@@ -1,0 +1,55 @@
+include header
+
+//- Master Wrap : starts
+section#mastwrap.mastwrap.slant-bottom.slant-bottom-color
+  section#intro.intro.single-project.white-bg.pad-bottom
+    .container
+      .row
+        article.text-left.col-md-12
+          .welcome
+            h1.font3.black Promova Idéias
+            h2.font2.dark
+              span.font2.weight-light.dark Web Design/Developer 
+          img.img-responsive(src='assets/images/works/promova/web_promova_responsive.jpg', alt='Promova Idéias')
+          img.browser.img-responsive(src='assets/images/browser.png')
+          img.img-responsive(src='assets/images/works/promova/web_promova_01.jpg', alt='Promova Idéias')
+          img.img-responsive(src='assets/images/works/promova/web_promova_02.jpg', alt='Promova Idéias')
+          img.img-responsive(src='assets/images/works/promova/web_promova_03.jpg', alt='Promova Idéias')
+          img.img-responsive(src='assets/images/works/promova/web_promova_04.jpg', alt='Promova Idéias')
+          img.img-responsive(src='assets/images/works/promova/web_promova_05.jpg', alt='Promova Idéias')
+          img.img-responsive(src='assets/images/works/promova/web_promova_06.jpg', alt='Promova Idéias')
+          img.img-responsive(src='assets/images/works/promova/web_promova_07.jpg', alt='Promova Idéias')
+          img.img-responsive.imgWeb(src='assets/images/works/promova/web_promova_08.jpg', alt='Promova Idéias')
+  section#clients.page.page-section.clients.color-bg
+    .container
+      .row
+        .navarrow
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='motion-ipiranga-rock-in-rio')
+                span.glyphicon.glyphicon-arrow-left.black
+                | Prev
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='index')
+                span.glyphicon.glyphicon-th.black
+                | All
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='concert-o-rappa')
+                span.glyphicon.glyphicon-arrow-right.black
+                | Next
+//- Master Wrap : ends
+
+script.
+  $(document).ready(function () {
+  $('.bxslider').bxSlider({
+  preloadImages: 'visible',
+  touchEnabled: true,
+  responsive: true,
+  pager: false,
+  controls: true
+  });
+  });
+
+include footer

@@ -1,0 +1,54 @@
+include header
+
+//- Master Wrap : starts
+section#mastwrap.mastwrap.slant-bottom.slant-bottom-color
+  section#intro.intro.single-project.white-bg.pad-bottom
+    .container
+      .row
+        article.text-left.col-md-12
+          .welcome
+            h1.font3.black Beauty Date
+            h2.font2.dark
+              span.font2.weight-light.dark UX/Front-end
+          img.img-responsive.imgWeb(src='assets/images/works/beautydate-web/web-beautydate-responsive.jpg', alt='Website Beauty Date')
+          img.browser.img-responsive(src='assets/images/browser.png')
+          img.img-responsive.imgWeb(src='assets/images/works/beautydate-web/web-beautydate-1.jpg', alt='Website Beauty Date')
+          img.browser.img-responsive(src='assets/images/browser.png')
+          img.img-responsive.imgWeb(src='assets/images/works/beautydate-web/web-beautydate-2.jpg', alt='Website Beauty Date')
+          img.browser.img-responsive(src='assets/images/browser.png')
+          img.img-responsive.imgWeb(src='assets/images/works/beautydate-web/web-beautydate-3.jpg', alt='Website Beauty Date')
+          img.browser.img-responsive(src='assets/images/browser.png')
+          img.img-responsive.imgWeb(src='assets/images/works/beautydate-web/web-beautydate-4.jpg', alt='Website Beauty Date')
+  section#clients.page.page-section.clients.color-bg
+    .container
+      .row
+        .navarrow
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='web-ccweiss')
+                span.glyphicon.glyphicon-arrow-left.black
+                | Prev
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='index')
+                span.glyphicon.glyphicon-th.black
+                | All
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='motion-sphere')
+                span.glyphicon.glyphicon-arrow-right.black
+                | Next
+//- Master Wrap : ends
+
+script.
+  $(document).ready(function () {
+  $('.bxslider').bxSlider({
+  preloadImages: 'visible',
+  touchEnabled: true,
+  responsive: true,
+  pager: false,
+  controls: true
+  });
+  });
+
+include footer

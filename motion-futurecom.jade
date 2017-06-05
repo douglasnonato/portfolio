@@ -1,0 +1,53 @@
+include header
+
+//- Master Wrap : starts
+section#mastwrap.mastwrap.slant-bottom.slant-bottom-color
+  section#intro.intro.single-project.white-bg.pad-bottom
+    .container
+      .row
+        article.text-left.col-md-12
+          .welcome
+            h1.font3.black Futurecom
+            h2.font2.dark
+              span.font2.weight-light.dark Motion Design / Video
+          img.img-responsive.imgPadding(src='assets/images/works/futurecom-video/futurecom-brazil-growth-1.jpg', alt='Infographic Futurecom')
+          img.img-responsive.imgPadding(src='assets/images/works/futurecom-video/futurecom-brazil-growth-2.jpg', alt='Infographic Futurecom')
+          img.img-responsive.imgPadding(src='assets/images/works/futurecom-video/futurecom-brazil-growth-3.jpg', alt='Infographic Futurecom')
+          img.img-responsive.imgPadding(src='assets/images/works/futurecom-video/futurecom-brazil-growth-4.jpg', alt='Infographic Futurecom')
+          .video-responsive
+            iframe(src='https://player.vimeo.com/video/37393280?color=d4ea01&title=0&byline=0&portrait=0', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+          .video-responsive
+            iframe(src='https://player.vimeo.com/video/29680901?color=d4ea01&title=0&byline=0&portrait=0', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+  section#clients.page.page-section.clients.color-bg
+    .container
+      .row
+        .navarrow
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='logo-freezermax')
+                span.glyphicon.glyphicon-arrow-left.black
+                | Prev
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='index')
+                span.glyphicon.glyphicon-th.black
+                | All
+          article.col-xs-2.text-center
+            .aux-icon-btn-wrap
+              a.aux-icon-btn.black.font2(href='web-ccweiss')
+                span.glyphicon.glyphicon-arrow-right.black
+                | Next
+//- Master Wrap : ends
+
+script.
+  $(document).ready(function () {
+  $('.bxslider').bxSlider({
+  preloadImages: 'visible',
+  touchEnabled: true,
+  responsive: true,
+  pager: false,
+  controls: true
+  });
+  });
+
+include footer
