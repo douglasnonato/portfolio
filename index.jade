@@ -1,0 +1,258 @@
+include header
+
+//- Master Wrap : starts
+section#mastwrap.mastwrap
+  section#woks-head.woks-head.pad-bottom.pad-bottom60.white-bg
+    .container
+      .row
+        article.text-left.col-md-12
+          h1.main-heading
+            span.black.font3 Web Designer
+      .row
+        article.col-md-12.text-left
+          ul.works-filter.clearfix
+            li
+              a#all.active(href='#', data-filter='*')
+                span All
+            li
+              a(href='#', data-filter='.web')
+                span Web
+            li
+              a(href='#', data-filter='.motion')
+                span Motion
+            li
+              a(href='#', data-filter='.graphic')
+                span Graphic
+
+  section#works-masonry.white-bg
+    #works-container.works-container.clearfix
+      //- start : works-item
+      .works-item.works-item-one-third.web
+        img.img-responsive(data-no-retina='', alt='Website CCWeiss Viagens', title='Website CCWeiss Viagens', src='images/works/ccweiss/web-ccweiss.jpg')
+        a(href='web-ccweiss.php')
+          .works-item-inner.valign
+            h3.dark CCWeis Viagens
+            p.dark
+              span.dark Website
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.web
+        img.img-responsive(data-no-retina='', alt='Website Beauty Date', title='Website Beauty Date', src='images/works/beautydate-web/web-beautydate.jpg')
+        a(href='web-beautydate.php')
+          .works-item-inner.valign
+            h3.dark Beauty Date
+            p.dark
+              span.dark Website
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.motion
+        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Motion Sphere - Simulator', title='Motion Sphere - Simulator', src='images/works/motion-sphere/motion-sphere-mobile.jpg')
+        video.img-responsive(loop='', autoplay='', alt='Motion Sphere - Simulator', title='Motion Sphere - Simulator')
+          source(type='video/webm', src='images/works/motion-sphere/motion-sphere.webm')
+          source(type='video/mp4', src='images/works/motion-sphere/motion-sphere.mp4')
+        a(href='motion-sphere.php')
+          .works-item-inner.valign
+            h3.dark Motion Sphere
+            p.dark
+              span.dark Simulator
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.graphic
+        img.img-responsive(data-no-retina='', alt='Beauty Date - Branding', title='Beauty Date - Branding', src='images/works/logo-beautydate/logo-beauty-date.jpg')
+        a(href='logo-beauty-date.php')
+          .works-item-inner.valign
+            h3.dark Beauty Date
+            p.dark
+              span.dark Branding
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.motion
+        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Ipiranga - Rock in Rio', title='Ipiranga - Rock in Rio', src='images/works/ipiranga/motion-ipiranga-rock-in-rio-mobile.jpg')
+        video.img-responsive(loop='', autoplay='', alt='Ipiranga - Rock in Rio', title='Ipiranga - Rock in Rio')
+          source(type='video/webm', src='images/works/ipiranga/motion-ipiranga-rock-in-rio.webm')
+          source(type='video/mp4', src='images/works/ipiranga/motion-ipiranga-rock-in-rio.mp4')
+        a(href='motion-ipiranga-rock-in-rio.php')
+          .works-item-inner.valign
+            h3.dark Ipiranga
+            p.dark
+              span.dark Rock in Rio
+      //- end : works-item
+
+      //- start : works-item
+      //-
+        <div class="works-item works-item-one-third motion">
+        <img data-no-retina alt="O RAPPA - Miami Concert" title="O RAPPA - Miami Concert" class="img-responsive imgVideoMobile" src="images/works/o-rappa/concert-o-rappa-miami-mobile.jpg"/>
+        <video loop="" autoplay="" alt="O RAPPA - Miami Concert" title="O RAPPA - Miami Concert" class="img-responsive">
+        <source type="video/webm" src="images/works/o-rappa/concert-o-rappa-miami.webm"></source>
+        <source type="video/mp4" src="images/works/o-rappa/concert-o-rappa-miami.mp4"></source>
+        </video>
+        <a href="concert-o-rappa.php">
+        <div class="works-item-inner valign">
+        <h3 class="dark">O RAPPA</h3>
+        <p class="dark"><span class="dark">Miami Concert</span></p>
+        </div>
+        </a>
+        </div>
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.web
+        img.img-responsive(data-no-retina='', alt='Website Clock Stock', title='Website Clock Stock', src='images/works/clockstock/web-clockstock.jpg')
+        a(href='web-clockstock.php')
+          .works-item-inner.valign
+            h3.dark Clock Stock
+            p.dark
+              span.dark Website
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.motion
+        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Promova I.D.E.I.A.S.', title='Promova I.D.E.I.A.S.', src='images/works/promova-video/motion-promova-mobile.jpg')
+        video.img-responsive(loop='', autoplay='', alt='Promova I.D.E.I.A.S.', title='Promova I.D.E.I.A.S.')
+          source(type='video/webm', src='images/works/promova-video/motion-promova.webm')
+          source(type='video/mp4', src='images/works/promova-video/motion-promova.mp4')
+        a(href='motion-promova.php')
+          .works-item-inner.valign
+            h3.dark Promova I.D.E.I.A.S.
+            p.dark
+              span.dark Video
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.web
+        img.img-responsive(data-no-retina='', alt='Website Qlance', title='Website Qlance', src='images/works/qlance/web-qlance.jpg')
+        a(href='web-qlance.php')
+          .works-item-inner.valign
+            h3.dark Qlance
+            p.dark
+              span.dark Website
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-two-third.web
+        img.img-responsive(data-no-retina='', alt='Website Cwb Consulting', title='Website Cwb Consulting', src='images/works/cwb-consulting/web_cwb_consulting.jpg')
+        a(href='web-cwb-consulting.php')
+          .works-item-inner.valign
+            h3.dark Cwb Consulting
+            p.dark
+              span.dark Website
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.graphic
+        img.img-responsive(data-no-retina='', alt='Fiat Barigui - Fidelity Card', title='Fiat Barigui - Fidelity Card', src='images/works/fiat-barigui/fiat-barigui.jpg')
+        a(href='graphic-fiat.php')
+          .works-item-inner.valign
+            h3.dark Fiat Barigui
+            p.dark
+              span.dark Fidelity Card
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.graphic
+        img.img-responsive(data-no-retina='', alt='Futurecom Materials', title='Futurecom Materials', src='images/works/futurecom-material/futurecom.jpg')
+        a(href='materials-futurecom.php')
+          .works-item-inner.valign
+            h3.dark Futurecom
+            p.dark
+              span.dark Materials
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.motion
+        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage', src='images/works/guarde-mais/motion-guarde-mais-mobile.jpg')
+        video.img-responsive(loop='', autoplay='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage video')
+          source(type='video/webm', src='images/works/guarde-mais/motion-guarde-mais.webm')
+          source(type='video/mp4', src='images/works/guarde-mais/motion-guarde-mais.mp4')
+        a(href='motion-guarde-mais.php')
+          .works-item-inner.valign
+            h3.dark Guarde Mais
+            p.dark
+              span.dark Video
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.graphic
+        img.img-responsive(data-no-retina='', alt='Moog logo', title='Moog logo', src='images/works/moog/logo-moog.jpg')
+        a(href='logo-moog.php')
+          .works-item-inner.valign
+            h3.dark Moog Recording Studio
+            p.dark
+              span.dark Branding
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.motion
+        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Beauty Date', title='Beauty Date', src='images/works/beauty-date-video/motion-beauty-date-mobile.jpg')
+        video.img-responsive(loop='', autoplay='', alt='Beauty Date', title='Beauty Date')
+          source(type='video/webm', src='images/works/beauty-date-video/motion-beauty-date.webm')
+          source(type='video/mp4', src='images/works/beauty-date-video/motion-beauty-date.mp4')
+        a(href='motion-beauty-date.php')
+          .works-item-inner.valign
+            h3.dark Beauty Date
+            p.dark
+              span.dark Video
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.graphic
+        img.img-responsive(data-no-retina='', alt='Futurecom Chile Teaser', title='Futurecom Chile Teaser', src='images/works/futurecom/futurecom-chile.jpg')
+        a(href='futurecom.php')
+          .works-item-inner.valign
+            h3.dark Futurecom
+            p.dark
+              span.dark
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.web
+        img.img-responsive(data-no-retina='', alt='Landing Page Business Village', title='Landing Page Business Village', src='images/works/business-village/web-business-village.jpg')
+        a(href='web-business-village.php')
+          .works-item-inner.valign
+            h3.dark Business Village
+            p.dark
+              span.dark Landing Page
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.web
+        img.img-responsive(data-no-retina='', alt='Website Elite', title='Website Elite', src='images/works/elite/web-elite.jpg')
+        a(href='web-elite.php')
+          .works-item-inner.valign
+            h3.dark Elite
+            p.dark
+              span.dark Website
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.graphic
+        img.img-responsive(data-no-retina='', alt='Freezermax logo', title='Freezermax logo', src='images/works/freezermax/logo-freezermax.jpg')
+        a(href='logo-freezermax.php')
+          .works-item-inner.valign
+            h3.dark Freezermax
+            p.dark
+              span.dark Branding
+      //- end : works-item
+
+      //- start : works-item
+      .works-item.works-item-one-third.motion
+        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Futurecom Brazil Growth', title='Futurecom Brazil Growth', src='images/works/futurecom-video/futurecom-brazil-growth-mobile.jpg')
+        video.img-responsive(loop='', autoplay='', alt='Futurecom Brazil Growth', title='Futurecom Brazil Growth')
+          source(type='video/webm', src='images/works/futurecom-video/futurecom-brazil-growth.webm')
+          source(type='video/mp4', src='images/works/futurecom-video/futurecom-brazil-growth.mp4')
+        a(href='motion-futurecom.php')
+          .works-item-inner.valign
+            h3.dark Futurecom
+            p.dark
+              span.dark Infographic
+      //- end : works-item
+
+    //- end : works-container
+
+//- Master Wrap : ends
+
+include footer
