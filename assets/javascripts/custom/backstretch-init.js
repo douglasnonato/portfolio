@@ -16,9 +16,9 @@ $(function ($) {
   // Duration is the amount of time in between slides,
   // and fade is value that determines how quickly the next image will fade in
   $.backstretch([
-      "images/bg/01.jpg"
-    , "images/bg/02.jpg"
-    , "images/bg/03.jpg"
+      "assets/images/bg/01.jpg"
+    , "assets/images/bg/02.jpg"
+    , "assets/images/bg/03.jpg"
   ], {duration: 3000, fade: 750});
 
    		
