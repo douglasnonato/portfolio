@@ -1,0 +1,180 @@
+.text-cols.intro{
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+section.intro{
+  background: #191d1f !important;
+}
+
+.web{
+  background: #f1f3f5;
+}
+
+.web figure figcaption{
+  color: #272822;
+  background: transparent;
+}
+
+.provisuale figure figcaption{
+  color: rgba(255,255,255,0.5);
+}
+
+.provisuale .description li{
+  font-weight: 500;
+}
+
+.easterEgg small{
+  color: rgba(255,255,255,0.25);
+}
+
+.web h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.web .flex-content{
+  background: #272822;
+}
+
+.web pre{
+    border: none;
+    box-shadow: none;
+    background: #272822;
+    color: #fff;
+}
+
+.web pre:hover{
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.web pre .pink{
+  color: #f9266c;
+}
+
+.web pre .yellow{
+  color: #e2c96b;
+}
+
+
+.web pre .green{
+  color: #8bde2e;
+}
+
+.web pre .grey{
+  color: #757158;
+}
+
+.web code,.web [class*="bg-"] pre {
+  background: #272822;
+}
+
+.experience .background{
+  background-position: right;
+}
+
+.title footer small, .experience footer small{
+  color: #75660f;
+  font-weight: 500;
+}
+
+.skills li{
+  background: rgba(0, 20, 80, 0.05);
+  margin: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) and (min-width: 600px){
+  .skills li{
+    width: 40%;
+  }
+}
+
+.cover{
+  background: #fff;
+}
+
+section.intro{
+  background: #282828;
+} 
+
+.motion hr, .graphic hr{
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 75%);
+  margin: 0.2rem auto;
+}
+
+.motion footer small, .promova footer small{
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+  font-size: 0.8em;
+  text-shadow: none;
+}
+
+.graphic footer small{
+  color: #000;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-shadow: none;
+}
+
+@media (min-width: 760px){
+  .responsabilities .reasons li{
+    padding-left: 21.8rem;
+  }
+}
+
+
+.responsabilities .reasons li:first-child:before{
+  content: 'start';
+}
+
+.responsabilities .reasons li:nth-child(2):before{
+  content: 'than';
+}
+
+.final h3{
+  margin-bottom: 40px;
+}
+
+.banner{
+  background-position-y: -50px;
+  background-position-x: 40px;
+}
+@media (max-height: 800px) and (min-width: 1024px){
+  .banner{
+    background-position-y: -60px;
+    background-position-x: 100px;
+    background-size: 33%;
+  }
+}
+
+.final svg{
+  margin: -5px 7px 0 0;
+}
+
+.final svg.fa-linkedin{
+  margin: -6px 7px 0 0;
+}
+
+.respPromova figure{
+  width: 100%;
+  padding-top: 33px;
+} 
+
+.respPromova figure figcaption{
+  background: rgba(0,0,0,0.5);
+}
+
+.respPromova h3{
+  position: absolute;
+  top: 40px;
+}
+
+.respPromova .flexblock li h2{
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
