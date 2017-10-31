@@ -48,7 +48,7 @@
 }
 
 /*Notebooks and Small Laptops*/
-@media (max-width: 1199px) {
+/*@media (max-width: 1199px) {
     .container{
         max-width: 1159px;
         padding-left:20px;
@@ -155,10 +155,10 @@
     #works-masonry .works-item{
         width: 33.3% !important;
     }
-}
+}*/
 
 /*iPad Landscape Mode and Large Tablets */
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .container{
         max-width: 984px;
         padding-left:20px;
@@ -265,10 +265,10 @@
     #works-masonry .works-item{
         width: 33.3% !important;
     }
-}
+}*/
 
 /*Small Desktop and Very Small Notebook */
-@media (max-width: 990px) {
+/*@media (max-width: 990px) {
 
     .container{
         max-width: 950px;
@@ -381,10 +381,10 @@
         font-size: 14px;
         line-height: 18px;
     }
-}
+}*/
 
 /*Medium Tablets */
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
 
     .container{
         max-width: 760px;
@@ -502,12 +502,39 @@
     .glyphicon-arrow-right:before {
         margin-left: -3px;
     }
+}*/
+
+@media (max-width: 1199px){
+    #about{
+        padding-top: 240px;
+    }
+    #about h1.main-heading > span{
+        font-size: 4vw;
+    }
 }
 
+@media (max-width: 990px){
+    #about h1.main-heading > span{
+        font-size: 5vw;
+    }
+    #about.about{
+        margin-top: 50px;
+        padding-top: 180px;
+    }
+    #woks-head.woks-head{
+        margin-top: 0;
+    }
+}
 
 /*iPad Portrait Mode, iPad Mini and Small Tablets */
 @media (max-width: 768px) {
-
+    .backstretch img{
+        right: -300px !important;
+        left: unset !important;
+    }
+    #about h1.main-heading > span{
+        font-size: 6vw;
+    }
     .container{
         max-width: 728px;
         padding-left:20px;
@@ -551,7 +578,7 @@
         visibility: hidden;
     }
     .mastfoot.space-top, .super-space{
-        margin-top: 0;
+        margin-top: 380px !important;
     }
     .stats-count span{
         font-size: 48px;
@@ -624,7 +651,6 @@
     .imgWeb{
         margin-bottom: 30px;
     }
-
 }
 
 /*iPhone 6Plus Landscape Mode*/
@@ -1111,7 +1137,9 @@
 
 /*iPhone Landscape Mode and Mediium Smart Phones*/
 @media screen and (max-width: 480px) {
-
+    #about h1.main-heading > span{
+        font-size: 20px;
+    }
     .container{
         max-width: 440px;
         padding-left: 20px;
