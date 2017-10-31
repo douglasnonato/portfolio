@@ -85,12 +85,5 @@ $(function ($) {
 
 })();
 //  JSHint wrapper $(function ($)  : ends
-
-
-
-
-
-
-
   
 
