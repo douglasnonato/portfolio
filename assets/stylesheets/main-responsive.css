@@ -505,11 +505,11 @@
 }*/
 
 @media (max-width: 1199px){
-    #about{
-        padding-top: 240px;
-    }
     #about h1.main-heading > span{
         font-size: 4vw;
+    }
+    section:first-of-type{
+        padding-top: 240px;
     }
 }
 
@@ -534,6 +534,10 @@
     }
     #about h1.main-heading > span{
         font-size: 6vw;
+    }
+    h1 span.large {
+        font-size: 5vw;
+        line-height: 8vw;
     }
     .container{
         max-width: 728px;
@@ -595,8 +599,8 @@
         line-height:26px;
     }
     .promo-text, .intro-03 h2 > span, .contact .main-heading > span{
-        font-size: 14px;
-        line-height:21px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .features-inner{
         padding: 20px;
@@ -716,8 +720,8 @@
         line-height:26px;
     }
     .promo-text, .intro-03 h2 > span, .contact .main-heading > span{
-        font-size: 14px;
-        line-height:21px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .features-inner{
         padding: 20px;
@@ -951,8 +955,8 @@
         line-height:26px;
     }
     .promo-text, .intro-03 h2 > span, .contact .main-heading > span{
-        font-size: 14px;
-        line-height:21px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .features-inner{
         padding: 20px;
@@ -1002,7 +1006,10 @@
 
 /*Google Nexus and Other Large Smart Phones v1*/
 @media screen and (max-width: 600px)  {
-
+    h1 span.large{
+        font-size: 6vw;
+        line-height: 10vw;
+    }
     .container{
         max-width: 560px;
         padding-left: 20px;
@@ -1063,8 +1070,8 @@
         line-height:26px;
     }
     .promo-text, .intro-03 h2 > span, .contact .main-heading > span{
-        font-size: 14px;
-        line-height:21px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .single-project .welcome h1{
         font-size: 26px;
@@ -1137,6 +1144,10 @@
 
 /*iPhone Landscape Mode and Mediium Smart Phones*/
 @media screen and (max-width: 480px) {
+    h1 span.large{
+        font-size: 8vw;
+        line-height: 11vw;
+    }
     #about h1.main-heading > span{
         font-size: 20px;
     }
@@ -1200,8 +1211,8 @@
         line-height:26px;
     }
     .promo-text, .intro-03 h2 > span, .contact .main-heading > span{
-        font-size: 14px;
-        line-height:21px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .features-inner{
         padding: 20px;
@@ -1321,8 +1332,8 @@
         line-height:26px;
     }
     .promo-text, .intro-03 h2 > span, .contact .main-heading > span{
-        font-size: 14px;
-        line-height:21px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .features-inner{
         padding: 20px;

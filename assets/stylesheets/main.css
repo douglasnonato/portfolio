@@ -41,7 +41,7 @@ a:focus {
 p{
     color: #777;
     font-weight:300;
-    font-size: 14px;
+    font-size: 16px;
     line-height:21px;
     font-weight: 200;
 }
@@ -1057,6 +1057,7 @@ fieldset h1 {
     margin-bottom: 20px;
     padding: 0;
 }
+
 
 /* Tooltip */
 
