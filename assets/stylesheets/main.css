@@ -510,21 +510,21 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .about .feature-icon i{
-    height: 82px;
+    height: 83px;
     width: 82px;
     margin-bottom: 30px;
 }
 
 .about .feature-icon i.motion{
-    background: url(../images/services/motion.png);
+    background: url(../images/services/motion.svg) no-repeat;
 }
 
-.about .feature-icon i.web{
-    background: url(../images/services/web.png);
+.about .feature-icon i.ux{
+    background: url(../images/services/ux.svg) no-repeat;
 }
 
-.about .feature-icon i.graphic{
-    background: url(../images/services/graphic.png);
+.about .feature-icon i.code{
+    background: url(../images/services/code.svg) no-repeat;
 }
 
 a.getInTouch{
