@@ -2726,7 +2726,7 @@ if ( typeof define === 'function' && define.amd ) {
 									meanMenuExist = true;
 									// add class to body so we don't need to worry about media queries here, all CSS is wrapped in '.mean-container'
 									jQuery(meanContainer).addClass("mean-container");
-									jQuery('.mean-container').prepend('<div class="mean-bar"><div class="container"><a href="index.php"><img data-no-retina alt="Douglas Nonato" class="mobile-logo" title="Douglas Nonato" src="/assets/images/douglas-nonato-mobile.png"/></a><a href="#nav" class="meanmenu-reveal" style="'+meanStyles+'">Show Navigation</a><nav class="mean-nav"></nav></div></div>');
+									jQuery('.mean-container').prepend('<div class="mean-bar"><div class="container"><a href="index"><img data-no-retina alt="Douglas Nonato" class="mobile-logo" title="Douglas Nonato" src="/assets/images/douglas-nonato-mobile.png"/></a><a href="#nav" class="meanmenu-reveal" style="'+meanStyles+'">Show Navigation</a><nav class="mean-nav"></nav></div></div>');
 
 									//push meanMenu navigation into .mean-nav
 									var meanMenuContents = jQuery(meanMenu).html();
