@@ -1,0 +1,199 @@
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Block Reveal Effects | Overview | Codrops</title>
+		<meta name="description" content="Ideas for revealing content in a schematic box look." />
+		<meta name="keywords" content="javascript, plugin, reveal, effect, demo, web development, web design, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700" rel="stylesheet">
+
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/effects.css" />
+
+		<!-- Parallax -->
+		<script type="text/javascript" src="js/parallax/parallax.js"></script>
+		<script type="text/javascript" src="js/parallax/smoothScroll.js"></script>
+
+		<script src="js/modernizr.js"></script>
+
+		<!-- <script>document.documentElement.className = 'js';</script> -->
+	</head>
+	<body class="demo-overview loading demo-3" onload="smoothScroll(window,parallax);">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<!-- Progress bar -->
+		<nav class="progress-bar">
+		   <a href="#intro" class="progress-bar-item a">1<span>5</span></a>
+		   <a href="#project1" class="progress-bar-item b">2<span>5</span></a>
+		   <a href="#project2" class="progress-bar-item c">3<span>5</span></a>
+		   <a href="#project3" class="progress-bar-item d">4<span>5</span></a>
+		   <a href="#project4" class="progress-bar-item e">5<span>5</span></a>
+		</nav>
+
+		<!-- BG Morph -->
+		<div class="morph-wrap">
+			<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+				<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+			</svg>
+		</div>
+
+		<!--Main -->
+		<main>
+			<div class="cd-main-content">
+			<!-- Content -->
+			<section id="intro" class="content content--full flexy intro">
+				<header>
+				</header>
+				<h1 id="rev-1" class="content__title cd-headline letters type">
+					<span>Lorem ipsum dolor sit amet, consecter adscing elit</span> 
+					<span class="cd-words-wrapper waiting">
+						<b class="is-visible">pizza</b>
+						<b>sushi</b>
+						<b>steak</b>
+					</span>
+				</h1>
+				<h2 id="rev-2"> Proin quis quam nec nibh fermentum tristique sit amet vitae nisi. Nullam euismod, elit eu imperdiet tempor, nibh ligula finibus massa, sit amet efficitur nibh libero eu orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</h2>
+
+				<a href="#project1" class="cbutton">
+<!-- 					<i class="fa fa-fw arrow-down"></i> -->
+					projects
+				</a>
+			</section>
+			<section id="project1" class="content content--full flexy flexy--row project parallax-area">
+				<div class="hover">
+					<a class="hover-effect" href="single-project.html" data-type="page-transition">
+						<h2 class="content__title content__title--medium content__title--half content__title--right parallax-element" data-parallax="0.7">
+							<div id="rev-4" class="content__title__inner">Fermentum trist</div><br/>
+							<div id="rev-5" class="content__title__inner content__title__inner--offset-1"><span>Nascetur ridiculus</span></div>
+						</h2>
+					</a>
+					<a class="link" href="single-project.html" data-type="page-transition">
+						<figure id="rev-3" class="moveLeft content__image-wrap content__image-wrap--half parallax-element" data-parallax="0.1">
+							<img class="content__image" src="img/1.jpg" alt="Some image"/>
+						</figure>
+					</a>
+				</div>
+			</section>
+			<section id="project2" class="content content--full flexy flexy--row project parallax-area">
+				<div class="hover">
+					<a class="link" href="#">
+						<figure id="rev-6" class="moveRight content__image-wrap content__image-wrap--half parallax-element" data-parallax="0.1">
+							<img class="content__image" src="img/2.jpg" alt="Some image"/>
+						</figure>
+					</a>
+					<a class="hover-effect" href="#">
+						<h2 class="content__title content__title--medium content__title--half content__title--left parallax-element" data-parallax="0.7">
+							<div id="rev-7" class="content__title__inner">fierce bears make</div><br/>
+							<div id="rev-8" class="content__title__inner content__title__inner--offset-2"><span>responsiveness</span></div>
+						</h2>
+					</a>
+				</div>
+			</section>
+			<section id="project3" class="content content--full flexy flexy--row project parallax-area">
+				<div class="hover">
+					<a class="hover-effect" href="#">
+						<h2 class="content__title content__title--medium content__title--half content__title--right parallax-element" data-parallax="0.7">
+							<div id="rev-10" class="content__title__inner">fresh meerkats dig</div><br/>
+							<div id="rev-11" class="content__title__inner content__title__inner--offset-3"><span>team play</span></div>
+						</h2>
+					</a>
+					<a class="link" href="#">
+						<figure id="rev-9" class="moveLeft content__image-wrap content__image-wrap--half parallax-element" data-parallax="0.1">
+							<img class="content__image" src="img/3.jpg" alt="Some image"/>
+						</figure>
+					</a>
+				</div>
+			</section>
+			<section id="project4" class="content content--full flexy flexy--row project parallax-area content--last">
+				<div class="hover">
+					<a class="link" href="#">
+						<figure id="rev-12" class="moveRight content__image-wrap content__image-wrap--half parallax-element" data-parallax="0.1">
+							<img class="content__image" src="img/2.jpg" alt="Some image"/>
+						</figure>
+					</a>
+					<a class="hover-effect" href="#">
+						<h2 class="content__title content__title--medium content__title--half content__title--left parallax-element" data-parallax="0.7">
+							<div id="rev-13" class="content__title__inner">fierce bears make</div><br/>
+							<div id="rev-14" class="content__title__inner content__title__inner--offset-4"><span>responsiveness</span></div>
+						</h2>
+					</a>
+				</div>
+			</section>
+
+<!-- 			<section class="content flexy flexy--row content--last">
+				<p class="content__heading">Other examples: Try it yourself</p>
+				<div class="triggers">
+					<button id="rev-trigger-1" class="btn btn--trigger">left to right</button>
+					<button id="rev-trigger-2" class="btn btn--trigger">right to left, oh yes</button>
+					<button id="rev-trigger-3" class="btn btn--trigger">from the bottom + extra</button>
+					<button id="rev-trigger-4" class="btn btn--trigger">come from the top</button>
+					<button id="rev-trigger-5" class="btn btn--trigger">show me some color</button>
+				</div>
+				<h2 id="rev-12" class="content__title content__title--medium">Superlative</h2>
+			</section> -->
+			
+			<footer>
+				<div class="content-warp">
+					<!-- <button class="Scroll-to-top">Scroll To Top</button> -->
+					<p>Proin quis quam nec nibh fermentum tristique sit amet vitae nisi. Nullam euismod.</p>
+					<ul>
+						<li><a href="">Proifn</a></li>
+						<li><a href="">GuitHub</a></li>
+						<li><a href="">fermentum</a></li>
+					</ul>
+					<ul>
+						<li><a href="">amdfet</a></li>
+						<li><a href="">vitdfgae</a></li>
+						<li><a href="">tristique</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		</main>
+
+		<!-- Transition -->
+		<div class="cd-cover-layer"></div>
+		<div class="cd-loading-bar"></div>
+
+		<!-- Effects -->
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+
+		<!-- Revealer -->
+		<script src="js/revealer/main.js"></script>
+		<script src="js/revealer/revealer.js"></script>
+
+		<!-- Bg -->
+		<script src="js/morph-bg/imagesloaded.pkgd.min.js"></script>
+		<script src="js/morph-bg/bg.js"></script>
+
+		<!-- Progress bar -->
+	    <script  src="js/progress-bar/progress.js"></script>
+	    <script  src="js/progress-bar/fixed-scroll.js"></script>
+
+		<!-- Outros -->
+		<script src="js/animated-headline/animated-headline.js"></script>
+		<script src="js/page-transition/page-transition.js"></script> 
+		<script src="js/smoothAncor.js"></script> 
+		<script src="js/clickEffect/clickEffect.js"></script> 
+
+	</body>
+
+	</body>
+</html>
