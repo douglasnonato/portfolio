@@ -1,0 +1,130 @@
+include components/header
+
+main
+	include components/top-menu
+	include components/menu-agenda
+	#agenda.empty
+
+		//- General agenda
+		.search
+			
+		#agenda-controls
+
+		#open-filter.btn
+		#agenda-filter
+			img(src='img/agenda/agenda-filter.png')
+			#close-filter.btn
+
+		#open-settings.btn
+		#agenda-settings
+			img(src='img/agenda/agenda-settings.png')
+			#close-settings.btn
+
+		.calendar.btn
+			img(src='img/calendar.png')
+
+		//- Extras
+
+		.add-new-professional.btn
+			img(src='img/agenda/tooltip-add-professional.png')
+
+		#time-border
+		#container
+			#agenda-professionals
+				.border-left
+			#agenda-time
+			.content
+				.blocked-card.one.btn
+					.hover
+				.time-off.one
+					.hover.btn
+				.appointment-card.one.btn
+				.currently-time
+
+				//- Group empty slots hover effetc
+				.group-empty-slots
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+					.empty-slot
+
+
+		script.
+			new PerfectScrollbar('#container');
+
+		//- MODAL
+
+	#professionals-modal-new-professional.modal
+		.close-modal.btn
+		a.close-modal.save.btn(href='agenda.html')
+		.close-modal.cancel.btn
+
+	#agenda-modal-new-appointment.modal
+			.close-modal.btn
+			.create-appointments.btn
+			.close-modal.cancel.btn
+			.block-time.btn
+
+		#agenda-modal-details.modal
+			.close-modal.btn
+			.delete-appointment.btn
+			.edit-appointment.btn
+			.create-sales-order.btn
+
+		#agenda-modal-sales-order.modal
+			.close-modal.btn
+			.close-modal.agenda.btn
+
+		#agenda-modal-block.modal
+			.close-modal.btn
+			.new-block-time.btn
+			.close-modal.cancel.btn
+			.new-appointment.btn
+
+		#agenda-modal-edit-block.modal
+			.close-modal.btn
+			.close-modal.refresh.btn
+			.close-modal.delete.btn
+
+		#agenda-modal-delete-appointment.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn

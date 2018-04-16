@@ -1,0 +1,158 @@
+include components/header
+
+main
+	include components/top-menu
+	include components/menu-sales-order
+	#sales-order
+
+		//- General sales-order
+		.search
+		#header
+			.comanda.btn
+			.caixa.btn
+			.print
+
+		#open-cash-register
+			.start.btn
+
+		//- COMANDA
+
+		#empty-space
+			.open-sales-order.btn
+			.new-client.btn
+
+		#sales-order-details
+			#shortcuts
+			#history.btn
+			#saler-order-history
+				img(src='img/sales-order/history.png')
+				#close-history.btn
+				#new-sales-order.btn
+
+			.status.open
+
+			#delete-sales-order.btn
+
+			//- Itens
+			.ordem-itens
+				.sales-order-item.um
+					.action.itens
+							.btn-edit
+								.tooltip
+							.btn-delete
+								.tooltip
+
+				.sales-order-item.dois
+					.action.itens
+							.btn-edit
+								.tooltip
+							.btn-delete
+								.tooltip
+
+				.sales-order-tip
+					.action.itens
+						.btn-edit
+							.tooltip
+						.btn-delete
+							.tooltip
+
+				.add-item
+
+			//- Payment
+			#payment
+				#payment-form
+					.receive.btn
+				.payment-history
+					.payment-tip
+						.action
+							.btn-tooltip
+								.tooltip
+
+					.payment-card
+						.action
+							.btn-delete
+								.tooltip
+
+				.add-discount.btn
+				.discount-applied
+
+		//- Modals
+
+		#sales-order-modal-new-client-full.modal
+			.full.btn
+			.close-modal.btn
+			.close-modal.save.btn
+			.close-modal.cancel.btn
+
+		#sales-order-modal-new-client-short.modal
+			.full.btn
+			.close-modal.btn
+			.close-modal.save.btn
+			.close-modal.cancel.btn
+
+		#sales-order-modal-add-item.modal
+			.tip.btn
+			.close-modal.btn
+			.close-modal.add.btn
+			.close-modal.cancel.btn
+
+		#sales-order-modal-add-tip.modal
+			.item.btn
+			.close-modal.btn
+			.close-modal.add.btn
+			.close-modal.cancel.btn
+
+		#sales-order-modal-edit-item.modal
+			.tip.btn
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn
+
+		#sales-order-modal-edit-tip.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn
+
+		#sales-order-modal-discount.modal
+			.close-modal.btn
+			.close-modal.add.btn
+			.close-modal.cancel.btn
+
+		#sales-order-modal-delete-tip.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn
+
+		#sales-order-modal-delete-item.um.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn
+
+		#sales-order-modal-delete-item.dois.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn
+
+		//- CAIXA
+
+		#cash-register.open.hide
+			.close-cash-register.btn
+			.deposit.btn
+			.withdraw.btn
+
+		//- Modals
+
+		#sales-order-close-cash-register.modal
+			.close-modal.btn
+			.close-modal.close.btn
+			.close-modal.cancel.btn
+
+		#sales-order-withdraw.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn
+
+		#sales-order-deposit.modal
+			.close-modal.btn
+			.close-modal.positive.btn
+			.close-modal.negative.btn

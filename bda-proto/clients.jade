@@ -1,0 +1,94 @@
+include components/header
+
+main
+	include components/top-menu
+	include components/menu-clients
+	#clients
+		#empty-space
+			.register.btn
+
+		//- General clients
+		.search
+		.new-client.btn
+		.pages-dropdown.btn
+			.dropdown
+
+		.birthday-dropdown.btn
+			.dropdown
+
+		ul.clients-list
+			li
+			li
+			li
+			li
+			li
+			li
+			li
+			li
+			li
+			li
+
+		ul.profile-list
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+
+		ul.history-list
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+			li
+				.tooltip
+					
+	//- Modals
+
+	#clients-modal-new-client.modal
+		.close-modal.btn
+		.close-modal.save.btn
+		.close-modal.cancel.btn
+
+	#clients-modal-profile.modal
+		.close-modal.btn
+		.close-modal.save.btn
+		.close-modal.cancel.btn
+		.delete-client.btn
+
+	#clients-modal-delete-client.modal
+		.close-modal.btn
+		.close-modal.positive.btn
+		.close-modal.negative.btn
+
+	#clients-modal-history.modal
+		.close-modal.btn

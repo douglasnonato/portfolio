@@ -1,0 +1,154 @@
+include components/header
+
+main
+	include components/top-menu
+	include components/menu-services
+	#services
+		#empty-space
+			.register.btn
+
+		//- General services
+		.search
+		.header
+			.info.btn
+			.new-service.btn
+		.sub-menu.business
+			.business-link.btn
+			.skills-link.btn
+			.msg-link.btn
+
+		//- Busines Tab
+
+		#business
+			.category-colapsed
+				ul.categories
+					li
+						.color.btn
+						.colorpicker.btn
+						img.close(src='img/services/category-cabelo.png')
+						img.open(src='img/services/colorpicker-cabelo.png')
+						.move-handle
+					li
+						.color.btn
+						.colorpicker.btn
+						img.close(src='img/services/category-depilacao.png')
+						img.open(src='img/services/colorpicker-depilacao.png')
+						.move-handle
+					li
+						.color.btn
+						.colorpicker.btn
+						img.close(src='img/services/category-estetica.png')
+						img.open(src='img/services/colorpicker-estetica.png')
+						.move-handle
+					li
+						.color.btn
+						.colorpicker.btn
+						img.close(src='img/services/category-maquiagem.png')
+						img.open(src='img/services/colorpicker-maquiagem.png')
+						.move-handle
+					li
+						.color.btn
+						.colorpicker.btn
+						img.close(src='img/services/category-massagem.png')
+						img.open(src='img/services/colorpicker-massagem.png')
+						.move-handle
+
+			.category-open
+				ul.categories
+					li
+						.color.btn
+						.colorpicker.btn
+						img.close(src='img/services/category-cabelo.png')
+						img.open(src='img/services/colorpicker-cabelo.png')
+						.move-handle
+				ul.appointment
+					li
+						.dropdown
+					li
+						.dropdown
+					li
+						.dropdown
+					li
+						.dropdown
+					li
+						.dropdown
+
+				ul.payment
+					li
+						.dropdown
+					li
+						.dropdown
+					li
+						.dropdown
+					li
+						.dropdown
+					li
+						.dropdown
+
+				ul.config
+					li
+						.tooltip
+					li
+						.tooltip
+					li
+						.tooltip
+					li
+						.tooltip
+					li
+						.tooltip
+					li.text
+						.tooltip
+				.tooltip-description.btn
+				.tooltip-description.two.btn
+				.tooltip-offer.btn
+				.tooltip-offer-scheduled.two.btn
+
+		#skills
+			.empty
+				.select-professional.btn
+			.professional-skills
+				ul.config
+					li
+						.tooltip
+					li
+						.tooltip
+					li
+						.tooltip
+					li
+						.tooltip
+					li
+						.tooltip
+
+	//- Modals
+
+	#services-modal-beginner-info.modal
+		.close-modal.btn
+		.close-modal.got-it.btn
+
+	#services-modal-info.modal
+		.close-modal.btn
+		.close-modal.skills.btn
+		.close-modal.got-it.btn
+
+	#services-modal-new-service.modal
+		.close-modal.btn
+		.close-modal.save.btn
+		.close-modal.cancel.btn
+
+	#services-modal-edit-service.modal
+		.offer.btn
+		.close-modal.btn
+		.close-modal.delete.btn
+		.close-modal.save.btn
+		.close-modal.cancel.btn
+
+	#services-modal-edit-offer.modal
+		.service.btn
+		.close-modal.btn
+		.close-modal.delete.btn
+		.close-modal.save.btn
+		.close-modal.cancel.btn
+		.calendar.btn
+			img(src='img/calendar.png')
+		.calendar.end.btn
+			img(src='img/calendar.png')

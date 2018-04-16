@@ -1,93 +1,61 @@
 include header
+//- Main
+main
+  .cd-main-content
+    #single-project
+      //- Content
+      section#header
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Lorem ipsum
+          .bg-text.fadeIn
+            | Lorem
+            br
+            | ipsum
+          figure.fadeIn.tv
+            img(src='assets/images/works/guarde-mais-motion/guarde-mais-motion-header.png', alt='Some image')
+          #rev-2.block-right
+            h2 Proin quis quam nec nibh fermentum tristique sit amet vitae nisi. Nullam euismod.
+      section
+        .flexy.delay-loading
+          h3#rev-3 Amet tempus
+          .description#rev-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, ipsum sed maximus bibendum, orci tortor finibus orci, eu consectetur erat lacus quis est. Quisque efficitur scelerisque ex non porta. Sed vitae mauris in dui dictum euismod eu vitae libero. Nullam sollicitudin non orci sollicitudin consectetur. In nec leo vel magna sollicitudin euismod at nec enim. Nunc varius dictum justo sit amet tempus.
+      section.full-bg.mb-work
+        .flexy
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-web/web-beautydate-home-1.png', alt='Beauty Date')
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-web/web-beautydate-home-2.jpg', alt='Beauty Date')
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-web/web-beautydate-home-3.jpg', alt='Beauty Date')
 
-//- Master Wrap : starts
-section#mastwrap.mastwrap.slant-bottom.slant-bottom-color
-  section#intro.intro.single-project.white-bg.pad-bottom
-    .container
-      .row
-        article.text-left.col-md-12
-          .welcome.add-top-quarter
-            h1.font3.black Sample Project.
-            h2.font2.dark
-              span.font2.weight-light.dark Web Design / Development
-      .row
-        article.text-left.col-md-12
-          .btn-wrap
-            a.btn.btn-seven.btn-seven-dark(href='works-masonry.html') Live Preview
-  section.about.pad-top.pad-bottom.white-bg.super-space
-    .container
-      .row
-        article.text-left.col-md-12
-          h1.sub-heading
-            span.dark.font4 About Project.
-          p.promo-text.dark.font2.weight-light.add-top-quarter.black
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod sed libero at congue. Praesent vulputate dolor velit, in condimentum odio pellentesque libero faucibus venenatis sed et quam. Nulla rutrum non tellus in fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      .row.add-top-quarter
-        article.text-left.col-md-6
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod sed libero at congue. Praesent vulputate dolor velit, in condimentum odio pellentesin condimentum odio pellentesque a. Nulla facilisi. Aliquam in justo non libero faucique a. Nulla facilisi. Aliquam in justo non libero faucibus venenatis sed et quam. Nulla rutrum non tellus in fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod sed libero at congue.
-        article.text-left.col-md-6
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod sed libero at congue. Praesent vulputate dolor velit, in condimentum odio pellentesin condimentum odio pellentesque a. Nulla facilisi. Aliquam in justo non libero faucique a. Nulla facilisi. Aliquam in justo non libero faucibus venenatis sed et quam. Nulla rutrum non tellus in fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod sed libero at congue.
-      .row.add-top-half
-        article.col-md-12.text-center
-          #carousel-example-generic.carousel.slide(data-ride='carousel')
-            //- Indicators
-            ol.carousel-indicators
-              li.active(data-target='#carousel-example-generic', data-slide-to='0')
-              li(data-target='#carousel-example-generic', data-slide-to='1')
-              li(data-target='#carousel-example-generic', data-slide-to='2')
-            //- Wrapper for slides
-            .carousel-inner
-              .item.active
-                img(data-no-retina='', alt='', title='', src='assets/images/works/single/01.jpg')
-              .item
-                img(data-no-retina='', alt='', title='', src='assets/images/works/single/02.jpg')
-              .item
-                img(data-no-retina='', alt='', title='', src='assets/images/works/single/03.jpg')
-      .row.add-top-quarter.zoom
-        article.col-md-6
-          a.venobox(data-gall='portfolio-gallery', href='assets/images/works/single/02.jpg')
-            img.img-responsive(data-no-retina='', alt='', title='', src='assets/images/works/single/02.jpg')
-        article.col-md-6
-          a.venobox(data-gall='portfolio-gallery', href='assets/images/works/single/01.jpg')
-            img.img-responsive(data-no-retina='', alt='', title='', src='assets/images/works/single/01.jpg')
-      .row.add-top-quarter.zoom
-        article.col-md-6
-          a.venobox(data-gall='portfolio-gallery', href='assets/images/works/single/05.jpg')
-            img.img-responsive(data-no-retina='', alt='', title='', src='assets/images/works/single/05.jpg')
-        article.col-md-6
-          a.venobox(data-gall='portfolio-gallery', href='assets/images/works/single/06.jpg')
-            img.img-responsive(data-no-retina='', alt='', title='', src='assets/images/works/single/06.jpg')
-  section#clients.page.page-section.clients.color-bg
-    .container
-      .row
-        article.col-md-2.col-md-offset-3.text-center
-          .aux-icon-btn-wrap
-            a.aux-icon-btn.black.font2(href='single-project.html')
-              span.glyphicon.glyphicon-arrow-left.black
-              | Prev
-        article.col-md-2.text-center
-          .aux-icon-btn-wrap
-            a.aux-icon-btn.black.font2(href='works-masonry.html')
-              span.glyphicon.glyphicon-th.black
-              | All
-        article.col-md-2.text-center
-          .aux-icon-btn-wrap
-            a.aux-icon-btn.black.font2(href='single-project.html')
-              span.glyphicon.glyphicon-arrow-right.black
-              | Next
-//- Master Wrap : ends
+      section.work-title-left
+        .flexy
+          h4.fadeIn Dictum euismod
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-web/web-beautydate-agenda.jpg', alt='Beauty Date Agenda')
+          h4.fadeIn Dictum euismod
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-web/web-beautydate-results.jpg', alt='Beauty Date Results')
 
-script.
-  $(document).ready(function() {
-  $('.bxslider').bxSlider({
-  preloadImages: 'visible',
-  touchEnabled: true,
-  responsive: true,
-  pager: false,
-  controls: true
-  });
-  });
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Title teste
+          .projects
+            a.item
+              img(src='assets/images/work-related.jpg', alt='Some image')
+              | sdfd
+            a.item
+              img(src='assets/images/work-related.jpg', alt='Some image')
+              | sdfd
 
-include footer
+
+          //- a.link(href='index.html', data-type='page-transition') voltar
+
+      include footer
+
+//- Transition
+.cd-cover-layer
+.cd-loading-bar
+
+include scripts-project

@@ -178,3 +178,21 @@ section.intro{
   margin-bottom: 15px;
 }
 
+.last-years{
+  font-size: 36px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  max-width: 650px;
+}
+
+@media (max-width: 760px){
+  .last-years{
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 40px;
+  }
+  .years h2{
+    font-weight: 500;
+  }
+}

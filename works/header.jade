@@ -1,0 +1,128 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Douglas Nonato | Graphic Designer
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name='description', content='I am a professional with extensive experience in design with emphasis on web, motion and graphic.')
+  meta(name='keywords', content='design, motion, designer, web design, freelancer, curitiba, graphic design')
+  meta(name='author', content='Douglas Nonato')
+  meta(name='owner', content='dougnot@gmail.com')
+
+  //- Share image
+  meta(property='og:title', content='Douglas Nonato | Graphic Designer')
+  meta(property='og:description', content='I am a professional with extensive experience in design with emphasis on web, motion and graphic.')
+  meta(property='og:url', content='http://www.douglasnonato.com/')
+  meta(property='og:site_name', content='Douglas Nonato | Graphic Designer')
+  meta(property='og:image', content='http://www.douglasnonato.com/images/share-logo.jpg')
+  meta(property='og:type', content='website')
+
+  //- Standard Favicon
+  link(rel='shortcut icon', href='assets/favico/favicon.ico')
+
+  //- Bootstrap CSS Files
+  link(href='assets/bootstrap/css/bootstrap.css', rel='stylesheet')
+
+  //- CSS files for plugins
+  link(href='assets/stylesheets/plugins-common.css', rel='stylesheet')
+  link(href='assets/stylesheets/venobox.css', rel='stylesheet')
+  link(href='assets/stylesheets/isotope.css', rel='stylesheet', type='text/css')
+
+  //- Intro Styles
+  link(href='assets/stylesheets/intro01.css', rel='stylesheet')
+
+  //- Main Template Styles
+  link(href='assets/stylesheets/main.css', rel='stylesheet')
+  link(href='assets/stylesheets/less-compiled.css', rel='stylesheet')
+
+  //- Main Template BG Images
+  link(href='assets/stylesheets/main-bg.css', rel='stylesheet')
+
+  //- Main Template Responsive Styles
+  link(href='assets/stylesheets/main-responsive.css', rel='stylesheet')
+
+  //- Main Template Retina Optimizaton Rules
+  link(href='assets/stylesheets/main-retina.css', rel='stylesheet')
+
+  //- Google Web Fonts
+  link(href='http://fonts.googleapis.com/css?family=Inconsolata:400,700%7CRaleway:400,300,700,900%7COpen+Sans:400,300,700,800%7CMontserrat:400,700', rel='stylesheet', type='text/css')
+
+  //- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+  //-if lt IE 9
+    script(src='assets/bootstrap/js/html5shiv.js')
+    script(src='assets/bootstrap/js/respond.min.js')
+
+  link(rel='apple-touch-icon', sizes='57x57', href='assets/favico/apple-icon-57x57.png')
+  link(rel='apple-touch-icon', sizes='60x60', href='assets/favico/apple-icon-60x60.png')
+  link(rel='apple-touch-icon', sizes='72x72', href='assets/favico/apple-icon-72x72.png')
+  link(rel='apple-touch-icon', sizes='76x76', href='assets/favico/apple-icon-76x76.png')
+  link(rel='apple-touch-icon', sizes='114x114', href='assets/favico/apple-icon-114x114.png')
+  link(rel='apple-touch-icon', sizes='120x120', href='assets/favico/apple-icon-120x120.png')
+  link(rel='apple-touch-icon', sizes='144x144', href='assets/favico/apple-icon-144x144.png')
+  link(rel='apple-touch-icon', sizes='152x152', href='assets/favico/apple-icon-152x152.png')
+  link(rel='apple-touch-icon', sizes='180x180', href='assets/favico/apple-icon-180x180.png')
+  link(rel='icon', type='image/png', sizes='192x192', href='assets/favico/android-icon-192x192.png')
+  link(rel='icon', type='image/png', sizes='32x32', href='assets/favico/favicon-32x32.png')
+  link(rel='icon', type='image/png', sizes='96x96', href='assets/favico/favicon-96x96.png')
+  link(rel='icon', type='image/png', sizes='16x16', href='assets/favico/favicon-16x16.png')
+  link(rel='manifest', href='assets/favico/manifest.json')
+  meta(name='msapplication-TileColor', content='#ffffff')
+  meta(name='msapplication-TileImage', content='assets/favico/ms-icon-144x144.png')
+  meta(name='theme-color', content='#ffffff')
+
+  //- Analytics .com
+  script(type='text/javascript').
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10693165-6']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+    })();
+  //- END: analutics
+
+.sticky-border.sticky-border-top
+.sticky-border.sticky-border-right
+.sticky-border.sticky-border-bottom
+.sticky-border.sticky-border-left
+
+//- main navigation trigger
+//- .main-nav.visible-lg
+//-   .mobile-toggle
+//-     span
+//-     span
+//-     span
+
+//- main menu : starts
+section.menu-panel.menu-bg.fullheight
+  .row
+    article.col-md-12.fullheight.nav-list-holder
+      .valign
+        //- nav.nav-item-wrap
+        //-   ul.main-nav-menu.main-nav-menu-effect.font4
+        //-     li
+        //-       a.main-nav-link(href='index') Works
+        //-     li
+        //-       a.main-nav-link(href='about') About
+//- main menu : ends
+
+//- mobile only navigation : starts
+nav.mobile-nav.hidden-lg
+  //- ul
+  //-   li
+  //-     a(href='index') Works
+  //-   li
+  //-     a(href='about') About
+//- mobile only navigation : ends
+
+//- masthead-section (this nav bar is initially hidden but will be visible only on inner pages) : starts
+header#standard-header.standard-header.visible-lg.standard-header-top.white-bg
+  .container
+    .row
+      article.col-md-4.text-left
+        a(href='index.html')
+          img.main-logo.img-responsive(data-no-retina='', alt='Douglas Nonato', title='Douglas Nonato', src='assets/images/douglas-nonato.png')
+//- masthead-section:ends

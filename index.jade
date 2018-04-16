@@ -1,323 +1,100 @@
 include header
 
-//- Master Wrap : starts
-section#mastwrap.mastwrap.slant-bottom.slant-bottom-white
-  section#about.about.pad-bottom.white-bg
-    .container
-      .row
-        article.text-left.col-md-12
-          h1.main-heading
-            span.black.font4
-              | Hello, my name is Douglas Nonato.
-              br
-              em.dark.font3.weight-light I'm a Product Designer. Scroll down and find out how i can help you!
-section#mastwrap.mastwrap.slant-top
-  section.about.pad-top.white-bg.super-space
-    .container
-      .row
-        article.text-left.col-md-12
-          h2.sub-heading
-            span.black.font3.fullTitle.large Experience
-          p.promo-text.dark.font2.weight-light.add-top-quarter
-            | I’m a Graphic Designer with a 360 knowledge of what concerns Web, Graphic and Video Productions.
-          p.promo-text.dark.font2.weight-light.add-top-quarter
-            | Inspired by design and things moving, since 2008 I've worked in several projects by taking part to every single step of the workflow production. Every project is another opportunity to learn something new.
-          p.promo-text.dark.font2.weight-light.add-top-quarter In the last years I have improved my knowledge as SaaS Product Designer
+main
+  include menu-index
+  .cd-main-content
+    //- BG Morph
+    .morph-wrap
+      svg.morph(width='1400', height='770', viewbox='0 0 1400 770')
+        path(d='M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z')
 
-      .row
-        h3.sub-heading.col-md-12
-          span.black.font3.fullTitle.large this is what i can do!
-        .col-md-4.feature-icon.text-center
-          .feature-icon-wrap
-            i.ux
-            h4.font4.black UX and UI
-            p Leading and improving new web products.
-        .col-md-4.feature-icon.text-center
-          .feature-icon-wrap
-            i.code
-            h4.font4.black Code
-            p Development of websites, from the scratch to its publication;
-        .col-md-4.feature-icon.text-center
-          .feature-icon-wrap
-            i.motion
-            h4.font4.black Motion
-            p Editorial videos, 2D and 3D animations.
+    //- Content
+    section#intro.flexy.flexy--full.delay-loading
+      header
+      h1#rev-1.content__title.cd-headline.letters.type
+        span Hello,
+        br
+        span my name is Douglas Nonato. I'm A&nbsp;
+        span.cd-words-wrapper.waiting
+          b.is-visible Product&nbsp;
+          b UX&nbsp;
+          b Motion&nbsp;
+        span Designer.
+        br
+        span Scroll down and find out how i can help you!
+      h2#rev-2
+        | Inspired by design and things moving, since 2008 I've worked in several projects by taking part to every single step of the workflow production. Every project is another opportunity to learn something new. In the last years I have improved my knowledge as SaaS Product Designer
+      //- a.cbutton(href='#project1')
+      //-   //- <i class="fa fa-fw arrow-down"></i>
+      //-   | projects
+    section#project1.flexy.flexy--row.flexy--full.project.parallax-area.delay-loading
+      .hover
+        a.hover-effect(href='beauty-date-site.html', data-type='page-transition')
+          h2.content__title.content__title--medium.content__title--half.content__title--right.parallax-element(data-parallax='0.7')
+            #rev-4.content__title__inner Beauty Date
+            br
+            #rev-5.content__title__inner.content__title__inner--offset-1
+              span SaaS dashboard
+        a.link(href='beauty-date-dashboard.html', data-type='page-transition')
+          figure#rev-3.moveLeft.parallax-element(data-parallax='0.1')
+            img.content__image(src='assets/images/works/beauty-date-dashboard/dashboard-beauty-date.jpg', alt='Beauty Date SaaS dashboard')
 
-  section#woks-head.woks-head.pad-bottom.pad-bottom60.white-bg.pad-top
-    .container
-      .row
-        article.text-left.col-md-12
-          h3.main-heading
-            span.black.font3.fullTitle.large Works
-      .row
-        article.col-md-12.text-left
-          ul.works-filter.clearfix
-            li
-              a#all.active(href='#', data-filter='*')
-                span All
-            li
-              a(href='#', data-filter='.web')
-                span Web
-            li
-              a(href='#', data-filter='.motion')
-                span Motion
-            li
-              a(href='#', data-filter='.graphic')
-                span Graphic
+    section#project2.flexy.flexy--row.flexy--full.project.parallax-area
+      .hover
+        a.link(href='beauty-date-site.html')
+          figure#rev-6.moveRight.parallax-element(data-parallax='0.1')
+            img.content__image(src='assets/images/works/beauty-date-web/web-beautydate.jpg', alt='Beauty Date Website')
+        a.hover-effect(href='beauty-date-site.html')
+          h2.content__title.content__title--medium.content__title--half.content__title--left.parallax-element(data-parallax='0.7')
+            #rev-7.content__title__inner Beauty Date
+            br
+            #rev-8.content__title__inner.content__title__inner--offset-2
+              span Website
 
-  section#works-masonry.white-bg
-    #works-container.works-container.clearfix
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Website CCWeiss Viagens', title='Website CCWeiss Viagens', src='assets/images/works/ccweiss/web-ccweiss.jpg')
-        a(href='web-ccweiss')
-          .works-item-inner.valign
-            h3.dark CCWeis Viagens
-            p.dark
-              span.dark Website
-      //- end : works-item
+    section#project3.flexy.flexy--row.flexy--full.project.parallax-area
+      .hover
+        a.hover-effect(href='guarde-mais-motion.html')
+          h2.content__title.content__title--medium.content__title--half.content__title--right.parallax-element(data-parallax='0.7')
+            #rev-10.content__title__inner Guarde Mais
+            br
+            #rev-11.content__title__inner.content__title__inner--offset-3
+              span Motion
+        a.link(href='guarde-mais-motion.html')
+          figure#rev-9.moveLeft.parallax-element(data-parallax='0.1')
+            video(loop='', autoplay='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage video')
+              source(type='video/webm', src='assets/images/works/guarde-mais-motion/guarde-mais-motion.webm')
+              source(type='video/mp4', src='assets/images/works/guarde-mais-motion/guarde-mais-motion.mp4')
 
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Website Beauty Date', title='Website Beauty Date', src='assets/images/works/beautydate-web/web-beautydate.jpg')
-        a(href='web-beautydate')
-          .works-item-inner.valign
-            h3.dark Beauty Date
-            p.dark
-              span.dark Website
-      //- end : works-item
+    section#project4.flexy.flexy--row.flexy--full.project.parallax-area
+      .hover
+        a.link(href='qlance-site.html')
+          figure#rev-12.moveRight.parallax-element(data-parallax='0.1')
+            img.content__image(src='assets/images/works/qlance-web/web-qlance.jpg', alt='Qlance')
+        a.hover-effect(href='qlance-site.html')
+          h2.content__title.content__title--medium.content__title--half.content__title--left.parallax-element(data-parallax='0.7')
+            #rev-13.content__title__inner Qlance
+            br
+            #rev-14.content__title__inner.content__title__inner--offset-4
+              span Website
 
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Beauty Date B2B Landing Page', title='Beauty Date B2B Landing Page', src='assets/images/works/beautydate-b2b/web-beautydate-b2b.jpg')
-        a(href='web-beautydate-b2b')
-          .works-item-inner.valign
-            h3.dark Beauty Date
-            p.dark
-              span.dark B2B Landing Page
-      //- end : works-item
+    section#project5.flexy.flexy--row.flexy--full.project.parallax-area.last-shape
 
-      //- start : works-item
-      .works-item.works-item-one-third.motion
-        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Motion Sphere - Simulator', title='Motion Sphere - Simulator', src='assets/images/works/motion-sphere/motion-sphere-mobile.jpg')
-        video.img-responsive(loop='', autoplay='', alt='Motion Sphere - Simulator', title='Motion Sphere - Simulator')
-          source(type='video/webm', src='assets/images/works/motion-sphere/motion-sphere.webm')
-          source(type='video/mp4', src='assets/images/works/motion-sphere/motion-sphere.mp4')
-        a(href='motion-sphere')
-          .works-item-inner.valign
-            h3.dark Motion Sphere
-            p.dark
-              span.dark Simulator
-      //- end : works-item
+    //-
+      <section class="content flexy flexy--row content--last">
+      <p class="content__heading">Other examples: Try it yourself</p>
+      <div class="triggers">
+      <button id="rev-trigger-1" class="btn btn--trigger">left to right</button>
+      <button id="rev-trigger-2" class="btn btn--trigger">right to left, oh yes</button>
+      <button id="rev-trigger-3" class="btn btn--trigger">from the bottom + extra</button>
+      <button id="rev-trigger-4" class="btn btn--trigger">come from the top</button>
+      <button id="rev-trigger-5" class="btn btn--trigger">show me some color</button>
+      </div>
+      <h2 id="rev-12" class="content__title content__title--medium">Superlative</h2>
+      </section>
+    include footer
 
-      //- start : works-item
-      .works-item.works-item-one-third.graphic
-        img.img-responsive(data-no-retina='', alt='Beauty Date - Branding', title='Beauty Date - Branding', src='assets/images/works/logo-beautydate/logo-beauty-date.jpg')
-        a(href='logo-beauty-date')
-          .works-item-inner.valign
-            h3.dark Beauty Date
-            p.dark
-              span.dark Branding
-      //- end : works-item
+//- Transition
+.cd-cover-layer
+.cd-loading-bar
 
-      //- start : works-item
-      .works-item.works-item-one-third.motion
-        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Ipiranga - Rock in Rio', title='Ipiranga - Rock in Rio', src='assets/images/works/ipiranga/motion-ipiranga-rock-in-rio-mobile.jpg')
-        video.img-responsive(loop='', autoplay='', alt='Ipiranga - Rock in Rio', title='Ipiranga - Rock in Rio')
-          source(type='video/webm', src='assets/images/works/ipiranga/motion-ipiranga-rock-in-rio.webm')
-          source(type='video/mp4', src='assets/images/works/ipiranga/motion-ipiranga-rock-in-rio.mp4')
-        a(href='motion-ipiranga-rock-in-rio')
-          .works-item-inner.valign
-            h3.dark Ipiranga
-            p.dark
-              span.dark Rock in Rio
-      //- end : works-item
-
-      //- start : works-item
-      //-
-        <div class="works-item works-item-one-third motion">
-        <img data-no-retina alt="O RAPPA - Miami Concert" title="O RAPPA - Miami Concert" class="img-responsive imgVideoMobile" src="images/works/o-rappa/concert-o-rappa-miami-mobile.jpg"/>
-        <video loop="" autoplay="" alt="O RAPPA - Miami Concert" title="O RAPPA - Miami Concert" class="img-responsive">
-        <source type="video/webm" src="images/works/o-rappa/concert-o-rappa-miami.webm"></source>
-        <source type="video/mp4" src="images/works/o-rappa/concert-o-rappa-miami.mp4"></source>
-        </video>
-        <a href="concert-o-rappa.php">
-        <div class="works-item-inner valign">
-        <h3 class="dark">O RAPPA</h3>
-        <p class="dark"><span class="dark">Miami Concert</span></p>
-        </div>
-        </a>
-        </div>
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Website Clock Stock', title='Website Clock Stock', src='assets/images/works/clockstock/web-clockstock.jpg')
-        a(href='web-clockstock')
-          .works-item-inner.valign
-            h3.dark Clock Stock
-            p.dark
-              span.dark Website
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.motion
-        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Promova I.D.E.I.A.S.', title='Promova I.D.E.I.A.S.', src='assets/images/works/promova-video/motion-promova-mobile.jpg')
-        video.img-responsive(loop='', autoplay='', alt='Promova I.D.E.I.A.S.', title='Promova I.D.E.I.A.S.')
-          source(type='video/webm', src='assets/images/works/promova-video/motion-promova.webm')
-          source(type='video/mp4', src='assets/images/works/promova-video/motion-promova.mp4')
-        a(href='motion-promova')
-          .works-item-inner.valign
-            h3.dark Promova I.D.E.I.A.S.
-            p.dark
-              span.dark Video
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Website Qlance', title='Website Qlance', src='assets/images/works/qlance/web-qlance.jpg')
-        a(href='web-qlance')
-          .works-item-inner.valign
-            h3.dark Qlance
-            p.dark
-              span.dark Website
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-two-third.web
-        img.img-responsive(data-no-retina='', alt='Website Cwb Consulting', title='Website Cwb Consulting', src='assets/images/works/cwb-consulting/web_cwb_consulting.jpg')
-        a(href='web-cwb-consulting')
-          .works-item-inner.valign
-            h3.dark Cwb Consulting
-            p.dark
-              span.dark Website
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.graphic
-        img.img-responsive(data-no-retina='', alt='Fiat Barigui - Fidelity Card', title='Fiat Barigui - Fidelity Card', src='assets/images/works/fiat-barigui/fiat-barigui.jpg')
-        a(href='graphic-fiat')
-          .works-item-inner.valign
-            h3.dark Fiat Barigui
-            p.dark
-              span.dark Fidelity Card
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.graphic
-        img.img-responsive(data-no-retina='', alt='Futurecom Materials', title='Futurecom Materials', src='assets/images/works/futurecom-material/futurecom.jpg')
-        a(href='materials-futurecom')
-          .works-item-inner.valign
-            h3.dark Futurecom
-            p.dark
-              span.dark Materials
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.motion
-        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage', src='assets/images/works/guarde-mais/motion-guarde-mais-mobile.jpg')
-        video.img-responsive(loop='', autoplay='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage video')
-          source(type='video/webm', src='assets/images/works/guarde-mais/motion-guarde-mais.webm')
-          source(type='video/mp4', src='assets/images/works/guarde-mais/motion-guarde-mais.mp4')
-        a(href='motion-guarde-mais')
-          .works-item-inner.valign
-            h3.dark Guarde Mais
-            p.dark
-              span.dark Video
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.graphic
-        img.img-responsive(data-no-retina='', alt='Moog logo', title='Moog logo', src='assets/images/works/moog/logo-moog.jpg')
-        a(href='logo-moog')
-          .works-item-inner.valign
-            h3.dark Moog Recording Studio
-            p.dark
-              span.dark Branding
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.motion
-        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Beauty Date', title='Beauty Date', src='assets/images/works/beauty-date-video/motion-beauty-date-mobile.jpg')
-        video.img-responsive(loop='', autoplay='', alt='Beauty Date', title='Beauty Date')
-          source(type='video/webm', src='assets/images/works/beauty-date-video/motion-beauty-date.webm')
-          source(type='video/mp4', src='assets/images/works/beauty-date-video/motion-beauty-date.mp4')
-        a(href='motion-beauty-date')
-          .works-item-inner.valign
-            h3.dark Beauty Date
-            p.dark
-              span.dark Video
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.graphic
-        img.img-responsive(data-no-retina='', alt='Futurecom Chile Teaser', title='Futurecom Chile Teaser', src='assets/images/works/futurecom/futurecom-chile.jpg')
-        a(href='futurecom')
-          .works-item-inner.valign
-            h3.dark Futurecom
-            p.dark
-              span.dark
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Landing Page Business Village', title='Landing Page Business Village', src='assets/images/works/business-village/web-business-village.jpg')
-        a(href='web-business-village')
-          .works-item-inner.valign
-            h3.dark Business Village
-            p.dark
-              span.dark Landing Page
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.web
-        img.img-responsive(data-no-retina='', alt='Website Elite', title='Website Elite', src='assets/images/works/elite/web-elite.jpg')
-        a(href='web-elite')
-          .works-item-inner.valign
-            h3.dark Elite
-            p.dark
-              span.dark Website
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.graphic
-        img.img-responsive(data-no-retina='', alt='Freezermax logo', title='Freezermax logo', src='assets/images/works/freezermax/logo-freezermax.jpg')
-        a(href='logo-freezermax')
-          .works-item-inner.valign
-            h3.dark Freezermax
-            p.dark
-              span.dark Branding
-      //- end : works-item
-
-      //- start : works-item
-      .works-item.works-item-one-third.motion
-        img.img-responsive.imgVideoMobile(data-no-retina='', alt='Futurecom Brazil Growth', title='Futurecom Brazil Growth', src='assets/images/works/futurecom-video/futurecom-brazil-growth-mobile.jpg')
-        video.img-responsive(loop='', autoplay='', alt='Futurecom Brazil Growth', title='Futurecom Brazil Growth')
-          source(type='video/webm', src='assets/images/works/futurecom-video/futurecom-brazil-growth.webm')
-          source(type='video/mp4', src='assets/images/works/futurecom-video/futurecom-brazil-growth.mp4')
-        a(href='motion-futurecom')
-          .works-item-inner.valign
-            h3.dark Futurecom
-            p.dark
-              span.dark Infographic
-      //- end : works-item
-
-    //- end : works-container
-
-  section#call-to-action.page.page-section.call-to-action.color-bg
-    .container
-      .row
-        article.col-md-12.text-center
-          .btn-wrap.text-center
-            a.btn.btn-seven.btn-seven-dark.getInTouch(href='mailto:dougnot@gmail.com')
-              | If You have any questions or interest in my services,
-              br
-              | please don’t be shy, get in touch
-              u dougnot@gmail.com
-
-//- Master Wrap : ends
-
-include footer
-
-script(src='assets/javascripts/custom/backstretch-init.js')
-script(src='assets/javascripts/custom/noscroll.js')
+include scripts-index

@@ -1,0 +1,52 @@
+include header
+//- Main
+main
+  include menu
+  .cd-main-content
+    #single-project
+      //- Content
+      section#header.video
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Guarde Mais
+          #rev-2.block-right
+            h2 2D Animation for a a self storage company
+        video(loop='', autoplay='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage video')
+            source(type='video/webm', src='assets/images/works/guarde-mais-motion/guarde-mais-motion-bg.webm')
+            source(type='video/mp4', src='assets/images/works/guarde-mais-motion/guarde-mais-motion-bg.mp4')
+      section.description-section
+        .flexy
+          h3#rev-3 The job
+          .description#rev-4 Development of a 2D animation for a 30 second commercial.
+      section.full-bg
+        .flexy
+          figure.fadeIn
+            img(src='assets/images/works/guarde-mais-motion/guarde-mais-motion-1.jpg', alt='Guarde Mais')
+          figure.fadeIn
+            img(src='assets/images/works/guarde-mais-motion/guarde-mais-motion-2.jpg', alt='Guarde Mais')
+          figure.fadeIn
+            img(src='assets/images/works/guarde-mais-motion/guarde-mais-motion-3.jpg', alt='Guarde Mais')
+          .video-responsive.fadeIn
+            iframe(src='https://player.vimeo.com/video/144430743?color=d4ea01&title=0&byline=0&portrait=0', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Related Works
+          .projects
+            a.item(href='beauty-date-site.html')
+              img(src='assets/images/works/beauty-date-web/work-related.jpg', alt='Beauty Date')
+              | Beauty Date
+            a.item(href='qlance-site.html')
+              img(src='assets/images/works/qlance-web/work-related.jpg', alt='Qlance')
+              | Qlance
+
+
+          //- a.link(href='index.html', data-type='page-transition') voltar
+
+      include footer
+
+//- Transition
+.cd-cover-layer
+.cd-loading-bar
+
+include scripts-project

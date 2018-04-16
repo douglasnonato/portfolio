@@ -1,0 +1,175 @@
+/*
+ * Container style
+ */
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
+
+/*
+ * Scrollbar rail styles
+ */
+.ps__rail-x {
+  display: none;
+  transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  height: 15px;
+  /* there must be 'bottom' or 'top' for ps__rail-x */
+  bottom: 0px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__rail-y {
+  transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  width: 15px;
+  /* there must be 'right' or 'left' for ps__rail-y */
+  right: 0;
+  /* please don't change 'position' */
+  position: absolute;
+  display: none !important;
+}
+
+.ps--active-x > .ps__rail-x{
+  display: block;
+  background-color: #919BA7;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.ps--active-y > .ps__rail-y {
+  display: block;
+  background-color: transparent;
+}
+
+/*
+ * Scrollbar thumb styles
+ */
+.ps__thumb-x {
+  background: url(../img/agenda/scroll-holder.png);
+  height: 30px !important;
+  width: 50px !important;
+  /* there must be 'bottom' for ps__thumb-x */
+  margin: 5px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__thumb-y {
+  background-color: #aaa;
+  border-radius: 6px;
+  transition: background-color .2s linear, width .2s ease-in-out;
+  -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+  width: 6px;
+  /* there must be 'right' for ps__thumb-y */
+  right: 2px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+  background-color: #999;
+  height: 11px;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: #999;
+  width: 11px;
+}
+
+/* MS supports */
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}
+
+#container {
+  position: relative;
+  overflow: hidden;
+  top: 77px;
+  height: 672px;
+  width: 1193px;
+  border: 1px solid #dde4ec;
+}
+
+#container .content {
+  background: url(../img/agenda/agenda-slots.jpg) 72px 35px no-repeat;
+  width: 1679px;
+  height: 1030px;
+  padding: 36px 0 0 73px;
+}
+
+.ps__rail-x {
+  margin: 0 480px 20px;
+  opacity: 1;
+}
+
+#container #agenda-professionals{
+  background: url(../img/agenda/agenda-professionals.png);
+  top: 128px;
+  width: 1193px;
+  height: 37px;
+  position: fixed;
+  z-index: 4;
+  background-repeat: no-repeat;
+}
+
+#container #agenda-professionals .border-left{
+  height: 37px;
+  border-left: 1px solid #DDE4EC;
+}
+
+#agenda #agenda-time{
+  background-image: url(../img/agenda/agenda-time.png);
+  background-repeat: no-repeat; 
+  position: fixed;
+  width: 77px;
+  height: 672px;
+  top: 128px;
+  z-index: 4;
+}
+
+#agenda #time-border{
+  position: absolute;
+  width: 74px;
+  border-top: 1px solid #DDE4EC;
+  background: #fff;
+  top: 128px;
+  z-index: 5;
+}
+
+.empty #container .content {
+  background: url(../img/agenda/agenda-slots-empty.png) 73px 35px no-repeat;
+  width: 1120px;
+  height: 1030px;
+  padding: 36px 0 0 73px;
+}
+
+.empty .ps__rail-x{
+  display: none;
+}
+
+.empty #container #agenda-professionals{
+  background: url(../img/agenda/agenda-professionals-empty.png);
+  top: 128px;
+  width: 1193px;
+  height: 37px;
+  position: fixed;
+  z-index: 4;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,115 @@
+include components/header
+
+main
+	include components/top-menu
+	include components/menu-reports
+	#reports
+
+		//- General reports
+		.search
+
+		//- Reports
+
+		#menu-reports
+			ul
+				li.chart
+				li.chart
+				li.chart
+				li.chart
+				li.chart
+				li.list
+				li.list
+				li.chart
+
+		#report-chart
+			.calendar.btn
+				img(src='img/calendar.png')
+			.calendar.end.btn
+				img(src='img/calendar.png')
+			.back.btn
+			.info.btn
+			ul.hover
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+
+			ul.link
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+
+		#report-list
+			.calendar.btn
+				img(src='img/calendar.png')
+			.calendar.end.btn
+				img(src='img/calendar.png')
+			.back.btn
+			.info.btn
+			#open-filter.btn
+			#report-filter
+				img(src='img/reports/report-list-filter.png')
+				#close-filter.btn
+
+			ul.appointments-list
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+
+			ul.clients-list
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+
+			.without-appointment.btn
+				.tooltip
+			.pending-payment.btn
+				.tooltip
+			.pending-payment.dois.btn
+				.tooltip
+
+	//- Modals
+
+	#reports-modal-info.modal
+		.close-modal.btn
+		.close-modal.got-it.btn
+
+	#reports-modal-profile.modal
+		.close-modal.btn
+		.close-modal.bottom.btn
+
+	#reports-modal-appointment-details.modal
+		.close-modal.btn
+		.close-modal.profile.btn
+		.close-modal.bottom.btn
