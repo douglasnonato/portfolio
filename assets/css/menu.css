@@ -217,6 +217,18 @@
   margin: 60px 0 0 15vw;
 }
 
+.menu-overlay nav.hide {
+  display: none;
+}
+
+.menu-overlay nav.backup {
+  display: none;
+}
+
+.menu-overlay nav.backup.show {
+  display: block;
+}
+
 .menu-overlay ul {
   list-style: none;
   padding: 0;
@@ -296,6 +308,7 @@
   line-height: 29px;
   padding-left: 50px;
   width: 280px;
+  position: relative;
 }
 
 .menu-overlay ul li a:hover strong small{
@@ -399,6 +412,7 @@
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
   animation-fill-mode: forwards;
+  -webkit-backface-visibility: visible;
 }
 
 .menu-overlay li:nth-of-type(2) strong.slideInLeft{

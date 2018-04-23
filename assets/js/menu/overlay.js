@@ -74,7 +74,12 @@ document.getElementById("trigger-overlay").onclick = function() {
 	$('.call.animated').removeClass('slideOutDown').addClass('slideInUp')
 	$('span.animated').removeClass('slideOutDown').addClass('slideInUp')
 	$('#trigger-overlay').css({ opacity: "0" });
+	setTimeout(function(){
+	   $("nav").addClass("hide");
+	   $("nav.backup").addClass("show");
+	}, 1050);
 };
+
 
 document.getElementById("trigger-close-overlay").onclick = function() {
 	if (window.removeEventListener)
@@ -87,4 +92,8 @@ document.getElementById("trigger-close-overlay").onclick = function() {
 	$('.call.animated').removeClass('slideInUp').addClass('slideOutDown')
 	$('span.animated').removeClass('slideInUp').addClass('slideOutDown') 
 	$('#trigger-overlay').css({ opacity: "1" });
+	setTimeout(function(){
+	   $("nav").removeClass("hide");
+	   $("nav.backup").removeClass("show");
+	}, 1050);
 }
