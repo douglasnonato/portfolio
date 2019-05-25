@@ -72,7 +72,7 @@ section.intro{
   background: #272822;
 }
 
-.experience .background{
+.bda .background{
   background-position: right;
 }
 
@@ -127,13 +127,14 @@ section.intro{
 }
 
 
-.responsabilities .reasons li:first-child:before{
-  content: 'start';
+.responsabilities .bg-white{
+  padding: 6vw;
 }
 
-.responsabilities .reasons li:nth-child(2):before{
-  content: 'than';
-}
+.responsabilities .bg-white p{
+  font-size: 25px;
+  line-height: 34px;
+} 
 
 .final h3{
   margin-bottom: 40px;
@@ -195,4 +196,17 @@ section.intro{
   .years h2{
     font-weight: 500;
   }
+}
+
+.sebrae .text-label{
+  width: unset;
+  font-size: 30px;
+  margin: 10px 0 20px;
+}
+
+.sebraeresp li{
+  text-align: center;
+  width: 40% !important;
+  padding: 30px;
+
 }

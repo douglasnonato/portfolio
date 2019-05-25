@@ -1607,9 +1607,9 @@ background-size: cover;
 
 [class*="bg-"] .background.light,
 [class*="bg-"] [class*="background-"].light {
-  filter: alpha(opacity=8000);
-  opacity: 0.80;
-  filter: alpha(opacity=8);
+  filter: alpha(opacity=6000);
+  opacity: 0.60;
+  filter: alpha(opacity=6);
 }
 
 [class*="bg-"] .background.dark,
