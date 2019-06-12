@@ -212,4 +212,6 @@ section.intro{
 
 .sebraeresp li h2{
   line-height: 24px;
+  font-weight: 400;
+  text-transform: unset;
 }
