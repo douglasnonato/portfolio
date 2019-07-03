@@ -121,7 +121,7 @@ a:focus {
 
 .content__title {
 	font-size: 90px;
-	line-height: 1.2;
+	line-height: 1;
   font-family: 'Rajdhani', sans-serif;
 }
 
@@ -633,9 +633,10 @@ footer p{
   position: relative;
   padding-left: 124px;
   margin: 0;
-  line-height: 1.8em;
+  line-height: 1.4em;
   font-size: 1.8rem;
   font-family: 'Rajdhani', sans-serif;
+  max-width: 720px;
 }
 
 footer p:before{  
@@ -1103,6 +1104,11 @@ footer p:before{
   #single-project section.work-title-right figure img, #single-project section.work-title-left figure img{
     width: 80vw;
   }
+}
+
+#single-project section.video video{
+  width: 100%;
+  margin-bottom: 80px;
 }
 
 #single-project section.mb-work{

@@ -1,101 +1,102 @@
-include header
+extends ./header.jade
 
-main
-  include menu-index
-  .cd-main-content
-    //- BG Morph
-    .morph-wrap
-      svg.morph(width='1400', height='770', viewbox='0 0 1400 770')
-        path(d='M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z')
+block content
+  main
+    include menu-index
+    .cd-main-content
+      //- BG Morph
+      .morph-wrap
+        svg.morph(width='1400', height='770', viewbox='0 0 1400 770')
+          path(d='M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z')
 
-    //- Content
-    section#intro.flexy.flexy--full.delay-loading
-      header
-      h1#rev-1.content__title.cd-headline.letters.type
-        span Hello,
-        br
-        span my name is Douglas Nonato. I'm A&nbsp;
-        span.cd-words-wrapper.waiting
-          b.is-visible Service&nbsp;
-          b Product&nbsp;
-          b UX&nbsp;
-          b Motion&nbsp;
-        span Designer.
-        br
-        span Scroll down and find out how i can help you!
-      h2#rev-2
-        | Inspired by the Digital World, since 2008 I've worked in several projects by taking part to every single step of the workflow production. Every project is another opportunity to learn something new. In the last years I have improved my knowledge as Digital Service Designer
-      //- a.cbutton(href='#project1')
-      //-   //- <i class="fa fa-fw arrow-down"></i>
-      //-   | projects
-    section#project1.flexy.flexy--row.flexy--full.project.parallax-area.delay-loading
-      .hover
-        a.hover-effect(href='beauty-date-dashboard.html', data-type='page-transition')
-          h2.content__title.content__title--medium.content__title--half.content__title--right.parallax-element(data-parallax='0.7')
-            #rev-4.content__title__inner Beauty Date
-            br
-            #rev-5.content__title__inner.content__title__inner--offset-1
-              span SaaS dashboard
-        a.link(href='beauty-date-dashboard.html', data-type='page-transition')
-          figure#rev-3.moveLeft.parallax-element(data-parallax='0.1')
-            img.content__image(src='assets/images/works/beauty-date-dashboard/dashboard-beauty-date.jpg', alt='Beauty Date SaaS dashboard')
+      //- Content
+      section#intro.flexy.flexy--full.delay-loading
+        header
+        h1#rev-1.content__title.cd-headline.letters.type
+          span Hello,
+          br
+          span my name is Douglas Nonato. I'm A&nbsp;
+          span.cd-words-wrapper.waiting
+            b.is-visible Service&nbsp;
+            b Product&nbsp;
+            b UX&nbsp;
+            b Motion&nbsp;
+          span Designer.
+          br
+          span Scroll down and find out how i can help you!
+        h2#rev-2
+          | Inspired by the Digital World, since 2008 I've worked in several projects by taking part to every single step of the workflow production. Every project is another opportunity to learn something new. In the last years I have improved my knowledge as Digital Service Designer
+        //- a.cbutton(href='#project1')
+        //-   //- <i class="fa fa-fw arrow-down"></i>
+        //-   | projects
+      section#project1.flexy.flexy--row.flexy--full.project.parallax-area.delay-loading
+        .hover
+          a.hover-effect(href='beauty-date-dashboard.html', data-type='page-transition')
+            h2.content__title.content__title--medium.content__title--half.content__title--right.parallax-element(data-parallax='0.7')
+              #rev-4.content__title__inner Beauty Date
+              br
+              #rev-5.content__title__inner.content__title__inner--offset-1
+                span SaaS dashboard
+          a.link(href='beauty-date-dashboard.html', data-type='page-transition')
+            figure#rev-3.moveLeft.parallax-element(data-parallax='0.1')
+              img.content__image(src='assets/images/works/beauty-date-dashboard/dashboard-beauty-date.jpg', alt='Beauty Date SaaS dashboard')
 
-    section#project2.flexy.flexy--row.flexy--full.project.parallax-area
-      .hover
-        a.link(href='beauty-date-site.html')
-          figure#rev-6.moveRight.parallax-element(data-parallax='0.1')
-            img.content__image(src='assets/images/works/beauty-date-web/web-beautydate.jpg', alt='Beauty Date Website')
-        a.hover-effect(href='beauty-date-site.html')
-          h2.content__title.content__title--medium.content__title--half.content__title--left.parallax-element(data-parallax='0.7')
-            #rev-7.content__title__inner Beauty Date
-            br
-            #rev-8.content__title__inner.content__title__inner--offset-2
-              span Website
+      section#project2.flexy.flexy--row.flexy--full.project.parallax-area
+        .hover
+          a.link(href='beauty-date-site.html')
+            figure#rev-6.moveRight.parallax-element(data-parallax='0.1')
+              img.content__image(src='assets/images/works/beauty-date-web/web-beautydate.jpg', alt='Beauty Date Website')
+          a.hover-effect(href='beauty-date-site.html')
+            h2.content__title.content__title--medium.content__title--half.content__title--left.parallax-element(data-parallax='0.7')
+              #rev-7.content__title__inner Beauty Date
+              br
+              #rev-8.content__title__inner.content__title__inner--offset-2
+                span Website
 
-    section#project3.flexy.flexy--row.flexy--full.project.parallax-area
-      .hover
-        a.hover-effect(href='guarde-mais-motion.html')
-          h2.content__title.content__title--medium.content__title--half.content__title--right.parallax-element(data-parallax='0.7')
-            #rev-10.content__title__inner Guarde Mais
-            br
-            #rev-11.content__title__inner.content__title__inner--offset-3
-              span Motion
-        a.link(href='guarde-mais-motion.html')
-          figure#rev-9.moveLeft.parallax-element(data-parallax='0.1')
-            video(loop='', autoplay='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage video')
-              source(type='video/webm', src='assets/images/works/guarde-mais-motion/guarde-mais-motion.webm')
-              source(type='video/mp4', src='assets/images/works/guarde-mais-motion/guarde-mais-motion.mp4')
+      section#project3.flexy.flexy--row.flexy--full.project.parallax-area
+        .hover
+          a.hover-effect(href='guarde-mais-motion.html')
+            h2.content__title.content__title--medium.content__title--half.content__title--right.parallax-element(data-parallax='0.7')
+              #rev-10.content__title__inner Guarde Mais
+              br
+              #rev-11.content__title__inner.content__title__inner--offset-3
+                span Motion
+          a.link(href='guarde-mais-motion.html')
+            figure#rev-9.moveLeft.parallax-element(data-parallax='0.1')
+              video(loop='', autoplay='', alt='Guarde Mais - Self Storage', title='Guarde Mais - Self Storage video')
+                source(type='video/webm', src='assets/images/works/guarde-mais-motion/guarde-mais-motion.webm')
+                source(type='video/mp4', src='assets/images/works/guarde-mais-motion/guarde-mais-motion.mp4')
 
-    section#project4.flexy.flexy--row.flexy--full.project.parallax-area
-      .hover
-        a.link(href='qlance-site.html')
-          figure#rev-12.moveRight.parallax-element(data-parallax='0.1')
-            img.content__image(src='assets/images/works/qlance-web/web-qlance.jpg', alt='Qlance')
-        a.hover-effect(href='qlance-site.html')
-          h2.content__title.content__title--medium.content__title--half.content__title--left.parallax-element(data-parallax='0.7')
-            #rev-13.content__title__inner Qlance
-            br
-            #rev-14.content__title__inner.content__title__inner--offset-4
-              span Website
+      section#project4.flexy.flexy--row.flexy--full.project.parallax-area
+        .hover
+          a.link(href='qlance-site.html')
+            figure#rev-12.moveRight.parallax-element(data-parallax='0.1')
+              img.content__image(src='assets/images/works/qlance-web/web-qlance.jpg', alt='Qlance')
+          a.hover-effect(href='qlance-site.html')
+            h2.content__title.content__title--medium.content__title--half.content__title--left.parallax-element(data-parallax='0.7')
+              #rev-13.content__title__inner Qlance
+              br
+              #rev-14.content__title__inner.content__title__inner--offset-4
+                span Website
 
-    section#project5.flexy.flexy--row.flexy--full.project.parallax-area.last-shape
+      section#project5.flexy.flexy--row.flexy--full.project.parallax-area.last-shape
 
-    //-
-      <section class="content flexy flexy--row content--last">
-      <p class="content__heading">Other examples: Try it yourself</p>
-      <div class="triggers">
-      <button id="rev-trigger-1" class="btn btn--trigger">left to right</button>
-      <button id="rev-trigger-2" class="btn btn--trigger">right to left, oh yes</button>
-      <button id="rev-trigger-3" class="btn btn--trigger">from the bottom + extra</button>
-      <button id="rev-trigger-4" class="btn btn--trigger">come from the top</button>
-      <button id="rev-trigger-5" class="btn btn--trigger">show me some color</button>
-      </div>
-      <h2 id="rev-12" class="content__title content__title--medium">Superlative</h2>
-      </section>
-    include footer
+      //-
+        <section class="content flexy flexy--row content--last">
+        <p class="content__heading">Other examples: Try it yourself</p>
+        <div class="triggers">
+        <button id="rev-trigger-1" class="btn btn--trigger">left to right</button>
+        <button id="rev-trigger-2" class="btn btn--trigger">right to left, oh yes</button>
+        <button id="rev-trigger-3" class="btn btn--trigger">from the bottom + extra</button>
+        <button id="rev-trigger-4" class="btn btn--trigger">come from the top</button>
+        <button id="rev-trigger-5" class="btn btn--trigger">show me some color</button>
+        </div>
+        <h2 id="rev-12" class="content__title content__title--medium">Superlative</h2>
+        </section>
+      include footer
 
-//- Transition
-.cd-cover-layer
-.cd-loading-bar
+  //- Transition
+  .cd-cover-layer
+  .cd-loading-bar
 
-include scripts-index
+  include scripts-index

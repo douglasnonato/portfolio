@@ -3,16 +3,16 @@ include header
 extends ./header.jade
 
 block meta
-  title Douglas Nonato | Bauty Date SaaS Dashboard
-  meta(name='description', content='Dashboard case of a salon management SaaS that provides online scheduling for customers.')
-  meta(name='keywords', content='Service, Product, experience, UX, dashboard, SaaS, scheduling')
+  title Douglas Nonato | Cálculo Jurídico Dashboard
+  meta(name='description', content='Dashboard of a SaaS for Pension and Social Security Calculation')
+  meta(name='keywords', content='Service, Product, UX, SaaS, dashboard, Pension, Social Security, Calculation')
 
   //- Share image
-  meta(property='og:title', content='Bauty Date SaaS Dashboard')
-  meta(property='og:description', content='Dashboard case of a salon management SaaS that provides online scheduling for customers.')
-  meta(property='og:url', content='http://www.douglasnonato.com/beauty-date-dashboard.html')
+  meta(property='og:title', content='Cálculo Jurídico Dashboard')
+  meta(property='og:description', content='Dashboard of a SaaS for Pension and Social Security Calculation.')
+  meta(property='og:url', content='http://www.douglasnonato.com/calculo-juridico-dashboard.html')
   meta(property='og:site_name', content='Douglas Nonato')
-  meta(property='og:image', content='http://www.douglasnonato.com/assets/images/works/beauty-date-dashboard/og-image.jpg')
+  meta(property='og:image', content='http://www.douglasnonato.com/assets/images/works/calculo-juridico-dashboard/og-image.jpg')
   meta(property='og:type', content='website')
 
 block content
@@ -24,16 +24,18 @@ block content
         //- Content
         section#header.web
           .bg-text.fadeIn
-            | Beauty
+            | Cálculo
             br
-            | Date
+            | Jurídico
           .flexy.flexy--column.delay-loading
             h1#rev-1.content__title
-              | Beauty Date
+              | Cálculo
+              br
+              | Jurídico
             figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.png', alt='Beauty Date SaaS dashboard')
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-header.png', alt='Cálculo Jurídico SaaS dashboard')
             #rev-2.block-right
-              h2 A salon management SaaS that provides online scheduling for customers
+              h2 A SaaS for Pension and Social Security Calculation
         section.description-section
           .flexy
             h3#rev-3 The job
@@ -42,7 +44,7 @@ block content
               p Over the years, with the number of new features that have been added to the tool without a platform design guide, the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process. Another point was the visual style that was starting to get outdated.
         section
           figure.fadeIn.mind-map
-            img(src='assets/images/works/beauty-date-dashboard/dashboard-mind-map.jpg', alt='Beauty Date SaaS Mind Map')
+            img(src='assets/images/works/calculo-juridico-dashboard/old-cj.png', alt='Old Cálculo Jurídico plataform')
 
         section.description-section
           .flexy
@@ -53,12 +55,27 @@ block content
                 a(href='bda-proto' target='_blank') this prototype
                 | &nbsp;with images and JQuery (it works only for higher resolutions than 1280X800)
 
+
+        section.video
+          .flexy
+            h3#rev-5 Microinteractions
+            .description#rev-6
+              p Beauty Date is
+            video.fadeIn(loop='', autoplay='', alt='Cálculo Jurídico interface animation', title='Cálculo Jurídico interface animation')
+              source(type='video/webm', src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-motion.webm')
+              source(type='video/mp4', src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-motion.mp4')
+            script.
+              document.getElementById('vid').play();
+
         section.full-bg.mb-work
           .flexy
             figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-agenda.png', alt='Beauty Date SaaS dashboard')
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-1.png', alt='Cálculo Jurídico')
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-2.png', alt='Cálculo Jurídico')
+
             figure.fadeIn.modal
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-modal.png', alt='Beauty Date SaaS Modal')
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-modal.png', alt='Cálculo Jurídico SaaS Modal')
 
         section.work-title-left
           .flexy
@@ -77,18 +94,18 @@ block content
               p As the current dashboard was not 100% mobile friendly, I designed each screen together with its mobile version, since 88% of our users were desktop the system is all modeled as desktop first.
         section     
           figure.fadeIn.mobile
-            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-mobile.png', alt='Beauty Date SaaS Mobile')
+            img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-mobile.png', alt='Cálculo Jurídico SaaS Mobile')
 
         section
           .flexy.flexy--row.projects--related.fadeIn
             h4.content__title--center Related Works
             .projects
+              a.item(href='beauty-date-dashboard.html')
+                img(src='assets/images/works/beauty-date-dashboard/work-related.jpg', alt='Beauty Date')
+                | Beauty Date Dashboard
               a.item(href='beauty-date-site.html')
                 img(src='assets/images/works/beauty-date-web/work-related.jpg', alt='Beauty Date')
                 | Beauty Date Website
-              a.item(href='qlance-site.html')
-                img(src='assets/images/works/qlance-web/work-related.jpg', alt='Qlance')
-                | Qlance
 
         include footer
 

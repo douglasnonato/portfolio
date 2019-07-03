@@ -1,20 +1,23 @@
 doctype html
 head
+
   meta(charset='utf-8')
-  title Douglas Nonato | Service Designer - Product Designer
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  meta(name='description', content='Hello, my name is Douglas Nonato and I am a Service Designers with extensive experience in the Digital World.')
-  meta(name='keywords', content='Service, Product, experience, designer, motion, web')
   meta(name='author', content='Douglas Nonato')
   meta(name='owner', content='dougnot@gmail.com')
 
-  //- Share image
-  meta(property='og:title', content='Douglas Nonato | Service Designer')
-  meta(property='og:description', content='Hello, my name is Douglas Nonato and I am a Service Designers with extensive experience in the Digital World.')
-  meta(property='og:url', content='http://www.douglasnonato.com/')
-  meta(property='og:site_name', content='Douglas Nonato | Service Designer')
-  meta(property='og:image', content='http://www.douglasnonato.com/assets/images/share-logo.jpg')
-  meta(property='og:type', content='website')
+  block meta
+    title Douglas Nonato | Service Designer - Product Designer
+    meta(name='description', content='Hello, my name is Douglas Nonato and I am a Service Designers with extensive experience in the Digital World.')
+    meta(name='keywords', content='Service, Product, experience, designer, SaaS, web')
+
+    //- Share image
+    meta(property='og:title', content='Douglas Nonato | Service Designer')
+    meta(property='og:description', content='Hello, my name is Douglas Nonato and I am a Service Designers with extensive experience in the Digital World.')
+    meta(property='og:url', content='http://www.douglasnonato.com/')
+    meta(property='og:site_name', content='Douglas Nonato')
+    meta(property='og:image', content='http://www.douglasnonato.com/assets/images/douglas-nonato.jpg')
+    meta(property='og:type', content='website')
 
   //- Standard Favicon
   link(rel='shortcut icon', href='assets/favico/favicon.ico')
@@ -75,3 +78,5 @@ body
       title drop
       path(d='M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z')
       path(d='M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z')
+
+block content
