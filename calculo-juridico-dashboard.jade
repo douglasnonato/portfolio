@@ -5,7 +5,7 @@ extends ./header.jade
 block meta
   title Douglas Nonato | Cálculo Jurídico Dashboard
   meta(name='description', content='Dashboard of a SaaS for Pension and Social Security Calculation')
-  meta(name='keywords', content='Service, Product, UX, SaaS, dashboard, Pension, Social Security, Calculation')
+  meta(name='keywords', content='Service, Product, UX, SaaS, dashboard, Pension, Social Security, Design System')
 
   //- Share image
   meta(property='og:title', content='Douglas Nonato | Cálculo Jurídico Dashboard')
@@ -36,52 +36,100 @@ block content
               img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-header.png', alt='Cálculo Jurídico SaaS dashboard')
             #rev-2.block-right
               h2 A SaaS for Pension and Social Security Calculation
-        section.description-section
+
+        section.meta.fadeIn
           .flexy
-            h3#rev-3 The job
+            .col.date
+              small
+                | DATE
+              br 
+              strong
+                | Sept / 2018
+            .col.position
+              small
+                | POSITION
+              br
+              strong
+                | UX Designer
+            .col.kind
+              small
+                | KIND
+              br
+              strong
+                | Dashboard
+
+        section
+          .flexy
+            h3#rev-3 Overview
             .description#rev-4
               p Beauty Date is an online platform that in addition to offering the online appointment for clients also offers a complete management system for beauty establishments. The system has resources for financial management, customer relationship management tool, product inventory control and others.
               p Over the years, with the number of new features that have been added to the tool without a platform design guide, the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process. Another point was the visual style that was starting to get outdated.
-        section
-          figure.fadeIn.mind-map
-            img(src='assets/images/works/calculo-juridico-dashboard/old-cj.png', alt='Old Cálculo Jurídico plataform')
+
+
+        section.description-section
+          .flexy
+            h3#rev-5 The process
+            .description#rev-6
+              p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-fluxogram.png', alt='Cálculo Jurídico Fluxogram')
 
         section.description-section
           .flexy
             .description
               p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-3.png', alt='Cálculo Jurídico dashboard')
+              figcaption
+                .col Old
+                .col New
+
+        section.description-section
+          .flexy
+            .description
+              p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-4.png', alt='Cálculo Jurídico dashboard')
+              figcaption
+                .col Old
+                .col New
+
+        section.description-section
+          .flexy
+            .description.fadeIn
               p.highlight
                 | For the usability test I made&nbsp;
                 a(href='bda-proto' target='_blank') this prototype
                 | &nbsp;with images and JQuery (it works only for higher resolutions than 1280X800)
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-design-system.jpg', alt='Cálculo Jurídico Design System')
 
-
-        section.video
+        section.full-bg.mb-work
           .flexy
-            h3#rev-5 Microinteractions
-            .description#rev-6
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-1.png', alt='Cálculo Jurídico dashboard')
+            figure.fadeIn
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-2.png', alt='Cálculo Jurídico dashboard')
+
+            figure.fadeIn.modal
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-modal.png', alt='Cálculo Jurídico SaaS Modal')
+
+        section.video.fadeIn
+          .flexy
+            h3#rev-7 Microinteractions
+            .description#rev-8
               p Beauty Date is
-            video.fadeIn(loop='', autoplay='', alt='Cálculo Jurídico interface animation', title='Cálculo Jurídico interface animation')
+            video(loop='', autoplay='', alt='Cálculo Jurídico interface animation', title='Cálculo Jurídico interface animation')
               source(type='video/webm', src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-motion.webm')
               source(type='video/mp4', src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-motion.mp4')
             script.
               document.getElementById('vid').play();
 
-        section.full-bg.mb-work
-          .flexy
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-1.png', alt='Cálculo Jurídico')
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-2.png', alt='Cálculo Jurídico')
-
-            figure.fadeIn.modal
-              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-modal.png', alt='Cálculo Jurídico SaaS Modal')
-
         section.work-title-left
           .flexy
-            h4.fadeIn Services
+            h4.fadeIn Office
             figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-services.jpg', alt='Beauty Date SaaS dashboard - Services')
+              img(src='assets/images/works/calculo-juridico-dashboard/dashboard-calculo-juridico-office.jpg', alt='Cálculo Jurídico dashboard - Office')
             h4.fadeIn Reports
             figure.fadeIn
               img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-reports.jpg', alt='Beauty Date SaaS dashboard - Reports')

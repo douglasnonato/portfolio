@@ -1,11 +1,13 @@
 /* Menu */
 
 ::-moz-selection { /* Code for Firefox */
-    background: rgb(212, 235, 1);
+    background: #D4EA01;
+    color: #000;
 }
 
 ::selection {
-    background: rgb(212, 235, 1);
+    background: #D4EA01;
+    color: #000;
 }
 
 .sidebar{

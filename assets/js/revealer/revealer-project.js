@@ -88,5 +88,32 @@ setTimeout(function(){
 			watcher_2.destroy();
 		});
 
+		var scrollElemToWatch_3 = document.getElementById('rev-7'),
+			watcher_3 = scrollMonitor.create(scrollElemToWatch_3, -300),				
+			rev7 = new RevealFx(scrollElemToWatch_3, {
+				revealSettings : {
+					bgcolor: '#D4EA01',
+					onCover: function(contentEl, revealerEl) {
+						contentEl.style.opacity = 1;
+					}
+				}
+			}),
+			rev8 = new RevealFx(document.querySelector('#rev-8'), {
+				revealSettings : {
+					bgcolor: '#fff',
+					delay: 250,
+					direction: 'rl',
+					onCover: function(contentEl, revealerEl) {
+						contentEl.style.opacity = 1;
+					}
+				}
+			});
+
+		watcher_3.enterViewport(function() {
+			rev7.reveal();
+			rev8.reveal();
+			watcher_3.destroy();
+		});
+
 	}
 })();
