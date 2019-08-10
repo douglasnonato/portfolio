@@ -215,3 +215,36 @@ section.intro{
   font-weight: 400;
   text-transform: unset;
 }
+
+span.me{
+  background-size: 90vh;
+}
+
+.strategy .background{
+  background-size: contain;
+}
+
+.ux, .strategy{
+  background-color: #fff;
+}
+
+.ux:after, .strategy:after{
+  z-index: 1;
+  background-color: #0000004d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.ux h1, .strategy h1{
+  background: #191d1f;
+  color: #fff;
+}
+
+.ux .background-video{
+  height: unset;
+  margin: auto;
+}
