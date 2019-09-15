@@ -4,6 +4,13 @@
   column-count: 1;
 }
 
+span.start{
+    color: #ccc;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+}
+
 section.intro{
   background: #191d1f !important;
 }
