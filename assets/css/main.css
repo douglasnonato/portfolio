@@ -1189,6 +1189,9 @@ footer span i{
     width: 50%;
     padding: 10px 0 20px;
   }
+  #single-project #meta .col.kind{
+    width: 100%;
+  }
   #single-project #meta strong{
     font-size: 22px;
   }

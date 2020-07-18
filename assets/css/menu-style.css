@@ -16,7 +16,7 @@
   background: transparent;
   border: none;
   width: 35px;
-  height: 24px;
+  height: 40px;
   padding: 0;
   outline: none;
   transition: 1s;
@@ -93,7 +93,7 @@
 }
 
 .menu-overlay #trigger-close-overlay {
-  width: 30px;
+  width: 40px;
   height: 30px;
   border: none;
   outline: none;
@@ -271,7 +271,7 @@
   margin: 60px 0 0 15vw;
 }
 
-/*.menu-overlay nav.hide {
+.menu-overlay nav.hide {
   display: none;
 }
 
@@ -281,7 +281,7 @@
 
 .menu-overlay nav.backup.show {
   display: block;
-}*/
+}
 
 .menu-overlay ul {
   list-style: none;
@@ -670,77 +670,91 @@
 @keyframes slideInRight {
   from {
     transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInLeft {
   from {
     transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInUp {
   from {
     transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInDown {
   from {
     transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideOutLeft {
   from {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   to {
     visibility: hidden;
     transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
   }
 }
 
 @keyframes slideOutRight {
   from {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   to {
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
   }
 }
 
 @keyframes slideOutUp {
   from {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   to {
     visibility: hidden;
     transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
   }
 }
 
@@ -748,11 +762,13 @@
 @keyframes slideOutDown {
   from {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   to {
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
   }
 }
 
