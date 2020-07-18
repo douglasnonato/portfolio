@@ -1,0 +1,182 @@
+#cj .logo{
+	background-color: #3a404c;
+}
+
+#cj .logo a{
+	color: #fafafa;
+}
+
+#cj #header {
+	background-color: #3a404c;
+	overflow: unset;
+}
+
+#cj #header .bg-text {
+	color: #f5f5f505;
+	font-size: 400px;
+}
+
+#cj #header h1{
+	color: #fafafa;
+	width: 25vw;
+}
+
+@media screen and (max-width: 38.3em){
+	#single-project #header.web h1 {
+	    margin-top: 27vw;
+	    font-size: 9vw;
+	    line-height: 11vw;
+	    margin-bottom: 13vw;
+	}
+}
+
+#cj #header .block-right h2{
+	color: #201f25;
+}
+
+#cj #header .block-right{
+	width: 25vw;
+}
+
+#cj #header .block-right .block-revealer__content:before{
+	background-color: #fafafa;
+}
+
+@media screen and (min-width: 64em){
+	#cj #header figure {
+		margin-top: 50px;
+		position: absolute;
+		z-index: 2;
+		width: 850px;
+		right: 5vw;
+		bottom: 5vw;
+	}
+	#cj #header figure img{
+		box-shadow: 0px 4px 10px #201f2573;
+	}
+	#cj #header .flexy, #cj .logo .flexy{
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+	#cj #header figure {
+		width: 50vw;
+		bottom: 10vw;
+	}
+}
+
+#cj #header #rev-1 .block-revealer__element{
+	background-color: #fafafa !important;
+}
+
+#cj .intro .textBorder{
+	top: -350px;
+	left: -60px;
+}
+
+#cj .process .col-half{
+	background-color: #3a404c;
+	display: inline-table;
+	padding: 60px;
+	color: #fafafa;
+	margin: 0 0 200px -10vw;
+}
+
+#cj .process .textBorder{
+	top: -270px;
+	left: -100px;
+	z-index: unset;
+}
+
+#cj .process h3{
+	color: #fafafa;
+}
+
+#cj figure.fluxogram{
+	width: 55vw;
+	float: right;
+	margin: 100px -21vw 170px 0;
+	max-width: 900px;
+}
+
+#cj figure.fluxogram figcaption{
+	padding-left: 3.6vw;
+}
+
+#cj figure figcaption .col:nth-child(even){
+	margin-left: 22px;
+	width: auto;
+}
+
+
+@media screen and (max-width: 64em) {
+	#cj .process .col-half{
+		margin-left: 0;
+		padding: 0px 40px 20px;
+		margin-bottom: 0;
+	}
+	#cj figure.fluxogram {
+		width: 100%;
+		margin: 80px auto;
+	}
+}
+
+#cj .mb-work{
+	margin-top: 30vh;
+}
+
+#cj .mb-work .textBorder{
+	top: -420px;
+	left: -100px;
+}
+
+#cj .tooltip.one{
+	top: 17.3%;
+	left: 21%;
+}
+
+#cj .tooltip.two{
+	top: 8.7%;
+	left: 55.5%;
+}
+
+#cj .tooltip.three{
+	top: 31.7%;
+	left: 80.5%;
+}
+
+#cj .tooltip.four{
+	top: 14.7%;
+	left: 76.5%;
+}
+
+#cj .tooltip.five{
+	top: 84.7%;
+	left: 25.5%;
+}
+
+#cj .tooltip.six{
+	top: 139.7%;
+	left: 73.5%;
+}
+
+#cj .tooltip.seven{
+	top: 29.3%;
+	left: 43.7%;
+}
+
+#cj .tooltip.eight{
+	top: 13.3%;
+	left: 32.7%;
+}
+
+#cj .tooltip.nine{
+	top: 38.3%;
+	left: 53.7%;
+}
+
+#cj .tooltip.ten{
+	top: 51.3%;
+	left: 70.7%;
+}

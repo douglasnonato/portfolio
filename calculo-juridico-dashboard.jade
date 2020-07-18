@@ -2,10 +2,13 @@ include header
 
 extends ./header.jade
 
+block style
+  link(rel='stylesheet', type='text/css', href='assets/css/cj.css')
+
 block meta
   title Douglas Nonato | Cálculo Jurídico Dashboard
   meta(name='description', content='Dashboard of a SaaS for Pension and Social Security Calculation')
-  meta(name='keywords', content='Service, Product, UX, SaaS, dashboard, Pension, Social Security, Design System')
+  meta(name='keywords', content='Product, UX, SaaS, dashboard, Pension, Social Security, Design System')
 
   //- Share image
   meta(property='og:title', content='Douglas Nonato | Cálculo Jurídico Dashboard')
@@ -17,144 +20,251 @@ block meta
 
 block content
   //- Main
-  main
+  main#cj
+    #top
     include menu
-    .cd-main-content
-      #single-project
-        //- Content
-        section#header.web
-          .bg-text.fadeIn
+    #single-project
+      //- Content
+      section#header.web
+        .bg-text.fadeIn
+          | Cálculo
+          br
+          | Jurídico
+        figure.viewDesktop.fadeIn
+          img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-header.jpg', alt='Cálculo Jurídico SaaS dashboard')
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
             | Cálculo
             br
             | Jurídico
-          .flexy.flexy--column.delay-loading
-            h1#rev-1.content__title
-              | Cálculo
-              br
-              | Jurídico
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-header.png', alt='Cálculo Jurídico SaaS dashboard')
-            #rev-2.block-right
-              h2 A SaaS for Pension and Social Security Calculation
+          figure.viewMobile.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-header.png', alt='Cálculo Jurídico SaaS dashboard')
+          #rev-2.block-right
+            h2 A SaaS for Pension and Social Security Calculation
 
-        section.meta.fadeIn
-          .flexy
-            .col.date
-              small
-                | DATE
-              br 
-              strong
-                | Sept / 2018
-            .col.position
-              small
-                | POSITION
-              br
-              strong
-                | UX Designer
-            .col.kind
-              small
-                | KIND
-              br
-              strong
-                | Dashboard
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | Sept_2018
+          .col.position
+            small
+              | ROLE —
+            br
+            strong
+              | UX Designer
+          .col.kind
+            small
+              | KIND —
+            br
+            strong
+              | SaaS Dashboard
 
-        section
-          .flexy
-            h3#rev-3 Overview
-            .description#rev-4
-              p Beauty Date is an online platform that in addition to offering the online appointment for clients also offers a complete management system for beauty establishments. The system has resources for financial management, customer relationship management tool, product inventory control and others.
-              p Over the years, with the number of new features that have been added to the tool without a platform design guide, the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process. Another point was the visual style that was starting to get outdated.
+      section
+        .flexy.intro
+          h3#rev-3 Overview
+          .textBorder
+            svg
+              text(x='0' y='550') 01
+          .description#rev-4
+            .col-half
+              p Social security calculations, especially in Brazil, is extremely complex and can take a few days, due to the hundreds of rules and the specific situations of each case, so lawyers usually need the help of a professional counter in the area to perform these calculations.
+
+              p Cálculo Jurídico is an online tool that allows the lawyer himself to be able to perform social security calculations without the need to hire a third party. 
+            .col-half
+              p The first version of the system was developed using Bootstrap as support for the UI, which for an initial period of the platform worked,
+                span but as the tool evolved and new features were added, completing a task in the product started to become complicated for users, which brought the need to develop a work focused on UX, and also the creation of its own UI.
 
 
-        section.description-section
-          .flexy
+      section.description-section.pdTop-30vh
+        .flexy.process
+          .col-half
             h3#rev-5 The process
+            .textBorder
+              svg
+                text(x='0' y='550') 02
             .description#rev-6
-              p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-fluxogram.png', alt='Cálculo Jurídico Fluxogram')
+              p I was responsible for conducting the redesign process, and as a first step we track all possible routes within the system, discover the journeys to perform a given task and thus suggest improvements. With a wide variety of combinations for each calculation, it was not clear how each parameter affected the following screens or the final results, which was on a separate screen. As an improvement, we decided to anticipate some information and create real time feedbacks, to avoid the need to go back and forth between screens to test a new parameter.
+          figure.fadeIn.fluxogram
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-fluxogram.png', alt='Cálculo Jurídico Fluxogram')
+            figcaption
+              | [fluxogram]
 
-        section.description-section
-          .flexy
-            .description
-              p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-3.png', alt='Cálculo Jurídico dashboard')
-              figcaption
-                .col Old
-                .col New
+          .description
+            p Some of the structural changes were the transposition of the main menu (1) and the calculations menu (2). The main menu at the header, besides being unusual, didn't allow the addition of more items. The internal calculations menu, on the other hand, didn't seem very connected with the content, in addition to having sub-items that confused and repeated themselves, which were later incorporated into the calculation screens.
+          figure.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-3.png', alt='Cálculo Jurídico dashboard')
+            figcaption
+              .col [old]
+              .col [new]
 
-        section.description-section
-          .flexy
-            .description
-              p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-4.png', alt='Cálculo Jurídico dashboard')
-              figcaption
-                .col Old
-                .col New
+          .description
+            p In terms of content, due to the complexity of the tasks, it was common to see multiple questions at the same time, to simplify, we decided to bring only one question at a time in the most crucial tasks, as in the calculation wizard.
+          figure.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-4.png', alt='Cálculo Jurídico dashboard')
+            figcaption
+              .col [old]
+              .col [new]
 
-        section.description-section
-          .flexy
-            .description.fadeIn
-              p.highlight
-                | For the usability test I made&nbsp;
-                a(href='bda-proto' target='_blank') this prototype
-                | &nbsp;with images and JQuery (it works only for higher resolutions than 1280X800)
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-design-system.jpg', alt='Cálculo Jurídico Design System')
+          h4 Design System
+          .description.fadeIn
+            P As it was a temporary job, I developed a simple component library, so the development team could implement new features in the future with greater consistency.
+          figure.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-design-system.jpg', alt='Cálculo Jurídico Design System')
 
-        section.full-bg.mb-work
-          .flexy
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-1.png', alt='Cálculo Jurídico dashboard')
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-2.png', alt='Cálculo Jurídico dashboard')
+      section.full-bg.mb-work
+        .flexy
+          h3#rev-7 Outcome
+          .textBorder
+            svg
+              text(x='0' y='550') 03
+          figure.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-1.png', alt='Cálculo Jurídico dashboard')
+            //- Tooltip
+            .tooltip.one.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content New menu structure.
+            .tooltip.two.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content New calculation header with quick access to customer information.
+            .tooltip.four.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Quick access to initial calculation settings.
+            .tooltip.three.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Toggles between 2 display modes, table or chart.
+            .tooltip.five.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content The results are now on the same screen as the settings with real-time feedback highlighting any changes.
+            .tooltip.six.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Call to action for the next calculation step.
 
-            figure.fadeIn.modal
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-modal.png', alt='Cálculo Jurídico SaaS Modal')
+          figure.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-2.png', alt='Cálculo Jurídico dashboard')
 
-        section.video.fadeIn
-          .flexy
-            h3#rev-7 Microinteractions
-            .description#rev-8
-              p Beauty Date is
-            video(loop='', autoplay='', alt='Cálculo Jurídico interface animation', title='Cálculo Jurídico interface animation')
-              source(type='video/webm', src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-motion.webm')
-              source(type='video/mp4', src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-motion.mp4')
-            script.
-              document.getElementById('vid').play();
+          figure.fadeIn.modal
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-modal.png', alt='Cálculo Jurídico SaaS Modal')
 
-        section.work-title-left
-          .flexy
-            h4.fadeIn Office
-            figure.fadeIn
-              img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-office.jpg', alt='Cálculo Jurídico dashboard - Office')
-            h4.fadeIn Reports
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-reports.jpg', alt='Beauty Date SaaS dashboard - Reports')
-            h4.fadeIn Sales Order
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-sales-order.jpg', alt='Beauty Date SaaS dashboard - Sales Order')
-        section.description-section
-          .flexy
-            .description.pdTop-60
-              p As the current dashboard was not 100% mobile friendly, I designed each screen together with its mobile version, since 88% of our users were desktop the system is all modeled as desktop first.
-        section     
-          figure.fadeIn.mobile
-            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-mobile.png', alt='Cálculo Jurídico SaaS Mobile')
+      section.video.fadeIn
+        .flexy
+          h4 Microinteractions
+          .description
+            p One of the problems brought up was that, due to the complexity of performing the calculation in the manual method, new users were suspicious about the veracity of the calculation, since the system presented the result instantly, for that we chose to create animations during the calculations, informing that the computer was processing and would soon present the data.
+          video(loop='', autoplay='', muted, alt='Cálculo Jurídico interface animation', title='Cálculo Jurídico microinteraction')
+            source(type='video/webm', src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-microinteraction.webm')
+            source(type='video/mp4', src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-microinteraction.mp4')
+          script.
+            document.getElementById('vid').play();
 
-        section
-          .flexy.flexy--row.projects--related.fadeIn
-            h4.content__title--center Other Projects
-            .projects
-              a.item(href='beauty-date-dashboard.html')
-                img(src='assets/images/works/beauty-date-dashboard/work-related.jpg', alt='Beauty Date')
-                | Beauty Date Dashboard
-              a.item(href='beauty-date-site.html')
-                img(src='assets/images/works/beauty-date-web/work-related.jpg', alt='Beauty Date')
-                | Beauty Date Website
+      section.mobile
+        figure.fadeIn
+          img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-mobile.png', alt='Cálculo Jurídico SaaS Mobile')
+          //- Tooltip
+          .tooltip.mobile.fadeIn(data-type='tooltip')
+            .tooltip__trigger(role='tooltip')
+              span.tooltip__trigger-text More
+            .tooltip__base
+              svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+              .tooltip__content All screens fully prepared for both desktop and mobile access.
 
-        include footer
+      section.half
+        .flexy
+          .col
+            .item
+              h5.fadeIn Calculation Wizard
+              figure.fadeIn
+                img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-wizard-calculation.jpg', alt='Cálculo Jurídico dashboard - Calculation Wizard')
+                //- Tooltip
+                .tooltip.seven.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content New calculation onboarding. Now in the style of cards, it presents a brief introduction related to the type of calculation to be done.                
+            .item
+              h5.fadeIn Empty List
+              figure.fadeIn
+                img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-empty-list.jpg', alt='Cálculo Jurídico dashboard - Empty List')
+                //- Tooltip
+                .tooltip.eight.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Each screen now has a empty space with instructions for the section task.   
+            .item
+              h5.fadeIn Office
+              figure.fadeIn
+                img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-office.jpg', alt='Cálculo Jurídico dashboard - Office')
+
+          .col
+            .item
+              h5.fadeIn Empty Space
+              figure.fadeIn
+                img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-empty-calculation.jpg', alt='Cálculo Jurídico dashboard - Empty Space')
+                //- Tooltip
+                .tooltip.nine.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Each screen now has a empty space with instructions for the section task.    
+            .item
+              h5.fadeIn Client page
+              figure.fadeIn
+                img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-client.jpg', alt='Cálculo Jurídico dashboard - Client page')
+                //- Tooltip
+                .tooltip.ten.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Calculation history, comments and attachment of documents related to the client's case. 
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='beauty-date-dashboard.html')
+              img(src='assets/images/works/beauty-date-dashboard/work-related.jpg', alt='Beauty Date Dashboard')
+              | Beauty Date - SaaS Dashboard
+            a.item(href='sebrae-portal-ecommerce.html')
+              img(src='assets/images/works/sebrae-portal/work-related.jpg', alt='Sebrae Portal and E-commmerce')
+              | Sebrae - Portal and E-commerce
+
+      include footer
 
   include scripts-project

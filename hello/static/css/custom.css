@@ -1,3 +1,51 @@
+html{
+    background: #fafafa;
+    cursor: none;
+}
+
+/* Cursor */
+
+body, a, button{
+  cursor: none !important;
+}
+
+.cursor, .cursor-outer {
+  mix-blend-mode: exclusion;
+  width: 10px;
+  height: 10px;
+}
+.cursor-outer {
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  z-index: 5000;
+  pointer-events: none!important;
+}
+.cursor {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+  -moz-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+  -ms-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+  -o-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+  transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+  transform-origin: center center;
+}
+.dark_page .cursor,
+.coloring .cursor {
+  background-color: #5cffbb;
+}
+.zooming.cursor {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+  background-color: #0020ff;
+    mix-blend-mode: exclusion;
+}
+
 .text-cols.intro{
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -12,7 +60,7 @@ span.start{
 }
 
 section.intro{
-  background: #191d1f !important;
+  background: #191d1f;
 }
 
 .web{
@@ -36,9 +84,27 @@ section.intro{
   color: rgba(255,255,255,0.25);
 }
 
+.web{
+  padding-top: 30px
+}
+
 .web h2{
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  background: #4f49ff;
+  color: #fff;
+  padding: 20px;
+  display: table;
+}
+
+.web .card-50{
+  height: 50vh;
+}
+
+@media (min-width: 768px){
+  .web .flex-content{
+    padding: 10px 4.8rem;
+  }
 }
 
 .web .flex-content{
@@ -48,7 +114,7 @@ section.intro{
 .web pre{
     border: none;
     box-shadow: none;
-    background: #272822;
+    background: #202025;
     color: #fff;
 }
 
@@ -101,12 +167,14 @@ section.intro{
 }
 
 .cover{
-  background: #fff;
+  background: #fafafa;
 }
 
-section.intro{
-  background: #282828;
-} 
+.cover h2{
+  font-weight: 900;
+  line-height: 2.8rem;
+  margin-bottom: 20px;
+}
 
 .motion hr, .graphic hr{
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0) 75%);
@@ -167,18 +235,22 @@ section.intro{
   margin: -6px 7px 0 0;
 }
 
+.respPromova .card-50 .flex-content{
+  padding: 0 2em;
+  justify-content: end;
+}
+
+.respPromova hr{
+  margin: 1em 0;
+}
+
 .respPromova figure{
-  width: 100%;
-  padding-top: 33px;
+  width: 90%;
+  margin: 0 auto;
 } 
 
 .respPromova figure figcaption{
   background: rgba(0,0,0,0.5);
-}
-
-.respPromova h3{
-  position: absolute;
-  top: 40px;
 }
 
 .respPromova .flexblock li h2{
@@ -187,7 +259,7 @@ section.intro{
 }
 
 .last-years{
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   line-height: 50px;
   font-weight: 600;
@@ -196,7 +268,7 @@ section.intro{
 
 @media (max-width: 760px){
   .last-years{
-    font-size: 28px;
+    font-size: 24spx;
     line-height: 36px;
     margin-top: 40px;
   }
@@ -207,8 +279,23 @@ section.intro{
 
 .sebrae .text-label{
   width: unset;
-  font-size: 30px;
+  font-size: 24px;
   margin: 30px 0 20px;
+}
+
+@media (min-width: 768px) {
+  .sebrae .card-50 figure{
+    width: 30%;
+  }
+  .sebrae .card-50 .flex-content {
+      width: 70%;
+  }
+}
+
+@media (min-width: 768px){
+  .sebraeresp.fullscreen .flex-content{
+    padding: 4.4rem;
+  }
 }
 
 .sebraeresp li{
@@ -219,6 +306,7 @@ section.intro{
 
 .sebraeresp li h2{
   line-height: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: unset;
 }
@@ -247,8 +335,18 @@ span.me{
 }
 
 .ux h1, .strategy h1{
+  background: #4f49ff;
+  color: #fff;
+  padding: 20px;
+}
+
+.ux h3, .strategy h3{
   background: #191d1f;
   color: #fff;
+  padding: 20px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .ux .background-video{

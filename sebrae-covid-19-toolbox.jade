@@ -1,0 +1,187 @@
+include header
+
+extends ./header.jade
+
+block style
+  link(rel='stylesheet', type='text/css', href='assets/css/sebrae-tb.css')
+
+block meta
+  title Douglas Nonato | Sebrae Covid-19 Toolbox
+  meta(name='description', content='A toolbox with more than 70 solutions to help entrepreneurs in COVID-19 times')
+  meta(name='keywords', content='Covid-19, Design, toolbox, Free Solutions, Sebrae, Research, coronavirus')
+
+  //- Share image
+  meta(property='og:title', content='Douglas Nonato | Sebrae Covid-19 Toolbox')
+  meta(property='og:description', content='A toolbox with more than 70 solutions to help entrepreneurs in COVID-19 times')
+  meta(property='og:url', content='https://www.douglasnonato.com/sebrae-covid-19-toolbox.html')
+  meta(property='og:site_name', content='Douglas Nonato')
+  meta(property='og:image', content='https://www.douglasnonato.com/assets/images/works/sebrae-toolbox/og-image.jpg')
+  meta(property='og:type', content='website')
+
+block content
+  //- Main
+  main#sebrae_tb
+    #top
+    include menu
+    #single-project
+      //- Content
+      section#header.web
+        .bg-text.fadeIn
+          | Seb
+          br
+          | rae
+        figure.viewDesktop.fadeIn
+          img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-cover.jpg', alt='Sebrae Covid-19 Toolbox')
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Sebrae
+          figure.viewMobile.fadeIn
+            img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae.png', alt='Sebrae Covid-19 Toolbox')
+          #rev-2.block-right
+            h2 A toolbox with more than 70 solutions to help entrepreneurs in COVID-19 times
+
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | May_2020
+          .col.kind 
+            small
+              | KIND —
+            br
+            strong
+              | New Service
+
+      section
+        .flexy.intro
+          h3#rev-3 Context
+          .textBorder
+            svg
+              text(x='0' y='550') 01
+          .description
+            .col-half
+              .fadeIn
+                p In 2020, Covid-19 caused many companies to face an unprecedented challenge in their journey, many of which were unable to survive. The lockdown, necessary for the moment, made many business models unfeasible, especially those not digitized, which overnight were forced to make their digital transformation
+                p At this time, Sebrae in its role as an institution that provides support to entrepreneurs, has become more essential than ever, which has resulted in an increase in its demand for assistance.
+            .col-half
+              .fadeIn
+                p This whole situation has caused many companies with digital solutions to start offering their services in an easy or free way during this pandemic period, boosting the migration of offline users to this new world.
+                  span Analyzing this movement of positive initiatives, we decided to collect b2b solutions with free plans to offer in a single place, a kind of catalog for the entrepreneur.
+            .col-half
+              .parallax(data-speed='7', data-parallax='')  
+                figure.fadein
+                  img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-virus.png', alt='Sebrae Covid-19 Toolbox Virus')
+          #rev-4
+
+      section.description-section.pdTop-30vh
+        .flexy.process
+          .col-half.description.fadeIn
+            h3#rev-5 The process
+              .textBorder
+                svg
+                  text(x='0' y='550') 02
+            p For this project we formed a squad of 3 members from 2 different units. With the pandemic already underway, all the work was done only with online meetings.
+            p We decided that for the launch we would collect an initial list of solutions, but after the launch, new companies interested in joining the list will be able to submit their solutions through a form that will be on the page.
+
+          .col-half
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-meeting.jpg', alt='Sebrae Covid-19 Toolbox Team meeting')
+              figcaption
+                | [
+                span.line-through slack
+                | &nbsp;teams meeting]
+
+      section.description-section.pdTop-60
+        .flexy.research
+          .col-half.center
+            .description.fadeIn
+                h4 Strategy and Research
+                p The first steps were to decide the evaluation criteria for a solution to be part of that list. Knowing that there would be great interest from other companies to join the catalog after its launch, 
+                  span our main concern was to create parameters that would ensure the delivery of value to customers without privileging companies during this assessment.
+                p For the launch batch, we hired an innovation consultancy to help us find these solutions. In this first scan, 70 companies were found within the pre-established criteria.
+              #rev-6
+
+          .row-figure
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-research-spreadsheet.jpg', alt='Sebrae Covid-19 Toolbox Research Spreadsheet')
+              figcaption
+                | [research spreadsheet]
+          .col-half.center
+            .description.fadeIn
+                h4 Build it up
+                p With the list in hand, I started the work of building the page. As our portal uses WordPress as a CMS, it took few lines of code to bring the project to life.
+                p The last step before launching was to configure Google Tag Manager to measure the number of accesses in each product. This was boring to solve, since I had never done this before, it took a few days and tips from GTM experts to get it running.
+                p
+                  span One month was the period between the beginning of the idea and its launch.
+
+      section.full-bg.mb-work.pdTop-15vh
+        .flexy
+          h3#rev-7 Outcome
+          .textBorder
+            svg
+              text(x='0' y='550') 03
+          figure.fadeIn
+            img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-1.png', alt='Sebrae Covid-19 Toolbox')
+
+            //- Tooltip
+            .tooltip.one.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Filter by purpose of the service.
+            .tooltip.two.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Entry form for companies to submit their tools.
+
+          figure.fadeIn
+            img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-2.png', alt='Sebrae Covid-19 Toolbox')
+
+          figure.pad
+            img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-3.png', alt='Sebrae Covid-19 Toolbox')
+      
+      section.press
+        figure.fadeIn
+          img(src='assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae-press-release-2.jpg', alt='Sebrae Covid-19 Toolbox Press release')
+        .content
+          .description
+            .highlight
+              h6 Some numbers
+              .col
+                .label In the launch week we reached
+                .data 1.319
+                .label tools accessed through the page.
+                .data 44%
+                .label conversion* rate
+                .note *people who accessed the page and clicked on a solution.
+              .col.line
+                .label This same week we were featured in
+                .news &nbsp;8
+                .label news portals.
+              .col.line 
+                .label At the end of the first month we had
+                .coupon &nbsp;2
+                .label companies offering exclusive access coupon to Sebrae customers through the page.
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='calculo-juridico-dashboard.html')
+              img(src='assets/images/works/sebrae-portal/work-related.jpg', alt='Sebrae Portal and E-commmerce')
+              | Sebrae - Portal and E-commerce
+            a.item(href='sebrae-design-sprint-prototype.html')
+              img(src='assets/images/works/sebrae-design-sprint/work-related.jpg', alt='Sebrae Design Sprint')
+              | Sebrae - Design sprint
+
+      include footer
+
+  include scripts-project

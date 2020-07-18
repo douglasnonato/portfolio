@@ -1,0 +1,273 @@
+#sebrae_ds .logo{
+	background-color: #2F69F8;
+}
+
+#sebrae_ds .logo a{
+	color: #fafafa;
+}
+
+@media screen and (min-width: 101em) {
+	#sebrae_ds .scroll-to.down {
+		right: 990px;
+	}
+}
+
+@media screen and (min-width: 89em) and (max-width: 100em){
+	#sebrae_ds .scroll-to.down {
+		right: 62%;
+	}	
+}
+
+@media screen and (min-width: 64em) and (max-width: 88em){
+		#sebrae_ds .scroll-to.down {
+		right: 57%;
+	}
+}
+
+#sebrae_ds #header {
+	background-color: #2F69F8;
+	overflow: unset;
+}
+
+#sebrae_ds #header .bg-text {
+	color: #f5f5f50f;
+}
+
+@media screen and (max-width: 38.3em){
+	#single-project #header.web h1 {
+	    margin-top: 37vw;
+	    font-size: 11vw;
+	}
+}
+
+@media screen and (min-width: 64em){
+	#sebrae_ds #header .bg-text{
+		left: calc(-1vw * 35);
+		font-size: 370px;
+	    line-height: 360px;
+	}
+}
+#sebrae_ds #header h1{
+	color: #fafafa;
+	width: 25vw;
+}
+
+#sebrae_ds #header .block-right h2{
+	color: #201f25;
+}
+
+#sebrae_ds #header .block-right{
+	width: 25vw;
+}
+
+#sebrae_ds #header .block-right .block-revealer__content:before{
+	background-color: #fafafa;
+}
+
+@media screen and (min-width: 64em){
+	#sebrae_ds #header .flexy, #sebrae_ds .logo .flexy{
+		width: 80vw;
+	}
+	#sebrae_ds #header figure {
+	    width: 60vw;
+	    bottom: 0;
+	    right: 0;
+	    top: -50px;
+	    margin: 0;
+	    overflow: hidden;
+	}
+	#sebrae_ds #header figure img {
+	    width: 120%;
+	    margin-left: -60px;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 88em){
+	#sebrae_ds #header figure {
+		width: 55vw;
+	}
+	#sebrae_ds #header figure img {
+	    width: 180%;
+	}
+}
+
+#sebrae_ds #header #rev-1 .block-revealer__element{
+	background-color: #fafafa !important;
+}
+
+.intro .card{
+    background-color: #f0f0f0;
+    padding: 30px 50px;
+    margin-top: 20px;
+    font-size: .85em;
+    line-height: 1.75em;
+}
+
+#single-project .intro .card h4{
+	margin: 0 0 5px 0;
+	font-size: 17px;
+}
+
+#single-project .process .row-figure{
+	width: 100%;
+}
+
+#sebrae_ds .process .textBorder{
+  top: -350px;
+  left: -60px;
+}
+
+@media screen and (max-width: 64em) {
+	#sebrae_ds #header {
+		padding-bottom: 150px;
+	}
+	#single-project .process .flexBetween{
+		display: unset;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+#single-project .process .flexBetween{
+	justify-content: space-around;
+}
+
+#single-project .process .flexBetween.matrix figure{
+	max-width: 28%;
+}
+
+#single-project .process .flexBetween.matrix figure img{
+	box-shadow: 0px 2px 4px #00000012;
+}
+
+@media screen and (max-width: 64em) {
+	#single-project .process .flexBetween.matrix figure{
+		max-width: 220px !important;
+	}
+}
+
+#sebrae_ds .intro .textBorder{
+	top: -350px;
+	left: -60px;
+}
+
+#sebrae_ds figure.flow{
+	width: 500px;
+	margin: 40px auto 100px;
+	float: unset;
+	max-width: 90%;
+}
+
+.validation{
+	margin-bottom: 30vh;
+}
+
+.validation h4{
+	margin-top: 100px;
+}
+
+.validation figure{
+	width: 22vw;
+	float: left;
+	max-width: 420px;
+}
+
+.validation .parallax{
+	margin-top: 35vw;
+	z-index: -1;
+}
+
+.validation figure.lg{
+	width: 50vw;
+	margin: 0 0 0 -30px !important;
+	z-index: -1;
+}
+
+.validation figure.lg figcaption{
+	margin-left: 30px !important;
+}
+
+@media screen and (min-width: 64em) and (max-width: 102em) {
+	.validation .parallax{
+		margin-top: 48vw;
+	}
+}
+
+@media screen and (max-width: 90em) {
+	.validation .parallax{
+		margin-top: 700px;
+	}
+}
+
+.validation .row{
+	width: 50vw;
+}
+
+.validation .row figure:first-child{
+	margin-right: 10px !important;
+}
+
+@media screen and (max-width: 64em) {
+	#sebrae_ds .intro .description{
+		display: unset;
+		margin: unset;
+	}
+	#single-project figure.sebrae{
+		width: 100%;
+		margin: 40px 0;
+	}
+	#single-project .strategy .flexBetween{
+		display: unset;
+		text-align: center;
+		width: 100%;
+	}
+	#single-project .validation figure, #single-project .process figure{
+		width: 100%;
+		max-width: 400px !important;
+		margin: 0 auto !important;
+		float: unset;
+	}
+	.validation .row{
+		width: 100%;
+	}
+	.validation figure.lg figcaption{
+		margin-left: unset !important;
+	}
+}
+
+.pdTop{
+	margin-top: 15vw;
+}
+
+@media screen and (max-width: 80em){
+	.pdTop{
+		margin-top: 8;
+	}
+}
+
+@media screen and (max-width: 64em){
+	.pdTop{
+		margin-top: 0;
+	}
+}
+
+#sebrae_ds .mb-work {
+    margin-top: 30vh;
+}
+
+#single-project section.full-bg:after{
+	height: 40vw;
+    max-height: 570px;
+}
+
+@media screen and (max-width: 38.3em) {
+	#single-project section.full-bg:after{
+		height: 55vw;
+		top: 55vw;
+	}
+}
+
+#sebrae_ds .mb-work .textBorder {
+    top: -420px;
+    left: -100px;
+}

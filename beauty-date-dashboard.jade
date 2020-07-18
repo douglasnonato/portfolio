@@ -2,10 +2,13 @@ include header
 
 extends ./header.jade
 
+block style
+  link(rel='stylesheet', type='text/css', href='assets/css/bda.css')
+
 block meta
   title Douglas Nonato | Beauty Date SaaS Dashboard
   meta(name='description', content='Dashboard case of a salon management SaaS that provides online scheduling for customers.')
-  meta(name='keywords', content='Service, Product, experience, UX, dashboard, SaaS, scheduling')
+  meta(name='keywords', content='Product, experience, UX, dashboard, SaaS, scheduling, interface')
 
   //- Share image
   meta(property='og:title', content='Douglas Nonato | Beauty Date SaaS Dashboard')
@@ -17,101 +20,113 @@ block meta
 
 block content
   //- Main
-  main
+  main#bda
+    #top
     include menu
-    .cd-main-content
-      #single-project
-        //- Content
-        section#header.web
-          .bg-text.fadeIn
-            | Beauty
+    #single-project
+      //- Content
+      section#header.web
+        .bg-text.fadeIn
+          | Beauty
+          br
+          | Date
+        figure.viewDesktop.fadeIn
+          img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.jpg', alt='Beauty Date SaaS dashboard')
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Beauty Date
+          figure.viewMobile.fadeIn
+            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.png', alt='Beauty Date SaaS dashboard')
+          #rev-2.block-right
+            h2 A salon management SaaS that provides online scheduling for customers
+
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | Apr_2018
+          .col.position
+            small
+              | ROLE —
             br
-            | Date
-          .flexy.flexy--column.delay-loading
-            h1#rev-1.content__title
-              | Beauty Date
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.png', alt='Beauty Date SaaS dashboard')
-            #rev-2.block-right
-              h2 A salon management SaaS that provides online scheduling for customers
+            strong
+              | Product Designer
+          .col.kind
+            small
+              | KIND —
+            br
+            strong
+              | SaaS Dashboard
 
-        section.meta.fadeIn
-          .flexy
-            .col.date
-              small
-                | DATE
-              br 
-              strong
-                | Apr / 2018
-            .col.position
-              small
-                | POSITION
-              br
-              strong
-                | Product Designer
-            .col.kind
-              small
-                | KIND
-              br
-              strong
-                | Dashboard
-
-        section.description-section
-          .flexy
-            h3#rev-3 Overview
-            .description#rev-4
+      section.description-section
+        .flexy
+          h3#rev-3 Overview
+            .textBorder
+              svg
+                text(x='0' y='550') 01
+          .description#rev-4
+            .col-half
               p Beauty Date is an online platform that in addition to offering the online appointment for clients also offers a complete management system for beauty establishments. The system has resources for financial management, customer relationship management tool, product inventory control and others.
-              p Over the years, with the number of new features that have been added to the tool without a platform design guide, the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process. Another point was the visual style that was starting to get outdated.
-        section
-          figure.fadeIn.mind-map
-            img(src='assets/images/works/beauty-date-dashboard/dashboard-mind-map.jpg', alt='Beauty Date SaaS Mind Map')
+            .col-half
+              p Over the years, with the number of new features that have been added to the tool without a platform design guide, 
+                span the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process.
+                |  Another point was the visual style that was starting to get outdated.
+      section
+        figure.fadeIn.mind-map
+          img(src='assets/images/works/beauty-date-dashboard/dashboard-mind-map.png', alt='Beauty Date SaaS Mind Map')
 
-        section.description-section
-          .flexy
-            .description
-              p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
-              p.highlight
-                | For the usability test I made&nbsp;
-                a(href='bda-proto' target='_blank') this prototype
-                | &nbsp;with images and JQuery (it works only for higher resolutions than 1280X800)
+      section.description-section.zTop
+        .flexy
+          .description
+            p I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.
+            p.highlight  
+              img(src='assets/images/prototype.svg', alt='Prototype')
+              | Without an ideal prototyping tool at the time, I ended up making&nbsp;
+              a(href='bda-proto' target='_blank') this prototype
+              | &nbsp;with JQuery for the usability test. (it works only at higher resolutions than 1280X800)
 
-        section.full-bg.mb-work
-          .flexy
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-agenda.png', alt='Beauty Date SaaS dashboard')
-            figure.fadeIn.modal
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-modal.png', alt='Beauty Date SaaS Modal')
+      section.full-bg.mb-work
+        .flexy
+          h3#rev-5 Outcomes
+          #rev-6
+          .textBorder
+            svg
+              text(x='0' y='550') 02
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-agenda.png', alt='Beauty Date SaaS dashboard')
+          figure.fadeIn.modal
+            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-modal.png', alt='Beauty Date SaaS Modal')
 
-        section.work-title-left
-          .flexy
-            h4.fadeIn Services
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-services.jpg', alt='Beauty Date SaaS dashboard - Services')
-            h4.fadeIn Reports
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-reports.jpg', alt='Beauty Date SaaS dashboard - Reports')
-            h4.fadeIn Sales Order
-            figure.fadeIn
-              img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-sales-order.jpg', alt='Beauty Date SaaS dashboard - Sales Order')
-        section.description-section
-          .flexy
-            .description.pdTop-60
-              p As the current dashboard was not 100% mobile friendly, I designed each screen together with its mobile version, since 88% of our users were desktop the system is all modeled as desktop first.
-        section     
-          figure.fadeIn.mobile
-            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-mobile.png', alt='Beauty Date SaaS Mobile')
+      section.work-title-left
+        .flexy
+          h4.fadeIn Services
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-services.jpg', alt='Beauty Date SaaS dashboard - Services')
+          h4.fadeIn Reports
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-reports.jpg', alt='Beauty Date SaaS dashboard - Reports')
+          h4.fadeIn Sales Order
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-sales-order.jpg', alt='Beauty Date SaaS dashboard - Sales Order')
 
-        section
-          .flexy.flexy--row.projects--related.fadeIn
-            h4.content__title--center Other Projects
-            .projects
-              a.item(href='beauty-date-site.html')
-                img(src='assets/images/works/beauty-date-web/work-related.jpg', alt='Beauty Date')
-                | Beauty Date Website
-              a.item(href='qlance-site.html')
-                img(src='assets/images/works/qlance-web/work-related.jpg', alt='Qlance')
-                | Qlance
+      section.mobile 
+        figure.fadeIn.mobile
+          img(src='assets/images/works/beauty-date-dashboard/dashboard-beautydate-mobile.png', alt='Beauty Date SaaS Mobile')
 
-        include footer
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='calculo-juridico-dashboard.html')
+              img(src='assets/images/works/calculo-juridico-dashboard/work-related.jpg', alt='Cálculo Jurídico')
+              | Cálculo Jurídico - SaaS Dashboard
+            a.item(href='beauty-date-marketplace.html')
+              img(src='assets/images/works/beauty-date-marketplace/work-related.jpg', alt='Beauty Date')
+              | Beauty Date - Marketplace
+
+      include footer
 
   include scripts-project

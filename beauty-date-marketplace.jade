@@ -1,0 +1,102 @@
+include header
+
+extends ./header.jade
+
+block meta
+  title Douglas Nonato | Beauty Date Web Site
+  meta(name='description', content='An online booking service that connects customers to salons right in their phones screens')
+  meta(name='keywords', content='Product, experience, UX, Marketplace, scheduling, interface')
+
+  //- Share image
+  meta(property='og:title', content='Douglas Nonato | Beauty Date Web Site')
+  meta(property='og:description', content='An online booking service that connects customers to salons right in their phones screens.')
+  meta(property='og:url', content='https://www.douglasnonato.com/beauty-date-web.html')
+  meta(property='og:site_name', content='Douglas Nonato')
+  meta(property='og:image', content='https://www.douglasnonato.com/assets/images/works/beauty-date-marketplace/og-image.jpg')
+  meta(property='og:type', content='website')
+
+block content
+
+  //- Main
+  main
+    #top
+    include menu
+    #single-project
+      //- Content
+      section#header.web.bda
+        .bg-text.fadeIn
+          | Beauty
+          br
+          | Date
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Beauty Date
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-header.png', alt='Beauty Date')
+          #rev-2.block-right
+            h2 An online booking service that connects customers to salons right in their phones screens
+
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | Feb_2016
+          .col.position
+            small
+              | ROLE —
+            br
+            strong
+              | Product Designer
+          .col.kind
+            small
+              | KIND —
+            br
+            strong
+              | Marketplace
+
+      section.description-section
+        .flexy
+          h3#rev-3 Overview
+          .description#rev-4
+            p Beauty Date's flagship is the online booking, allowing customers to book appointments whenever and wherever they want. I was responsible of the website redesign and lead new tools for the product and improvements to the user experience based on customer's feedback. I also had front-end programming as one of my duties.
+      section.full-bg.mb-work
+        .flexy
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-home-1.png', alt='Beauty Date')
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-home-2.png', alt='Beauty Date')
+          figure
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-home-3.png', alt='Beauty Date')
+      section.description-section.fadeIn
+        .flexy
+          .description.detail
+            p The user's flow consists of the following steps. Search for an establishment, it can be a salon that you already know or a new one, the result page serves as a guide with ratings of the establishments of the region. Then select the service and professional that will perform the service. Finally choose one of the available times on the agenda.
+      section.work-title-left
+        .flexy
+          h4.fadeIn Results page
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-results.jpg', alt='Beauty Date Results')
+          h4.fadeIn Business Storefront
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-storefront.jpg', alt='Beauty Date Storefront')
+          h4.fadeIn Personal Schedule
+          figure.fadeIn
+            img(src='assets/images/works/beauty-date-marketplace/marketplace-beautydate-agenda.jpg', alt='Beauty Date Agenda')
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='sebrae-portal-ecommerce.html')
+              img(src='assets/images/works/sebrae-portal/work-related.jpg', alt='Sebrae Portal and E-commmerce')
+              | Sebrae - Portal and E-commerce
+            a.item(href='beauty-date-dashboard.html')
+              img(src='assets/images/works/beauty-date-dashboard/work-related.jpg', alt='Beauty Date')
+              | Beauty Date - SaaS Dashboard
+
+      include footer
+
+  include scripts-project

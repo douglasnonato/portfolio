@@ -1,0 +1,393 @@
+#sebrae .logo{
+	background-color: #007ac3;
+}
+
+#sebrae .logo a{
+	color: #fafafa;
+}
+
+@media screen and (min-width: 91em) {
+	#sebrae .scroll-to.down {
+		right: 870px;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+	#sebrae .scroll-to.down {
+		right: 51vw;
+	}
+}
+
+#sebrae #header {
+	background-color: #007ac3;
+	overflow: unset;
+}
+
+#sebrae #header .bg-text {
+	color: #f5f5f50a;
+	left: calc(-1vw * 30);
+	font-size: 400px;
+}
+
+
+#sebrae #header h1{
+	color: #fafafa;
+	width: 30vw;
+}
+
+@media screen and (max-width: 38.3em){
+	#sebrae #header .bg-text{
+		left: 0;
+	}
+	#single-project #header.web h1 {
+	    margin-top: 37vw;
+	    font-size: 11vw;
+	}
+}
+
+#sebrae #header .block-right h2{
+	color: #201f25;
+}
+
+#sebrae #header .block-right{
+	width: 30vw;
+}
+
+#sebrae #header .block-right .block-revealer__content:before{
+	background-color: #fafafa;
+}
+
+@media screen and (min-width: 64em){
+	#sebrae #header figure {
+		margin-top: 50px;
+		position: absolute;
+		z-index: 2;
+		width: 850px;
+		right: 0;
+		top: -100px;
+	}
+	#sebrae #header figure img{
+		border-left: 1px solid #117dc5;
+		border-bottom: 1px solid #117dc5;
+	}
+	#sebrae #header .flexy, #sebrae .logo .flexy{
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+	#sebrae #header figure {
+		width: 50vw;
+	}
+}
+
+#sebrae #header #rev-1 .block-revealer__element{
+	background-color: #fafafa !important;
+}
+
+#sebrae  #meta .col{
+	padding-top: 50px; 
+}
+
+#sebrae #meta .flexy{
+	display: unset;
+}
+
+@media screen and (max-width: 64em) {
+	#sebrae #meta .flexy{
+		display: flex;
+	}
+}
+
+#sebrae .intro .textBorder{
+  top: -350px;
+  left: -10vw;
+}
+
+#sebrae .intro .description{
+	margin-left: -5vw;
+	flex-direction: row-reverse;
+	display: flex;
+}
+
+#sebrae .intro h4{
+	margin-top: 100px;
+}
+
+#single-project figure.sebrae{
+	width: 35vw;
+	margin: 23vw 0 0 7vw;
+}
+
+@media screen and (max-width: 74em) {
+	#single-project figure.sebrae{
+	margin-top:40vw;
+	}
+}
+.flexy.strategy{
+	width: 100vw;
+}
+
+
+#single-project .strategy .row-figure{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#single-project .strategy .row-figure figure{
+	margin: 0 auto;
+}
+
+#single-project .strategy .row-figure-half{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#single-project .strategy .row-figure-half figure{
+	width: 48%;
+	float: left;
+}
+
+@media screen and (max-width: 64em){
+	#single-project .strategy .row-figure, #single-project .strategy .row-figure-half{
+		width: 100%
+	}
+	#single-project .strategy .row-figure-half figure{
+		margin: 20px 0 !important;
+	}
+	#single-project .strategy .row-figure figure{
+		max-width: unset !important;
+	}
+}
+
+#sebrae .strategy .textBorder{
+  top: -350px;
+  left: -60px;
+}
+
+.ideation{
+	margin-bottom: 30vh;
+}
+
+.ideation h4{
+	margin-top: 100px;
+}
+
+.ideation figure{
+	width: 22vw;
+	float: left;
+}
+
+.ideation .parallax{
+	margin-top: 35vw;
+	z-index: -1;
+}
+
+.ideation figure.lg{
+	width: 60vw;
+	margin: 0 0 0 -160px !important;
+	z-index: -1;
+	max-width: unset !important;
+}
+
+.ideation figure.lg figcaption{
+	margin-left: 160px !important;
+}
+
+@media screen and (min-width: 64em) and (max-width: 102em) {
+	.ideation .parallax{
+		margin-top: 48vw;
+	}
+	.ideation figure.lg{
+		width: 70vw;
+	}
+}
+
+@media screen and (max-width: 90em) {
+	.ideation .parallax{
+		margin-top: 870px;
+	}
+}
+
+.ideation .row{
+	width: 50vw;
+}
+
+.ideation .row figure:first-child{
+	margin-right: 10px !important;
+}
+
+@media screen and (max-width: 64em) {
+	#sebrae .intro .description{
+		display: unset;
+		margin: unset;
+	}
+	#single-project figure.sebrae{
+		width: 100%;
+		margin: 40px 0;
+	}
+	#single-project .strategy .flexBetween{
+		display: unset;
+		text-align: center;
+		width: 100%;
+	}
+	#single-project .strategy figure, #single-project .ideation figure.lg, .ideation .row figure:first-child, .ideation .row figure{
+		width: 100%;
+		max-width: 400px !important;
+		margin: 0 auto !important;
+		float: unset;
+	}
+	.ideation .row{
+		width: 100%;
+	}
+	.ideation figure.lg figcaption{
+		margin-left: unset !important;
+	}
+}
+
+#sebrae .mb-work{
+	margin-top: 30vh;
+}
+
+#sebrae .mb-work .textBorder{
+  top: -420px;
+  left: -100px;
+}
+
+#sebrae .tooltip.one{
+  top: 31.7%;
+  left: 17%;
+}
+
+#sebrae .tooltip.two{
+  top: 39%;
+  left: 69%;
+}
+
+#sebrae .tooltip.three{
+  top: 20%;
+  left: 82%;
+}
+
+#sebrae .tooltip.four{
+  top: 55%;
+  left: 20%;
+}
+
+#sebrae .tooltip.five{
+  top: 97%;
+  left: 25%;
+}
+
+#sebrae .tooltip.six{
+  top: 120.3%;
+  left: 13%;
+}
+
+#sebrae .tooltip.eight{
+  top: 40.3%;
+  left: 56%;
+}
+
+#sebrae .tooltip.nine{
+  top: 23.3%;
+  left: 64%;
+}
+
+#sebrae .tooltip.ten{
+  top: 55.5%;
+  left: 25%;
+}
+
+#sebrae .tooltip.eleven{
+  top: 42.3%;
+  left: 54%;
+}
+
+#sebrae .tooltip.thirteen{
+  top: 60.5%;
+  left: 62%;
+}
+
+#sebrae .tooltip.fourteen{
+  top: 8.3%;
+  left: -2%;
+
+}
+
+#sebrae .tooltip.fifteen{
+  top: 32.3%;
+  left: 18%;
+}
+
+#sebrae .tooltip.sixteen{
+  top: 22.3%;
+  left: 32%;
+}
+
+#sebrae .tooltip.seventeen{
+  top: 69.3%;
+  left: 32%;
+}
+
+#sebrae .tooltip.eighteen{
+  top: 50.3%;
+  left: 56%;
+}
+
+#sebrae .tooltip.nineteen{
+  top: 35.3%;
+  left: 41%;
+}
+
+#sebrae .tooltip.twenty{
+	top: 2.7%;
+	left: 84.5%;
+}
+
+#sebrae .press{
+	padding: 0;
+	margin: 40vw 0 20vw;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sebrae .press figure{
+  max-width: unset;
+  position: absolute;
+  margin: 0;
+}
+
+#sebrae .press figure img{
+  width: 100%;
+  max-width: unset;
+}
+
+#sebrae .press .content{
+	max-width: 970px;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.description .highlight{
+    padding: 50px;
+    opacity: .95;
+    margin-top: 0;
+}
+
+.description .highlight h6{
+	font-size: 30px;
+    margin: 0;
+    line-height: 34px;
+    text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+	#sebrae .press figure{
+		position: relative;
+	}
+}

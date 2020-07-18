@@ -6,7 +6,7 @@
   <meta name="owner" content="dougnot@gmail.com">
   <title>Douglas Nonato | Beauty Date SaaS Dashboard</title>
   <meta name="description" content="Dashboard case of a salon management SaaS that provides online scheduling for customers.">
-  <meta name="keywords" content="Service, Product, experience, UX, dashboard, SaaS, scheduling">
+  <meta name="keywords" content="Product, experience, UX, dashboard, SaaS, scheduling, interface">
   <meta property="og:title" content="Douglas Nonato | Beauty Date SaaS Dashboard">
   <meta property="og:description" content="Dashboard case of a salon management SaaS that provides online scheduling for customers.">
   <meta property="og:url" content="https://www.douglasnonato.com/beauty-date-dashboard.html">
@@ -31,14 +31,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="assets/favico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700%7CInconsolata:400,700%7CRajdhani:600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:100,200,300,400,500,600,700,800&amp;display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/effects.css">
   <link rel="stylesheet" type="text/css" href="assets/css/menu-style.css">
-  <script type="text/javascript" src="assets/js/parallax/parallax.js"></script>
-  <script type="text/javascript" src="assets/js/parallax/smoothScroll.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/bda.css">
   <script type="text/javascript" src="assets/js/modernizr.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -56,23 +55,19 @@
   </script>
 </head>
 <body>
-  <svg class="hidden">
-    <symbol id="icon-arrow" viewbox="0 0 24 24">
-      <title>arrow</title>
-      <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "></polygon>
-    </symbol>
-    <symbol id="icon-drop" viewbox="0 0 24 24">
-      <title>drop</title>
-      <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"></path>
-      <path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"></path>
-    </symbol>
-  </svg>
+  <div class="cursor-outer">
+    <div class="cursor"></div>
+  </div>
 </body>
-<main>
+<main id="bda">
+  <div id="top"></div>
+  <section class="logo">
+    <div class="flexy"><a href="../">Douglas Nonato</a></div>
+  </section>
   <div class="sidebar"><a href="../" class="home">home</a>
     <div class="line"></div>
     <button id="trigger-overlay" class="menu__handle"><span>Menu</span><span></span><span></span></button>
-  </div>
+  </div><a href="#meta" class="scroll-to fadeIn down scroll-project"><span class="scroll-arrow"></span><span class="scroll-line"></span> Scroll</a>
   <div class="menu-overlay menu-overlay-hugeinc">
     <div class="sidebar"><a href="../" class="home">home</a>
       <div class="line"></div>
@@ -80,125 +75,139 @@
     </div>
     <nav>
       <ul>
-        <li><a href="beauty-date-dashboard.html"><span class="animated">.01</span><strong class="animated">Beauty Date<br><small>SaaS dashboard</small></strong></a></li>
-        <li><a href="beauty-date-site.html"><span class="animated">.02</span><strong class="animated">Beauty Date<br><small>Marketplace</small></strong></a></li>
-        <li><a href="guarde-mais-motion.html"><span class="animated">.03</span><strong class="animated">Guarde Mais<br><small>Motion</small></strong></a></li>
-        <li><a href="qlance-site.html"><span class="animated">.04</span><strong class="animated">QLance<br><small>Marketplace</small></strong></a></li>
-      </ul>
-    </nav>
-    <nav class="backup">
-      <ul>
-        <li><a href="beauty-date-dashboard.html"><span>.01</span><strong>Beauty Date<br><small>SaaS dashboard</small></strong></a></li>
-        <li><a href="beauty-date-site.html"><span>.02</span><strong>Beauty Date<br><small>Marketplace</small></strong></a></li>
-        <li><a href="guarde-mais-motion.html"><span>.03</span><strong>Guarde Mais<br><small>Motion</small></strong></a></li>
-        <li><a href="qlance-site.html"><span>.04</span><strong>QLance<br><small>Marketplace</small></strong></a></li>
+        <li><a href="sebrae-portal-ecommerce.html"><span class="animated">.01</span><strong class="animated">Portal/E-commerce<br><small>Sebrae</small></strong></a></li>
+        <li><a href="sebrae-covid-19-toolbox.html"><span class="animated">.02</span><strong class="animated">Covid-19 Toolbox<br><small>Sebrae</small></strong></a></li>
+        <li><a href="sebrae-design-sprint-prototype.html"><span class="animated">.03</span><strong class="animated">Design Sprint<br><small>Sebrae</small></strong></a></li>
+        <li><a href="calculo-juridico-dashboard.html"><span class="animated">.04</span><strong class="animated">SaaS dashboard<br><small>Cálculo Jurídico</small></strong></a></li>
+        <li><a href="beauty-date-dashboard.html"><span class="animated">.05</span><strong class="animated">SaaS dashboard<br><small>Beauty Date</small></strong></a></li>
+        <li><a href="beauty-date-marketplace.html"><span class="animated">.06</span><strong class="animated">Marketplace<br><small>Beauty Date</small></strong></a></li>
       </ul>
     </nav>
     <div class="animated call">
-      <p>My name is Douglas Nonato. I'm a Service Designer. I've worked in several projects by taking part of every single step of the workflow production, providing me great experience with a 360º knowledge about the Digital World.&nbsp;<a href="hello" target="_blank">Check-out my presentation</a></p>
+      <p><span>🤯</span><a href="hello" target="_blank">Check-out my presentation&nbsp;</a>and find out about my accomplishments and what skills I developed on this journey, or get in touch&nbsp;<a href="mailto:dougnot@gmail.com">dougnot@gmail.com</a></p>
+      <ul class="links">
+        <li><a href="hello">About me</a></li>
+        <li><a href="hello/Douglas-Nonato-Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://br.linkedin.com/in/douglas-nonato" target="_blank">Linkedin</a></li>
+      </ul>
     </div>
   </div>
-  <div class="cd-main-content">
-    <div id="single-project">
-      <section id="header" class="web">
-        <div class="bg-text fadeIn">Beauty<br>Date</div>
-        <div class="flexy flexy--column delay-loading">
-          <h1 id="rev-1" class="content__title">Beauty Date</h1>
-          <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.png" alt="Beauty Date SaaS dashboard"></figure>
-          <div id="rev-2" class="block-right">
-            <h2>A salon management SaaS that provides online scheduling for customers</h2>
+  <div id="single-project">
+    <section id="header" class="web">
+      <div class="bg-text fadeIn">Beauty<br>Date</div>
+      <figure class="viewDesktop fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.jpg" alt="Beauty Date SaaS dashboard"></figure>
+      <div class="flexy flexy--column delay-loading">
+        <h1 id="rev-1" class="content__title">Beauty Date</h1>
+        <figure class="viewMobile fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-header.png" alt="Beauty Date SaaS dashboard"></figure>
+        <div id="rev-2" class="block-right">
+          <h2>A salon management SaaS that provides online scheduling for customers</h2>
+        </div>
+      </div>
+    </section>
+    <section id="meta" class="fadeIn">
+      <div class="flexy">
+        <div class="col date"><small>DATE —</small><br><strong>Apr_2018</strong></div>
+        <div class="col position"><small>ROLE —</small><br><strong>Product Designer</strong></div>
+        <div class="col kind"><small>KIND —</small><br><strong>SaaS Dashboard</strong></div>
+      </div>
+    </section>
+    <section class="description-section">
+      <div class="flexy">
+        <h3 id="rev-3">Overview
+          <div class="textBorder">
+            <svg>
+              <text x="0" y="550">01</text>
+            </svg>
           </div>
-        </div>
-      </section>
-      <section class="meta fadeIn">
-        <div class="flexy">
-          <div class="col date"><small>DATE</small><br><strong>Apr / 2018</strong></div>
-          <div class="col position"><small>POSITION</small><br><strong>Product Designer</strong></div>
-          <div class="col kind"><small>KIND</small><br><strong>Dashboard</strong></div>
-        </div>
-      </section>
-      <section class="description-section">
-        <div class="flexy">
-          <h3 id="rev-3">Overview</h3>
-          <div id="rev-4" class="description">
+        </h3>
+        <div id="rev-4" class="description">
+          <div class="col-half">
             <p>Beauty Date is an online platform that in addition to offering the online appointment for clients also offers a complete management system for beauty establishments. The system has resources for financial management, customer relationship management tool, product inventory control and others.</p>
-            <p>Over the years, with the number of new features that have been added to the tool without a platform design guide, the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process. Another point was the visual style that was starting to get outdated.</p>
+          </div>
+          <div class="col-half">
+            <p>Over the years, with the number of new features that have been added to the tool without a platform design guide, <span>the interface has started to run out of standard and difficult to understand, not only for our user but also internally, without a clear visual system the development of each new feature ends up being a random process.</span> Another point was the visual style that was starting to get outdated.</p>
           </div>
         </div>
-      </section>
-      <section>
-        <figure class="fadeIn mind-map"><img src="assets/images/works/beauty-date-dashboard/dashboard-mind-map.jpg" alt="Beauty Date SaaS Mind Map"></figure>
-      </section>
-      <section class="description-section">
-        <div class="flexy">
-          <div class="description">
-            <p>I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.</p>
-            <p class="highlight">For the usability test I made&nbsp;<a href="bda-proto" target="_blank">this prototype</a>&nbsp;with images and JQuery (it works only for higher resolutions than 1280X800)</p>
-          </div>
+      </div>
+    </section>
+    <section>
+      <figure class="fadeIn mind-map"><img src="assets/images/works/beauty-date-dashboard/dashboard-mind-map.png" alt="Beauty Date SaaS Mind Map"></figure>
+    </section>
+    <section class="description-section zTop">
+      <div class="flexy">
+        <div class="description">
+          <p>I was responsible for the dashboard redesign process, from collecting customer feedback, building a backlog of the company sectors, designing and prototyping for usability validation. There were many requests that I developed this mind map (image above) to organize the business objectives and drivers of each requested item, so we could focus on the items that fit the company's strategy.</p>
+          <p class="highlight"> <img src="assets/images/prototype.svg" alt="Prototype">Without an ideal prototyping tool at the time, I ended up making&nbsp;<a href="bda-proto" target="_blank">this prototype</a>&nbsp;with JQuery for the usability test. (it works only at higher resolutions than 1280X800)</p>
         </div>
-      </section>
-      <section class="full-bg mb-work">
-        <div class="flexy">
-          <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-agenda.png" alt="Beauty Date SaaS dashboard"></figure>
-          <figure class="fadeIn modal"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-modal.png" alt="Beauty Date SaaS Modal"></figure>
+      </div>
+    </section>
+    <section class="full-bg mb-work">
+      <div class="flexy">
+        <h3 id="rev-5">Outcomes</h3>
+        <div id="rev-6"></div>
+        <div class="textBorder">
+          <svg>
+            <text x="0" y="550">02</text>
+          </svg>
         </div>
-      </section>
-      <section class="work-title-left">
-        <div class="flexy">
-          <h4 class="fadeIn">Services</h4>
-          <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-services.jpg" alt="Beauty Date SaaS dashboard - Services"></figure>
-          <h4 class="fadeIn">Reports</h4>
-          <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-reports.jpg" alt="Beauty Date SaaS dashboard - Reports"></figure>
-          <h4 class="fadeIn">Sales Order</h4>
-          <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-sales-order.jpg" alt="Beauty Date SaaS dashboard - Sales Order"></figure>
-        </div>
-      </section>
-      <section class="description-section">
-        <div class="flexy">
-          <div class="description pdTop-60">
-            <p>As the current dashboard was not 100% mobile friendly, I designed each screen together with its mobile version, since 88% of our users were desktop the system is all modeled as desktop first.</p>
-          </div>
-        </div>
-      </section>
-      <section>    
-        <figure class="fadeIn mobile"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-mobile.png" alt="Beauty Date SaaS Mobile"></figure>
-      </section>
-      <section>
-        <div class="flexy flexy--row projects--related fadeIn">
-          <h4 class="content__title--center">Other Projects</h4>
-          <div class="projects"><a href="beauty-date-site.html" class="item"><img src="assets/images/works/beauty-date-web/work-related.jpg" alt="Beauty Date">Beauty Date Website</a><a href="qlance-site.html" class="item"><img src="assets/images/works/qlance-web/work-related.jpg" alt="Qlance">Qlance</a></div>
-        </div>
-      </section>
-      <section id="call-to-action">
-        <div class="flexy flexy--row"><a href="mailto:dougnot@gmail.com">If You have any questions or interest in my services, please don’t be shy, get in touch
-            <u>dougnot@gmail.com</u></a></div>
-      </section>
-      <footer>
-        <div class="content-warp">
+        <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-agenda.png" alt="Beauty Date SaaS dashboard"></figure>
+        <figure class="fadeIn modal"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-modal.png" alt="Beauty Date SaaS Modal"></figure>
+      </div>
+    </section>
+    <section class="work-title-left">
+      <div class="flexy">
+        <h4 class="fadeIn">Services</h4>
+        <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-services.jpg" alt="Beauty Date SaaS dashboard - Services"></figure>
+        <h4 class="fadeIn">Reports</h4>
+        <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-reports.jpg" alt="Beauty Date SaaS dashboard - Reports"></figure>
+        <h4 class="fadeIn">Sales Order</h4>
+        <figure class="fadeIn"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-sales-order.jpg" alt="Beauty Date SaaS dashboard - Sales Order"></figure>
+      </div>
+    </section>
+    <section class="mobile"> 
+      <figure class="fadeIn mobile"><img src="assets/images/works/beauty-date-dashboard/dashboard-beautydate-mobile.png" alt="Beauty Date SaaS Mobile"></figure>
+    </section>
+    <section>
+      <div class="flexy flexy--row projects--related fadeIn">
+        <h4 class="content__title--center">Other Projects</h4>
+        <div class="projects"><a href="calculo-juridico-dashboard.html" class="item"><img src="assets/images/works/calculo-juridico-dashboard/work-related.jpg" alt="Cálculo Jurídico">Cálculo Jurídico - SaaS Dashboard</a><a href="beauty-date-marketplace.html" class="item"><img src="assets/images/works/beauty-date-marketplace/work-related.jpg" alt="Beauty Date">Beauty Date - Marketplace</a></div>
+      </div>
+    </section>
+    <section id="call-to-action">
+      <div class="flexy flexy--row"><a href="mailto:dougnot@gmail.com">If You have any questions or interest in my services, please don’t be shy, get in touch
+          <u>dougnot@gmail.com</u></a></div><a href="#top" class="scroll-to fadeIn"><span class="scroll-arrow"></span><span class="scroll-line"></span>
+        <div class="text"> Scroll</div></a>
+    </section>
+    <footer>
+      <div class="content-warp">
+        <div class="row flexy">
           <p>I'm always looking for challenges, willing to discuss and share ideas. Each project is an opportunity to learn something new.</p>
           <ul>
             <li><a href="hello">About me</a></li>
             <li><a href="hello/Douglas-Nonato-Resume.pdf" target="_blank">Resume</a></li>
-          </ul>
-          <ul>
             <li><a href="https://br.linkedin.com/in/douglas-nonato" target="_blank">Linkedin</a></li>
-            <li><a href="https://www.instagram.com/dougnot/" target="_blank">Instagram</a></li>
           </ul>
         </div>
-      </footer>
-    </div>
+        <div class="row">
+          <div class="code"><span><i></i>site coded by myself</span></div>
+        </div>
+      </div>
+    </footer>
   </div>
 </main>
+<script src="assets/js/smoothAncor.js"></script>
 <script src="assets/js/clickEffect/clickEffect.js"></script>
 <script src="assets/js/jquery.easeScroll.js"></script>
-<script type="text/javascript">
-  $("html").easeScroll();
-  
-</script>
+<script type="text/javascript">$("html").easeScroll();</script>
+<script src="assets/js/parallax.js"></script>
 <script src="assets/js/anime.min.js"></script>
 <script src="assets/js/scrollMonitor.js"></script>
+<script src="assets/js/cursor.js"></script>
 <script src="assets/js/revealer/main.js"></script>
 <script src="assets/js/revealer/revealer-project.js"></script>
 <script src="assets/js/revealer/fadein-scroll.js"></script>
 <script src="assets/js/menu/classie.js"></script>
 <script src="assets/js/menu/overlay.js"></script>
+<script src="assets/js/tooltip/anime.min.js"></script>
+<script src="assets/js/tooltip/charming.min.js"></script>
+<script src="assets/js/tooltip/main.js"></script>

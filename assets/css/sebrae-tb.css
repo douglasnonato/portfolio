@@ -1,0 +1,268 @@
+#sebrae_tb .logo{
+	background: rgb(0,114,183);
+	background: linear-gradient(90deg, rgba(0,114,183,1) 0%, rgba(0,224,201,1) 50%);
+}
+
+#sebrae_tb .logo a{
+	color: #fafafa;
+}
+
+@media screen and (min-width: 91em) {
+	#sebrae_tb .scroll-to.down {
+		right: 870px;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+	#sebrae_tb .scroll-to.down {
+		right: 51vw;
+	}
+}
+
+#sebrae_tb #header {
+	background: rgb(0,114,183);
+	background: linear-gradient(90deg, rgba(0,114,183,1) 0%, rgba(0,224,201,1) 50%);
+	overflow: unset;
+}
+
+#sebrae_tb #header .bg-text {
+	color: #f5f5f50a;
+	left: calc(-1vw * 30);
+	font-size: 400px;
+}
+
+
+#sebrae_tb #header h1{
+	color: #fafafa;
+	width: 30vw;
+}
+
+@media screen and (max-width: 38.3em){
+	#sebrae_tb #header .bg-text{
+		left: 0;
+	}
+	#single-project #header.web h1 {
+	    margin-top: 37vw;
+	    font-size: 11vw;
+	}
+}
+
+#sebrae_tb #header .block-right h2{
+	color: #201f25;
+}
+
+#sebrae_tb #header .block-right{
+	width: 30vw;
+}
+
+#sebrae_tb #header .block-right .block-revealer__content:before{
+	background-color: #fafafa;
+}
+
+@media screen and (min-width: 64em){
+	#sebrae_tb #header figure {
+		margin-top: 50px;
+		position: absolute;
+		z-index: 2;
+		width: 850px;
+		right: 0;
+		top: -100px;
+	}
+	#sebrae_tb #header .flexy, #sebrae_tb .logo .flexy{
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+	#sebrae_tb #header figure {
+		width: 50vw;
+	}
+}
+
+#sebrae_tb #header #rev-1 .block-revealer__element{
+	background-color: #fafafa !important;
+}
+
+#sebrae_tb  #meta .col{
+	padding-top: 50px; 
+}
+
+#sebrae_tb #meta .flexy{
+	display: unset;
+}
+
+@media screen and (max-width: 64em) {
+	#sebrae_tb #meta .flexy{
+		display: flex;
+	}
+}
+
+#sebrae_tb .intro .textBorder{
+  top: -350px;
+  /*left: 44%;*/
+}
+
+
+#sebrae_tb .intro figure{
+	margin-top: 550px;
+}
+
+@media screen and (max-width: 64em){
+	#sebrae_tb .intro .textBorder{
+	  /*left: -10%;*/
+	}
+}
+
+#sebrae_tb .process figure{
+	margin-top: 120px;
+}
+
+#sebrae_tb .process .textBorder {
+    top: -350px;
+    left: -60px;
+}
+
+#sebrae_tb .research figure{
+    margin: 20px auto;
+    width: 80%;
+}
+
+#sebrae_tb .mb-work figure.pad{
+	margin-top: -20px;
+}
+
+#sebrae_tb .mb-work .textBorder {
+    top: -420px;
+    left: -100px;
+}
+
+
+#sebrae_tb .tooltip.one{
+	top: 77.3%;
+	left: 20%;
+}
+
+#sebrae_tb .tooltip.two{
+    top: 190%;
+    left: 29%;
+}
+
+#sebrae_tb .press{
+	padding: 0;
+	margin: 40vw 0 20vw;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sebrae_tb .press figure{
+  max-width: unset;
+  position: absolute;
+  margin: 0;
+}
+
+#sebrae_tb .press figure img{
+  width: 100%;
+  max-width: unset;
+}
+
+#sebrae_tb .press .content{
+	max-width: 970px;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.description .highlight{
+    padding: 50px;
+    opacity: .95;
+    margin-top: 0;
+}
+
+.description .highlight h6{
+	font-size: 30px;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.description .highlight .col{
+	float: left;
+	width: 33%;
+	padding-top: 30px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 380px;
+}
+
+@media screen and (max-width: 48em) {
+	.description .highlight .col{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.description .highlight .col.line{
+		border-top: 1px solid #fff;
+		padding-top: 30px; 
+		margin-top: 10px;
+	}
+	#sebrae_tb .press figure{
+		position: relative;
+	}
+}
+
+.description .highlight .label{
+	font-size: 20px;
+    line-height: 24px;
+    max-width: 215px;
+    margin: 10px auto;
+}
+
+.description .highlight .col.line .label{
+	font-size: 17px;
+}
+
+.description .highlight .right .label{
+    max-width: 260px;
+    line-height: 29px;
+}
+
+.description .highlight .col .data{
+	font-size: 70px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.description .highlight .col .note{
+	font-size: 12px;
+    line-height: 16px;
+    max-width: 215px;
+    margin: 0 auto;
+    opacity: .4;
+    font-weight: 400;
+}
+
+.description .highlight .col .coupon{
+	background-image: url(../images/coupon.svg);
+    background-repeat: no-repeat;
+    background-size: 160px;
+    background-position: center;
+    font-size: 110px;
+    font-weight: 800;
+    line-height: 70px;
+    padding: 20px 20px 20px 40px;
+    color: #4f49fe;
+}
+
+.description .highlight .col .news{
+	background-image: url(../images/news.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(50% - 15px);
+    font-size: 110px;
+    font-weight: 800;
+    line-height: 120px;
+    padding: 30px 0 10px 10px;
+}

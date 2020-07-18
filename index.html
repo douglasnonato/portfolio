@@ -5,9 +5,9 @@
   <meta name="author" content="Douglas Nonato">
   <meta name="owner" content="dougnot@gmail.com">
   <title>Douglas Nonato | Project Manager - Service Designer</title>
-  <meta name="description" content="Hello, my name is Douglas Nonato and I am a Project Manager/Service Designers with extensive experience in the Digital World.">
-  <meta name="keywords" content="Manager, Product, experience, designer, SaaS, web, Project">
-  <meta property="og:title" content="Douglas Nonato | Project Manager - Service Designer">
+  <meta name="description" content="Hello, my name is Douglas Nonato and I am a Project Manager/Product Designer with extensive experience in the Digital World.">
+  <meta name="keywords" content="Service, Product, experience, designer, SaaS, web, Project, UX">
+  <meta property="og:title" content="Douglas Nonato | Project Manager - Product Designer">
   <meta property="og:description" content="Hello, my name is Douglas Nonato and I am a Project Manager/Service Designers with extensive experience in the Digital World.">
   <meta property="og:url" content="https://www.douglasnonato.com/">
   <meta property="og:site_name" content="Douglas Nonato">
@@ -31,14 +31,12 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="assets/favico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700%7CInconsolata:400,700%7CRajdhani:600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:100,200,300,400,500,600,700,800&amp;display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/effects.css">
   <link rel="stylesheet" type="text/css" href="assets/css/menu-style.css">
-  <script type="text/javascript" src="assets/js/parallax/parallax.js"></script>
-  <script type="text/javascript" src="assets/js/parallax/smoothScroll.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -56,130 +54,164 @@
   </script>
 </head>
 <body>
-  <svg class="hidden">
-    <symbol id="icon-arrow" viewbox="0 0 24 24">
-      <title>arrow</title>
-      <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "></polygon>
-    </symbol>
-    <symbol id="icon-drop" viewbox="0 0 24 24">
-      <title>drop</title>
-      <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"></path>
-      <path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"></path>
-    </symbol>
-  </svg>
+  <div class="cursor-outer">
+    <div class="cursor"></div>
+  </div>
 </body>
 <main>
-  <div class="sidebar index"><a href="hello" target="_blank" class="home">my presentation</a>
+  <div id="top"></div>
+  <div class="sidebar index"><a href="hello" target="_blank" class="home">about me</a>
     <div class="line"></div>
     <button id="trigger-overlay" class="menu__handle"><span>Menu</span><span></span><span></span></button>
-  </div>
+  </div><a href="#projects" class="scroll-to fadeIn scroll-index"><span class="scroll-arrow"></span><span class="scroll-line"></span> Scroll</a>
   <div class="menu-overlay menu-overlay-hugeinc">
-    <div class="sidebar index"><a href="hello" target="_blank" class="home">my presentation</a>
+    <div class="sidebar index"><a href="hello" target="_blank" class="home">about me </a>
       <div class="line"></div>
       <button id="trigger-close-overlay" type="button">✕</button>
     </div>
     <nav>
       <ul>
-        <li><a href="beauty-date-dashboard.html"><span class="animated">.01</span><strong class="animated">Beauty Date<br><small>SaaS dashboard</small></strong></a></li>
-        <li><a href="beauty-date-site.html"><span class="animated">.02</span><strong class="animated">Beauty Date<br><small>Marketplace</small></strong></a></li>
-        <li><a href="guarde-mais-motion.html"><span class="animated">.03</span><strong class="animated">Guarde Mais<br><small>Motion</small></strong></a></li>
-        <li><a href="qlance-site.html"><span class="animated">.04</span><strong class="animated">QLance<br><small>Marketplace</small></strong></a></li>
-      </ul>
-    </nav>
-    <nav class="backup">
-      <ul>
-        <li><a href="beauty-date-dashboard.html"><span>.01</span><strong>Beauty Date<br><small>SaaS dashboard</small></strong></a></li>
-        <li><a href="beauty-date-site.html"><span>.02</span><strong>Beauty Date<br><small>Marketplace</small></strong></a></li>
-        <li><a href="guarde-mais-motion.html"><span>.03</span><strong>Guarde Mais<br><small>Motion</small></strong></a></li>
-        <li><a href="qlance-site.html"><span>.04</span><strong>QLance<br><small>Marketplace</small></strong></a></li>
+        <li><a href="sebrae-portal-ecommerce.html"><span class="animated">.01</span><strong class="animated">Portal/E-commerce<br><small>Sebrae</small></strong></a></li>
+        <li><a href="sebrae-covid-19-toolbox.html"><span class="animated">.02</span><strong class="animated">Covid-19 Toolbox<br><small>Sebrae</small></strong></a></li>
+        <li><a href="sebrae-design-sprint-prototype.html"><span class="animated">.03</span><strong class="animated">Design Sprint<br><small>Sebrae</small></strong></a></li>
+        <li><a href="calculo-juridico-dashboard.html"><span class="animated">.04</span><strong class="animated">SaaS dashboard<br><small>Cálculo Jurídico</small></strong></a></li>
+        <li><a href="beauty-date-dashboard.html"><span class="animated">.05</span><strong class="animated">SaaS dashboard<br><small>Beauty Date</small></strong></a></li>
+        <li><a href="beauty-date-marketplace.html"><span class="animated">.06</span><strong class="animated">Marketplace<br><small>Beauty Date</small></strong></a></li>
       </ul>
     </nav>
     <div class="animated call">
-      <p>My name is Douglas Nonato. I'm a Service Designer. I've worked in several projects by taking part of every single step of the workflow production, providing me great experience with a 360º knowledge about the Digital World.&nbsp;<a href="hello" target="_blank">Check-out my presentation</a></p>
+      <p><span>🤯</span><a href="hello" target="_blank">Check-out my presentation&nbsp;</a>and find out about my accomplishments and what skills I developed on this journey, or get in touch&nbsp;<a href="mailto:dougnot@gmail.com">dougnot@gmail.com</a></p>
+      <ul class="links">
+        <li><a href="hello">About me</a></li>
+        <li><a href="hello/Douglas-Nonato-Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://br.linkedin.com/in/douglas-nonato" target="_blank">Linkedin</a></li>
+      </ul>
     </div>
   </div>
-  <div class="cd-main-content">
-    <div class="morph-wrap">
-      <svg width="1400" height="770" viewbox="0 0 1400 770" class="morph">
-        <path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"></path>
-      </svg>
-    </div>
-    <section id="intro" class="flexy flexy--full delay-loading">
+  <section id="intro" class="delay-loading">
+    <div class="content">
       <header></header>
-      <h1 id="rev-1" class="content__title cd-headline letters type"><span>Hello,&nbsp;</span><br class="desktop"><span>my name is&nbsp;</span><span class="highlight">Douglas Nonato.</span><br><span>I'm A&nbsp;</span><span class="cd-words-wrapper waiting"><b class="is-visible">Product designer</b><b>Project Manager</b><b>UX Designer</b></span><br><span>Scroll down and find out</span><br class="desktop"><span>how i can help you!</span></h1>
-      <h2 id="rev-2">Inspired by the Digital World, since 2008 I've been helping companies stand out in their segments. With a pretty solid visual and front-end background, I craft digital services with great experience at both a strategic and hands-on level. In the last years I've improved my knowledge as Project Manager working with Digital Products by applying Design Thinking approach into Digital Projects to match business strategies.</h2>
-    </section>
-    <section id="project2" class="flexy flexy--row flexy--full project parallax-area delay-loading">
-      <div class="hover"><a href="beauty-date-dashboard.html" data-type="page-transition" class="hover-effect">
-          <h2 data-parallax="0.7" class="content__title content__title--medium content__title--half content__title--right parallax-element">
-            <div id="rev-4" class="content__title__inner">Beauty Date</div><br>
-            <div id="rev-5" class="content__title__inner content__title__inner--offset-1"><span>SaaS dashboard</span></div>
-          </h2></a><a href="beauty-date-dashboard.html" data-type="page-transition" class="link">
-          <figure id="rev-3" data-parallax="0.1" class="moveLeft parallax-element"><img src="assets/images/works/beauty-date-dashboard/dashboard-beauty-date.jpg" alt="Beauty Date SaaS dashboard" class="content__image"></figure></a></div>
-    </section>
-    <section id="project3" class="flexy flexy--row flexy--full project parallax-area">
-      <div class="hover"><a href="beauty-date-site.html" class="link">
-          <figure id="rev-6" data-parallax="0.1" class="moveRight parallax-element"><img src="assets/images/works/beauty-date-web/web-beautydate.jpg" alt="Beauty Date Website" class="content__image"></figure></a><a href="beauty-date-site.html" class="hover-effect">
-          <h2 data-parallax="0.7" class="content__title content__title--medium content__title--half content__title--left parallax-element">
-            <div id="rev-7" class="content__title__inner">Beauty Date</div><br>
-            <div id="rev-8" class="content__title__inner content__title__inner--offset-2"><span>Marketplace</span></div>
-          </h2></a></div>
-    </section>
-    <section id="project4" class="flexy flexy--row flexy--full project parallax-area">
-      <div class="hover"><a href="guarde-mais-motion.html" class="hover-effect">
-          <h2 data-parallax="0.7" class="content__title content__title--medium content__title--half content__title--right parallax-element">
-            <div id="rev-10" class="content__title__inner">Guarde Mais</div><br>
-            <div id="rev-11" class="content__title__inner content__title__inner--offset-3"><span>Motion</span></div>
-          </h2></a><a href="guarde-mais-motion.html" class="link">
-          <figure id="rev-9" data-parallax="0.1" class="moveLeft parallax-element">
-            <video loop="" autoplay="" alt="Guarde Mais - Self Storage" title="Guarde Mais - Self Storage video">
-              <source type="video/webm" src="assets/images/works/guarde-mais-motion/guarde-mais-motion.webm">
-              <source type="video/mp4" src="assets/images/works/guarde-mais-motion/guarde-mais-motion.mp4">
-            </video>
-          </figure></a></div>
-    </section>
-    <section id="project5" class="flexy flexy--row flexy--full project parallax-area">
-      <div class="hover"><a href="qlance-site.html" class="link">
-          <figure id="rev-12" data-parallax="0.1" class="moveRight parallax-element"><img src="assets/images/works/qlance-web/web-qlance.jpg" alt="Qlance" class="content__image"></figure></a><a href="qlance-site.html" class="hover-effect">
-          <h2 data-parallax="0.7" class="content__title content__title--medium content__title--half content__title--left parallax-element">
-            <div id="rev-13" class="content__title__inner">Qlance</div><br>
-            <div id="rev-14" class="content__title__inner content__title__inner--offset-4"><span>Marketplace</span></div>
-          </h2></a></div>
-    </section>
-    <section id="project6" class="flexy flexy--row flexy--full project parallax-area last-shape"></section>
-    <section id="call-to-action">
-      <div class="flexy flexy--row"><a href="mailto:dougnot@gmail.com">If You have any questions or interest in my services, please don’t be shy, get in touch
-          <u>dougnot@gmail.com</u></a></div>
-    </section>
-    <footer>
-      <div class="content-warp">
+      <h1 id="rev-heading-1" class="content__title cd-headline letters type"><span>Hello,&nbsp;</span><br class="desktop"><span>my name is&nbsp;</span><span class="highlight">Douglas Nonato</span><br><span>👨‍💻 I'm a&nbsp;</span><span class="cd-words-wrapper waiting"><b class="is-visible">Project Manager</b><b>Product Designer</b><b>UX Designer</b></span></h1>
+      <h2 id="rev-heading-2">Inspired by the Digital World, since 2008 I've been helping companies stand out in their segments. With a pretty solid visual and front-end background, I craft digital services with great experience at both a strategic and hands-on level. In the last years I've improved my knowledge as Project Manager working with Digital Products by applying Design Thinking approach into projects to match business strategies.</h2>
+      <h3 id="rev-heading-3">Scroll down and find out what I can do!</h3>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="flexy">
+      <div class="project fadeIn"><a href="sebrae-portal-ecommerce.html" class="link">
+          <figure><img src="assets/images/works/sebrae-portal/portal-ecommerce-sebrae.jpg" alt="Sebrae Portal and E-commerce" class="content__image"></figure></a>
+        <div class="info"><small>#Jun_2020</small>
+          <h2 class="content__title">Sebrae's portal and e-commerce. The complete process of rebuild the main digital channel of a big institution.</h2>
+          <div>
+            <button onclick="window.location.href = 'sebrae-portal-ecommerce.html'" class="fxButton fxButton--border"><span class="fxButton__text">Check-out this project</span>
+              <div class="fxButton__border">Check-out this project</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project fadeIn"><a href="sebrae-covid-19-toolbox.html" class="link">
+          <figure><img src="assets/images/works/sebrae-toolbox/covid-19-toolbox-sebrae.jpg" alt="Sebrae Covid0-19 Toolbox" class="content__image"></figure></a>
+        <div class="info"><small>#May_2020</small>
+          <h2 class="content__title">A toolbox built in a month with 70 solutions to help entrepreneurs in COVID-19 times.</h2>
+          <div>
+            <button onclick="window.location.href = 'sebrae-covid-19-toolbox.html'" class="fxButton two fxButton--border two"><span class="fxButton__text two">Check-out this project</span>
+              <div class="fxButton__border two">Check-out this project</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project fadeIn"><a href="sebrae-design-sprint-prototype.html" class="link">
+          <figure><img src="assets/images/works/sebrae-design-sprint/sebrae-design-sprint-prototyping.jpg" alt="Sebrae Design Sprint Prototyping" class="content__image"></figure></a>
+        <div class="info"><small>#Jan_2020</small>
+          <h2 class="content__title">Design thinking and high-fidelity prototyping in a Design Sprint</h2>
+          <div>
+            <button onclick="window.location.href = 'sebrae-design-sprint-prototype.html'" class="fxButton three fxButton--border three"><span class="fxButton__text three">Check-out this project</span>
+              <div class="fxButton__border three">Check-out this project</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project fadeIn"><a href="calculo-juridico-dashboard.html" class="link">
+          <figure><img src="assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard.jpg" alt="Cálculo Jurídico SaaS Dashboard" class="content__image"></figure></a>
+        <div class="info"><small>#Sept_2018</small>
+          <h2 class="content__title">Redesign of Cálculo Jurídico Dashboard, a SaaS for Pension and Social Security Calculation.</h2>
+          <div>
+            <button onclick="window.location.href = 'calculo-juridico-dashboard.html'" class="fxButton four fxButton--border four"><span class="fxButton__text four">Check-out this project</span>
+              <div class="fxButton__border four">Check-out this project</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project fadeIn"><a href="beauty-date-dashboard.html" class="link">
+          <figure><img src="assets/images/works/beauty-date-dashboard/dashboard-beauty-date.jpg" alt="Beauty Date SaaS dashboard" class="content__image"></figure></a>
+        <div class="info"><small>#Apr_2018</small>
+          <h2 class="content__title">Redesign of Beauty Date dashboard, a salon management SaaS that provides online scheduling for customers.</h2>
+          <div>
+            <button onclick="window.location.href = 'beauty-date-dashboard.html'" class="fxButton five fxButton--border five"><span class="fxButton__text five">Check-out this project</span>
+              <div class="fxButton__border five">Check-out this project</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project fadeIn"><a href="beauty-date-marketplace.html" class="link">
+          <figure><img src="assets/images/works/beauty-date-marketplace/marketplace-beautydate.jpg" alt="Beauty Date Website" class="content__image"></figure></a>
+        <div class="info"><small>#Feb_2016</small>
+          <h2 class="content__title">Beauty Date Marketplace, an online booking service that connects customers to salons.</h2>
+          <div>
+            <button onclick="window.location.href = 'beauty-date-marketplace.html'" class="fxButton six fxButton--border six"><span class="fxButton__text six">Check-out this project</span>
+              <div class="fxButton__border six">Check-out this project</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial fadeIn">
+    <div data-speed="2" data-parallax="" class="content fadeIn parallax">
+      <p>"Douglas is a person you can count on inside and outside the company. He is Interested, original, talented, and strategically visionary that combines design, user experience, and business value creation activities. During the time we worked together, I tracked his evolution from designer to responsible product owner and focused on solving customer issues. His ability ranges the whole process of prototyping and product development."</p>
+      <div class="name"><span>Jorge Buczek —&nbsp;</span><strong>Director of Valoo</strong></div>
+    </div>
+    <div data-speed="6" data-parallax="" class="content fadeIn parallax">
+      <p>"Douglas is a very experienced product designer with a wide variety of skills. As a software developer I have recommended him to a few clients that were amazed with the results of his work. He is a good listener and works in a very practical way to find a good solution for each requirement. On the technical side, he is up to date with the latest tools of the trade, like Sketch and Figma."</p>
+      <div class="name"><span>Giovanni Bonetti —&nbsp;</span><strong>CTO of Cálculo Jurídico</strong></div>
+    </div>
+    <figure data-speed="4" data-parallax="" class="dots parallax"><img src="assets/images/dots.svg" alt="dots"></figure>
+  </section>
+  <section id="call-to-action">
+    <div class="flexy flexy--row"><a href="mailto:dougnot@gmail.com">If You have any questions or interest in my services, please don’t be shy, get in touch
+        <u>dougnot@gmail.com</u></a></div><a href="#top" class="scroll-to fadeIn"><span class="scroll-arrow"></span><span class="scroll-line"></span>
+      <div class="text"> Scroll</div></a>
+  </section>
+  <footer>
+    <div class="content-warp">
+      <div class="row flexy">
         <p>I'm always looking for challenges, willing to discuss and share ideas. Each project is an opportunity to learn something new.</p>
         <ul>
           <li><a href="hello">About me</a></li>
           <li><a href="hello/Douglas-Nonato-Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-        <ul>
           <li><a href="https://br.linkedin.com/in/douglas-nonato" target="_blank">Linkedin</a></li>
-          <li><a href="https://www.instagram.com/dougnot/" target="_blank">Instagram</a></li>
         </ul>
       </div>
-    </footer>
-  </div>
+      <div class="row">
+        <div class="code"><span><i></i>site coded by myself</span></div>
+      </div>
+    </div>
+  </footer>
 </main>
-<div class="cd-cover-layer"></div>
-<div class="cd-loading-bar"></div>
+<script src="assets/js/smoothAncor.js"></script>
 <script src="assets/js/clickEffect/clickEffect.js"></script>
 <script src="assets/js/animated-headline/animated-headline.js"></script>
 <script src="assets/js/jquery.easeScroll.js"></script>
-<script type="text/javascript">
-  $("html").easeScroll();
-  
-</script>
+<script type="text/javascript">$("html").easeScroll();</script>
+<script src="assets/js/parallax.js"></script>
 <script src="assets/js/anime.min.js"></script>
 <script src="assets/js/scrollMonitor.js"></script>
+<script src="assets/js/cursor.js"></script>
 <script src="assets/js/revealer/main.js"></script>
 <script src="assets/js/revealer/revealer-index.js"></script>
-<script src="assets/js/morph-bg/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/morph-bg/shapes.js"></script>
+<script src="assets/js/revealer/fadein-scroll.js"></script>
 <script src="assets/js/menu/classie.js"></script>
 <script src="assets/js/menu/overlay.js"></script>
+<script src="assets/js/btn-nearby/TweenMax.min.js"></script>
+<script src="assets/js/btn-nearby/nearby.js"></script>
+<script src="assets/js/btn-nearby/effect.js"></script>

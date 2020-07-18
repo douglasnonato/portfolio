@@ -1,6 +1,6 @@
 body {
-  color: #333;
-  background-color: #f7f9fb;
+  color: #202025;
+  background-color: #fafafa;
 }
 :focus {
   box-shadow: 0 0 2px rgba(150, 187, 238, 1);
@@ -278,14 +278,17 @@ header[role=banner] {
 
 .logo a {
   color: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 nav[role=navigation] li a {
-  background-color: rgba(50, 50, 50, .9);
+  background-color: #202025;
 }
 
 nav[role=navigation] li a:hover {
-  background-color: rgba(50, 50, 50, .7);
+  background-color: #4f49ff;
 }
 
 nav[role=navigation] li a,
@@ -298,37 +301,14 @@ nav[role=navigation] li.active a {
   color: #fff;
 }
 
-
-nav li.twitter a:hover {
-  background-color: #1da1f3;
-}
-nav li.portfolio a:hover, .final .portfolio:hover {
-  background-color: #077;
-}
-
-nav li.linkedin a:hover, .final .linkedin:hover {
-  background-color: #1683bb;
-}
-
-nav li.dribbble a:hover {
-  background-color: #ea4c89;
-}
-
-nav li.resume a:hover.final .resume:hover {
-  background-color: #d5b91b;
-}
-
-nav li.email a:hover, .final .email:hover {
-  background: #dd4b39;
-}
-
 .final .button{
-  background: rgba(50, 50, 50, .9);
+  background-color: #202025;
   border: none;
 }
 
 .final .button:hover{
   border: none;
+  background-color: #4f49ff;
 }
 
 
@@ -800,7 +780,6 @@ input[type="submit"],
 .button,.button:hover,button[type="submit"]:hover,input[type="submit"]:hover {
   color: #fff;
   background-color: #44d;
-  text-shadow: 0 1px 0 #123;
 }
 .button:active,button[type="submit"]:active,input[type="submit"]:active {
 background-color: #17d;

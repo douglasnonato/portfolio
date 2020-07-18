@@ -8,6 +8,16 @@
  * Copyright 2016, Codrops
  * http://www.codrops.com
  */
+
+{
+    setTimeout(() => document.body.classList.add('render'), 100);
+    const navigate = (linkEl) => {
+        document.body.classList.remove('render');
+        document.body.addEventListener('transitionend', () => window.location = linkEl.href);
+    };
+}
+
+
 ;(function(window) {
 
 	'use strict';

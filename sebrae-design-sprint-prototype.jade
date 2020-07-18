@@ -1,0 +1,203 @@
+include header
+
+extends ./header.jade
+
+block style
+  link(rel='stylesheet', type='text/css', href='assets/css/sebrae-ds.css')
+
+block meta
+  title Douglas Nonato | Sebrae Design Sprint prototype
+  meta(name='description', content='Design thinking and high-fidelity prototyping in a Design Sprint.')
+  meta(name='keywords', content='Sebrae, Design, Sprint, Usability, Thinker, Prototype, Prototyping')
+
+  //- Share image
+  meta(property='og:title', content='Douglas Nonato | Sebrae Design Sprint prototype')
+  meta(property='og:description', content='Design thinking and high-fidelity prototyping in a Design Sprint.')
+  meta(property='og:url', content='https://www.douglasnonato.com/sebrae-design-sprint-prototype.html')
+  meta(property='og:site_name', content='Douglas Nonato')
+  meta(property='og:image', content='https://www.douglasnonato.com/assets/images/works/sebrae-design-sprint/og-image.jpg')
+  meta(property='og:type', content='website')
+
+block content
+  //- Main
+  main#sebrae_ds
+    #top
+    include menu
+    #single-project
+      //- Content
+      section#header.web
+        .bg-text.fadeIn
+          | Seb
+          br
+          | rae
+        figure.viewDesktop.fadeIn
+          img(src='assets/images/works/sebrae-design-sprint/design-sprint-team.jpg', alt='Design Sprint Team')
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Sebrae
+          figure.viewMobile.fadeIn
+            img(src='assets/images/works/calculo-juridico-dashboard/calculo-juridico-dashboard-header.png', alt='Cálculo Jurídico SaaS dashboard')
+          #rev-2.block-right
+            h2 Design thinking and high-fidelity prototyping in a Design Sprint
+
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | Jan_2020
+          .col.position
+            small
+              | ROLE —
+            br
+            strong
+              | Design Thinker
+          .col.kind
+            small
+              | KIND —
+            br
+            strong
+              | Design Sprint
+
+      section
+        .flexy.intro
+          h3#rev-3 Overview
+          .textBorder
+            svg
+              text(x='0' y='550') 01
+          .description#rev-4
+            .col-half
+              p At the headquarters of Sebrae we have a LAB space, which assists us in conducting research, ideations and facilitating workshops for project development. Since the launch of this laboratory, I had the opportunity to participate in some of the Design Sprints that took place in this environment, and here I will present contributions and experiences that I had as a participant in one of them
+              p As it is an internal system of the company I will not go very deeply in the tools details, but rather 
+                span how we started from the immersion of the problems of the current tool until the validation of a high-fidelity prototype that went straight to the development.
+              p In a nutshell, the tool that is the object of the study has a very simple purpose, to provide detailed control of the values of the hirings that have not yet been paid, hence the name “Committed”.
+
+            .col-half
+              .card
+                h4 Problem
+                | Users trust more and feel more comfortable creating parallel excel spreadsheets with their own parameters than using the official tool.
+              .card
+                h4 Challenge
+                | How can we improve the system's functionality and usability for users to use the tool?
+              .card
+                h4 Goal
+                | System redesign delivered in a user-validated prototype.
+
+      section.description-section.pdTop-30vh
+        .flexy.process
+          .col-half.center
+            h3#rev-5 The process
+            .textBorder
+              svg
+                text(x='0' y='550') 02
+            .description#rev-6
+              p For this Design Sprint, 2 teams were assembled, and during 3 days we went through the stages of immersion, ideation, validation and prototyping.
+          .row-figure  
+            figure.fadeIn.flow
+              img(src='assets/images/works/sebrae-design-sprint/design-sprint-flow.svg', alt='Design Sprint Flow')
+                
+          .col-half.description.fadeIn.pdTop-60
+            h4 1. Immersion
+            p We begin with the heuristic analysis of current tool problems, and then we went to the interviews, trying to talk to 3 different user profiles:
+            blockquote
+              | A - Who always used.
+              br
+              | B - Occasionally uses.
+              br
+              | C - Only used parallel spreadsheets.
+
+            p In this step we had to create the interview script, synthesis and sharing the findings.
+           
+          .col-half.fadeIn.pdTop-60
+            figure
+              img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-interview.jpg', alt="Sebrae Design Sprint interview")
+              figcaption
+                | [interview]
+
+          .col-half.description.fadeIn.pdTop-120.center
+            h4 2. Ideation
+            p With the results of the interviews in hand, we went on to the ideation stage, starting by aligning 
+              span what the tool actually is and what it isn't
+              | and then everyone presented ideas of what and how the resources could be presented on the screens.
+
+          .flexBetween.matrix
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-concept-matrix.jpg', alt="Sebrae Design Sprint Concept Matrix")
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-feature-matrix.jpg', alt="Sebrae Design Sprint Feature Matrix")
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-priorization-matrix.jpg', alt="Sebrae Design Sprint Priorization Matrix")
+
+      section.description-section.pdTop-30vh
+        .flexy.validation
+          .col-half.description.fadeIn
+            h4 3. Validation
+            p At this stage, we begin to transfer ideas from paper to a navigable prototype, 
+              span as the designer of my team, I was responsible for developing the prototype.
+            p This prototype was used to carry out usability tests as well as a previous presentation to the managers of this project.
+            p For the usability test, we again invited different people from profiles A, B and C.
+
+          .col-half
+            .parallax.viewDesktop(data-speed='2', data-parallax='')
+              .row
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-usability-test.jpg', alt='Sebrae Design Sprint usability test')
+                  figcaption
+                    | [usability test]
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-presentation.jpg', alt='Sebrae Design Sprint presentation')
+                  figcaption
+                    | [presentation]
+              figure.lg.fadeIn
+                img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-prototype.jpg', alt="Sebrae Design Sprint Prototype")
+                figcaption
+                  | [prototype flow]
+            .viewMobile
+              .row
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-usability-test.jpg', alt='Sebrae Design Sprint usability test')
+                  figcaption
+                    | [usability test]
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-presentation.jpg', alt='Sebrae Design Sprint presentation')
+                  figcaption
+                    | [presentation]
+              figure.lg.fadeIn
+                img(src='assets/images/works/sebrae-design-sprint/sebrae-design-sprint-prototype.jpg', alt="Sebrae Design Sprint Prototype")
+                figcaption
+                  | [prototype flow]
+
+      section.description-section.pdTop
+        .flexy.process
+          .col-half.description.fadeIn.center
+            h4 4. Prototyping
+            p Due to the short time, in a Design Sprint, a high-fidelity prototype is not expected as a final delivery, however in this case, as it is a system of few screens, I chose to design components with a final look and full navigation.
+            p 
+              span In total I had a morning to build the prototype of the validation stage, another morning to combine the best features of both teams in my prototype.
+            p After the sprint design, this prototype was sent directly for development.
+
+      section.full-bg.mb-work.pdTop-60
+        .flexy
+          h3#rev-7 Outcome
+          .textBorder
+            svg
+              text(x='0' y='550') 03
+          figure.fadeIn
+            img(src='assets/images/works/sebrae-design-sprint/design-sprint-sebrae-prototype.png', alt='Design Sprint Prototype')
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='sebrae-portal-ecommerce.html')
+              img(src='assets/images/works/sebrae-portal/work-related.jpg', alt='Sebrae Portal and E-commmerce')
+              | Sebrae - Portal and E-commerce
+            a.item(href='sebrae-covid-19-toolbox.html')
+              img(src='assets/images/works/sebrae-toolbox/work-related.jpg', alt='Sebrae Covid-19 Toolbox')
+              | Sebrae - Covid-19 Toolbox
+
+      include footer
+
+  include scripts-project

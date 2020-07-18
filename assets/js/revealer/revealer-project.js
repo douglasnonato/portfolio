@@ -12,7 +12,7 @@ setTimeout(function(){
 		
 		var rev1 = new RevealFx(document.querySelector('#rev-1'), {
 			revealSettings : {
-				bgcolor: '#D4EA01',
+				bgcolor: '#4f49ff',
 				onCover: function(contentEl, revealerEl) {
 					contentEl.style.opacity = 1;
 				}
@@ -22,7 +22,7 @@ setTimeout(function(){
 
 		var rev2 = new RevealFx(document.querySelector('#rev-2'), {
 			revealSettings : {
-				bgcolor: '#fff',
+				bgcolor: '#202025',
 				delay: 500,
 				direction: 'rl',
 				onCover: function(contentEl, revealerEl) {
@@ -38,7 +38,7 @@ setTimeout(function(){
 			watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
 			rev3 = new RevealFx(scrollElemToWatch_1, {
 				revealSettings : {
-					bgcolor: '#D4EA01',
+					bgcolor: '#4f49ff',
 					onCover: function(contentEl, revealerEl) {
 						contentEl.style.opacity = 1;
 					}
@@ -46,7 +46,7 @@ setTimeout(function(){
 			}),
 			rev4 = new RevealFx(document.querySelector('#rev-4'), {
 				revealSettings : {
-					bgcolor: '#fff',
+					bgcolor: '#202025',
 					delay: 250,
 					direction: 'rl',
 					onCover: function(contentEl, revealerEl) {
@@ -65,7 +65,7 @@ setTimeout(function(){
 			watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -300),				
 			rev5 = new RevealFx(scrollElemToWatch_2, {
 				revealSettings : {
-					bgcolor: '#D4EA01',
+					bgcolor: '#4f49ff',
 					onCover: function(contentEl, revealerEl) {
 						contentEl.style.opacity = 1;
 					}
@@ -73,7 +73,7 @@ setTimeout(function(){
 			}),
 			rev6 = new RevealFx(document.querySelector('#rev-6'), {
 				revealSettings : {
-					bgcolor: '#fff',
+					bgcolor: '#202025',
 					delay: 250,
 					direction: 'rl',
 					onCover: function(contentEl, revealerEl) {
@@ -92,17 +92,7 @@ setTimeout(function(){
 			watcher_3 = scrollMonitor.create(scrollElemToWatch_3, -300),				
 			rev7 = new RevealFx(scrollElemToWatch_3, {
 				revealSettings : {
-					bgcolor: '#D4EA01',
-					onCover: function(contentEl, revealerEl) {
-						contentEl.style.opacity = 1;
-					}
-				}
-			}),
-			rev8 = new RevealFx(document.querySelector('#rev-8'), {
-				revealSettings : {
-					bgcolor: '#fff',
-					delay: 250,
-					direction: 'rl',
+					bgcolor: '#4f49ff',
 					onCover: function(contentEl, revealerEl) {
 						contentEl.style.opacity = 1;
 					}
@@ -111,8 +101,23 @@ setTimeout(function(){
 
 		watcher_3.enterViewport(function() {
 			rev7.reveal();
-			rev8.reveal();
 			watcher_3.destroy();
+		});
+
+		var scrollElemToWatch_4 = document.getElementById('rev-9'),
+			watcher_4 = scrollMonitor.create(scrollElemToWatch_4, -300),				
+			rev9 = new RevealFx(scrollElemToWatch_4, {
+				revealSettings : {
+					bgcolor: '#4f49ff',
+					onCover: function(contentEl, revealerEl) {
+						contentEl.style.opacity = 1;
+					}
+				}
+			});
+
+		watcher_4.enterViewport(function() {
+			rev9.reveal();
+			watcher_4.destroy();
 		});
 
 	}

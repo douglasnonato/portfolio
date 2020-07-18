@@ -1,26 +1,15 @@
 /* Menu */
 
 ::-moz-selection { /* Code for Firefox */
-    background: #D4EA01;
-    color: #000;
-}
-
-::selection {
-    background: #D4EA01;
+    background: #4f49ff;
     color: #000;
 }
 
 .sidebar{
-  top: 115px;
-  left: 2vw;
+  top: 125px;
+  left: 20px;
   z-index: 9;
   position: fixed;
-}
-
-@media screen and (max-width: 64em) {
-  .sidebar{
-    top: 110px;
-  }
 }
 
 .menu__handle {
@@ -33,23 +22,25 @@
   transition: 1s;
   position: absolute;
   left: 10px;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 38.3em) {
   .sidebar{
     top: 0;
     display: flex;
-    justify-content: space-around;
-    width: 100vw;
+    justify-content: space-between;
+    width: 91vw;
     left: 0;
-    background: #202026;
-    padding: 20px 5vw 10px;
+    padding: 20px 20px 15px;
+    background-color: #fafafa;
   }
   .menu-overlay .sidebar{
     background: transparent;
   }
   .menu__handle {
     position: unset;
+    margin-top: -4px;
   }
 }
 
@@ -57,11 +48,11 @@
   height: 2px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  margin-bottom: 8px;
+  margin-top: 8px;
   display: block;
   text-indent: 99999px;
   color: #fff;
-  border-bottom: 0.1em solid #fff;
+  border-bottom: 3px solid #202025;
 }
 
 .menu__handle span:nth-of-type(1){
@@ -78,7 +69,7 @@
 
 .menu__handle:hover span{
   width: 100% !important;
-  border-color: rgb(212, 235, 1)
+  border-color: #4f49ff;
 }
 
 /* Menu overlay */
@@ -89,7 +80,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(10, 10, 10, 0.98);
+  background: #fafafa;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -107,11 +98,12 @@
   border: none;
   outline: none;
   background: transparent;
-  color: #5F5E66;
-  font-size: 34px;
+  /*color: #5F5E66;*/
+  font-size: 40px;
   line-height: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 38.3em) {
@@ -119,31 +111,37 @@
     width: unset;
     height: unset;
   }
+  .menu__handle span{
+    margin: 0 0 5px 0;
+  }
+  .menu-overlay #trigger-close-overlay {
+    margin-top: 0;
+  }
 }
 
 .menu-overlay #trigger-close-overlay:hover {
-  color: #fff;
+  color: #4f49ff;
 }
 
 .sidebar .home{
   display: block;
   transform: rotate(270deg);
-  color: #fff;
-  font-weight: 600;
-  font-size: 12px;
+  color: #202025;
+  font-weight: 700;
+  font-size: 14px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .sidebar.index .home{
   position: absolute;
-  left: -36px;
+  left: -45px;
   top: 20px;
-  width: 110px;
+  width: 130px;
 }
 
 .sidebar .home:hover{
-  color: #5F5E66;
+  color: #4f49ff;
 }
 
 @media screen and (max-width: 38.3em) {
@@ -156,7 +154,7 @@
 }
 
 .sidebar .line{
-  border-left: 1px solid #fff;
+  border-left: 3px solid #202025;
   height: 20vh;
   margin: 50px 0 50px 20px;
 }
@@ -170,13 +168,13 @@
   .sidebar .line{
     width: 40vw;
     height: 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #202025;
     margin: 8px 0;
     border-left: none;
   }
   .sidebar.index .line{
     height: 0;
-    width: 20vw;
+    width: 30vw;
     margin: 9px;
   }
 }
@@ -192,23 +190,77 @@
 .menu-overlay .call p{
   line-height: 34px;
   font-size: 18px;
-  max-width: 410px;
+  max-width: 430px;
   margin: 0 auto;
+  font-weight: 600;
+}
+
+.menu-overlay .call p span{
+  display: block;
+  font-size: 70px;
+  margin: 40px 0 20px;
 }
 
 .menu-overlay .call p a{
-  color: rgb(212, 235, 1);
+  color: #4f49ff;
+}
+
+.menu-overlay ul.links{
+  max-width: 430px;
+  margin: 40px auto;
+  display: block;
+}
+
+.menu-overlay ul.links li{
+  list-style: none;
+  margin-right:28px;
+  text-align: right;
+  width: auto;
+}
+
+.menu-overlay ul.links li a{
+  position: relative;
+  padding-bottom: 5px;
+  color: #202025;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 15px;
+}
+
+.menu-overlay ul.links li a:hover{
+  color: #fff;
+}
+
+.menu-overlay ul.links li a:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #4f49ff;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: -1;
+}
+
+.menu-overlay ul.links li a:hover:after{
+  height: calc(100% + 5px);
+  width: calc(100% + 20px);
+  left: -10px;
 }
 
 @media screen and (max-width: 64em) {
-  .menu-overlay .call p{
+  .menu-overlay .call p, .menu-overlay ul.links{
     max-width: 78vw;
     margin: 0 0 0 14vw;
   }
 }
 
 @media screen and (max-width: 48em) {
-  .menu-overlay .call {
+  .menu-overlay .call p{
     display: none;
   }
 }
@@ -219,7 +271,7 @@
   margin: 60px 0 0 15vw;
 }
 
-.menu-overlay nav.hide {
+/*.menu-overlay nav.hide {
   display: none;
 }
 
@@ -229,7 +281,7 @@
 
 .menu-overlay nav.backup.show {
   display: block;
-}
+}*/
 
 .menu-overlay ul {
   list-style: none;
@@ -238,15 +290,13 @@
   display: inline-block;
   height: 100%;
   position: relative;
-  width: 400px;
-  border-right: 1px solid #1f1f1f;
+  width: 600px;
 }
 
 .menu-overlay ul li{
-  margin: 4vh 0;
+  margin: 3vh 0;
   display: inline-block;
   width: 100%;
-  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 64em) {
@@ -279,23 +329,28 @@
     margin: 2vh 0;
   }
 }
+@media screen and (max-width: 38.3em) {
+  .menu-overlay ul {
+    max-height: 82vh;
+    overflow: hidden;
+  }
+}
 
 .menu-overlay ul li a{
-  color: #5F5E66;
+  color: #d9d7e3;
   display: block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
 }
 
 .menu-overlay ul li a:hover{
-  color: #fff;
+  color: #202025;
 }
 
 .menu-overlay ul li a span{
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   float: left;
   width: 8vw;
   max-width: 90px;
@@ -304,35 +359,66 @@
 
 
 .menu-overlay ul li a strong{
-  font-size: 36px;
+  font-size: 32px;
   float: left;
   text-transform: uppercase;
   line-height: 29px;
   padding-left: 50px;
-  width: 280px;
+  width: 500px;
   position: relative;
 }
 
+.menu-overlay ul li a strong small{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 38.3em) {
+  .menu-overlay ul li a strong small{
+    font-size: 16px;
+  }
+  .menu-overlay ul.links{
+    margin: -55px 0 0 0;
+    overflow: inherit;
+    border-top: 1px solid #d9d6e3;
+  }
+  .menu-overlay ul.links li {
+    list-style: none;
+    margin: 30px auto 0;
+    text-align: center;
+    width: 49%;
+  }
+  .menu-overlay ul.links li a{
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+
 .menu-overlay ul li a:hover strong small{
-  color: rgb(212, 235, 1);
+  color: #4f49ff;
   transition: all 0.5s;f
 }
 
 @media screen and (max-width: 64em) {
+  .menu-overlay ul li a strong{
+    font-size: 20px;
+    line-height: 22px;
+  }
   .menu-overlay ul li a{
-    color: #fff;
+    color: #202025;
   }
   .menu-overlay ul li a strong small{
-    color: rgb(212, 235, 1);
+    color: #4f49ff;
   }
   .menu-overlay ul li a span{
     width: 30px;
+    font-size: 14px;
+    margin-bottom: -20px;
   }
 }
 
 .menu-overlay ul li a strong:before{
   content: '';
-  background: #5F5E66;
+  background: #d9d7e3;
   height: 3px;
   width: 40px;
   display: block;
@@ -345,7 +431,7 @@
 }
 
 .menu-overlay ul li a:hover strong:before{
-  background: rgb(212, 235, 1);
+  background: #4f49ff;
 }
 
 /* Effects */
@@ -441,6 +527,12 @@
     transition-delay: 0.4s;
 }
 
+.menu-overlay li:nth-of-type(6) strong.slideInLeft{
+    animation-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
 .menu-overlay strong.slideOutLeft {
   animation-name: slideOutLeft;
   opacity: 0;
@@ -470,6 +562,12 @@
     animation-delay: 0.4s;
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
+}
+
+.menu-overlay li:nth-of-type(6) strong.slideOutLeft{
+    animation-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
 }
 
 .menu-overlay a span.slideInUp {
@@ -505,6 +603,13 @@
     transition-delay: 0.7s;
 }
 
+.menu-overlay li:nth-of-type(6) a span.slideInUp{
+    animation-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+
 .menu-overlay a span.slideOutDown {
   animation-name: slideOutDown;
   opacity: 0;
@@ -533,6 +638,12 @@
     animation-delay: 0.4s;
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
+}
+
+.menu-overlay li:nth-of-type(5) a span.slideOutDown{
+    animation-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
 }
 
 .menu-overlay .call.slideInUp{
@@ -642,5 +753,105 @@
   to {
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* Scroll */
+
+.scroll-to{
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    color: #000;
+    z-index: 8;
+    transition: 0.3s cubic-bezier(0.65, 0, 0.17, 0.98);
+    right: 20px;
+    bottom: 330px;
+}
+
+.scroll-to.scroll-project{
+    bottom: unset;
+    top: 540px;
+}
+
+@media screen and (max-width: 38.3em){
+  .scroll-to.scroll-project{
+    top: 67vh;
+  }
+}
+
+.scroll-index{
+  bottom: 220px;
+}
+
+.scroll-to:hover {
+    padding-right: 40px;
+    color: #000;
+}
+
+.scroll-arrow {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url(../images/arrow-scroll.png) no-repeat center center / 9px 13px;
+}
+
+.scroll-line {
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    background: #000;
+    position: relative;
+    top: -4px;
+    left: -6px;
+    transition: 0.3s cubic-bezier(0.65, 0, 0.17, 0.98);
+}
+
+.scroll-to:hover .scroll-line {
+    width: 50px;
+}
+
+.scroll-project .scroll-arrow{
+background-image: url(../images/arrow-scroll-light.png)
+}
+.scroll-project .scroll-line{
+  background: #fafafa;
+}
+.scroll-to.scroll-project, .scroll-to.scroll-project:hover{
+  color: #fafafa;
+} 
+
+#call-to-action .scroll-to {
+    transform: rotate(90deg);
+    bottom: 80px;
+    padding-bottom: 10px;
+    right: 60px;
+
+}
+
+#call-to-action .scroll-to .text{
+  display: inline-block;
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 42em){
+  #call-to-action .scroll-to{
+    top: 730px;
+    right: 30px;
+  }
+  #call-to-action .scroll-arrow{
+    background-image: url(../images/arrow-scroll-light.png)
+  }
+  #call-to-action .scroll-line{
+    background: #fafafa;
+  }
+  #call-to-action .scroll-to{
+    color: #fafafa;
   }
 }

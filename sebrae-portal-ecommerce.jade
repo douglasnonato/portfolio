@@ -1,0 +1,459 @@
+include header
+
+extends ./header.jade
+
+block style
+  link(rel='stylesheet', type='text/css', href='assets/css/sebrae.css')
+
+block meta
+  title Douglas Nonato | Sebrae Portal and E-commerce
+  meta(name='description', content='A content portal with an e-commerce of services and courses for entrepreneurs')
+  meta(name='keywords', content='Usability, Design, E-commerce, UX, Portal, Sebrae, Research')
+
+  //- Share image
+  meta(property='og:title', content='Douglas Nonato | Sebrae Portal and E-commerce')
+  meta(property='og:description', content='A content portal with an e-commerce of services and courses for entrepreneurs')
+  meta(property='og:url', content='https://www.douglasnonato.com/sebrae-portal-ecommmerce.html')
+  meta(property='og:site_name', content='Douglas Nonato')
+  meta(property='og:image', content='https://www.douglasnonato.com/assets/images/works/sebrae-portal/og-image.jpg')
+  meta(property='og:type', content='website')
+
+block content
+  //- Main
+  main#sebrae
+    #top
+    include menu
+    #single-project
+      //- Content
+      section#header.web
+        .bg-text.fadeIn
+          | Seb
+          br
+          | rae
+        figure.viewDesktop.fadeIn
+          img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-cover.jpg', alt='Sebrae Portal and E-commerce')
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Sebrae
+          figure.viewMobile.fadeIn
+            img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae.png', alt='Sebrae Portal and E-commerce')
+          #rev-2.block-right
+            h2 A content portal with an e-commerce of services and courses for entrepreneurs
+
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | Jun_2020
+          .col.position
+            small
+              | ROLE —
+            br
+            strong
+              | Project Manager
+          .col.kind 
+            small
+              | KIND —
+            br
+            strong
+              | Portal and E-commerce
+
+      section
+        .flexy.intro
+          h3#rev-3 Context
+          .textBorder
+            svg
+              text(x='0' y='550') 01
+          .description
+            .col-half 
+              figure.sebrae#rev-4.viewDesktop.parallax(data-speed='2', data-parallax='')
+                img(src='hello/img/sebrae.jpg', alt="Sebrae Headquarters")
+                figcaption
+                  | [Sebrae headquarters]
+            .col-half
+              .fadeIn
+                p Founded in 1972, Sebrae is present throughout Brazil, acting as a stimulating agent of entrepreneurship, helping in the competitiveness and sustainability of small business.
+                p So many years of history has led to a portfolio of over 200 products, including support for those who want to formalize their business, business consulting, training courses and events, mostly face-to-face solutions. 
+                  span With a network of over 1800 service points across the country, the company's business model has always been based on presential services.
+              figure.sebrae#rev-4.viewMobile
+                img.fadeIn(src='hello/img/sebrae.jpg', alt="Sebrae Headquarters")
+                figcaption
+                  | [Sebrae headquarters]
+              .fadeIn
+                h4 Without a purpose
+                  br
+                  | there is no story
+                p Although it has a strong capillarity power of service points, Sebrae has been working hard in recent years to make its digital transformation, and the team I work with is responsible for developing new fully digital services that can be used individually or as a support to our presential products.
+                p As we began to develop new solutions, we had to rethink the way we offer our services, and the main channel for that was the institutional portal. This site receives millions of users per year organically, but with low performance, due to the very poor usability and as found in the search, too much content without the right direction, making it difficult for people to find what they were looking for.
+            
+
+      section.description-section.pdTop-30vh
+        .flexy.strategy
+          .col-half.center
+            h3#rev-5 The process
+            .textBorder
+              svg
+                text(x='0' y='550') 02
+            .description
+              #rev-6
+                p I was responsible for managing the entire process of rethinking from the scratch the Paraná portal, a platform that consists of 3 different parts, Content, Store and Logged Area. Below I will describe some of the project stages. 
+
+          .row-figure-half
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-call-center.jpg', alt="Sebrae Portal Call Center's interview")
+              figcaption
+                | [call center's interview]
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-client-journey.jpg', alt='Sebrae Portal Client Journey')
+              figcaption
+                | [client journey]
+          .row-figure
+            figure.fadeIn
+              img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-research.jpg', alt='Sebrae Portal Research')
+              figcaption
+                | [research tabulation]
+
+          .col-half.description.fadeIn.center
+                h4 Strategy and Research
+                p The project strategy was built on the definition of 4 initial business objectives, which together set out to make the portal part of the company's business model, not just a passive channel. The next step was to identify and understand how people related to the platform, not just digital users but also customers who come to our offices, attendants and project managers.
+                p To identify all stakeholder needs, 
+                  span a battery of qualitative surveys was conducted with more than 200 people from 3 groups, our customers, our call center team and internal employees.
+                  |  Once tabulated, this information was cross-referenced with the 4 business objectives, becoming the database for insights and improvements. To finish the process, we draw the user journey, which were divided into 6 personas.
+
+      section.description-section.pdTop-30vh
+        .flexy.ideation
+          .col-half.description.fadeIn
+            h4 Ideation
+            p The first steps of the ideation stage were about the CMS, layout sketches and meetings with project managers, who would use this interface to communicate their projects to the business community.
+            p Furher, with a high fidelity semi-navigable prototype, we conducted a usability test using the RITE method, which instead of waiting until the end of the study to gather the findings and suggest improvements, once a problem was identified, the fix was evaluated and implemented for the next participant.
+            P As a final touch, instead of using stockphotos, we decided to use real Sebrae clients to illustrate the homepage, inviting them to an exclusive photo shoot at their own establishments. The goal was to humanize the portal by bringing real customers as social proof, also becoming a recognition action for successful clients.
+
+          .col-half
+            .parallax.viewDesktop(data-speed='2', data-parallax='')
+              figure.lg.fadeIn
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-sketch.jpg', alt='Sebrae Portal Sketch')
+                figcaption
+                  | [first sketchs]
+              .row
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-usability-test.jpg', alt='Sebrae Portal Usability test')
+                  figcaption
+                    | [usability test]
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-photo-shoot.jpg', alt='Sebrae Portal Photo Shoot')
+                  figcaption
+                    | [photo shoot]
+            .viewMobile
+              figure.lg.fadeIn
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-sketch.jpg', alt='Sebrae Portal Sketch')
+                figcaption
+                  | [first sketchs]
+              .row
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-usability-test.jpg', alt='Sebrae Portal Usability test')
+                  figcaption
+                    | [usability test]
+                figure.fadeIn
+                  img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-photo-shoot.jpg', alt='Sebrae Portal Photo Shoot')
+                  figcaption
+                    | [photo shoot]
+
+      section.description-section
+        .flexy.strategy
+          .col-half.description.fadeIn.center
+            h4 Development
+            P The development was carried out by a bidding company, which I was responsible for its briefing and homologation of the sprints.
+            p The main difficulty in development was due to the fact that the content part of the site was built on wordpress, to give us freedom to create any type of page without the need for development, and the part of the store and logged area in angular, however, 
+              span both interfaces needed to exchange information with each other.
+              //- span An extra point is that this was a project developed with PWA.
+
+            h4.pdTop-60 Content
+            p To keep content true to our social mission and relevant to the consumer as a market company, we hired a specialized content and SEO agency to update this publications and set up meta data for better search engine ranking. 
+              span We managed to publish more than 700 contents, against just over 180 from the previous site. 
+            p Part of our customer support is carried out by our call center through digital channels, and with the aim of automating this process, 
+              span together with another team we have developed a channel with chatbot to solve simpler issues,
+              |  without the need for human assistance in these cases.
+              
+
+      section.full-bg.mb-work
+        .flexy
+          h3#rev-7 Outcome
+          .textBorder
+            svg
+              text(x='0' y='550') 03
+          figure.fadeIn
+            img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-home-1.png', alt='Sebrae Portal Home')
+
+            //- Tooltip
+            .tooltip.twenty.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content The shopping cart is now visible across the site.
+            .tooltip.one.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Main call to action that directs the user to the journey corresponding to his persona.
+            .tooltip.three.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Accessibility feature for people with visual needs.
+            .tooltip.two.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Real customer photos to illustrate the site.
+            .tooltip.four.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content A session with upcoming courses, enabling home conversions and bringing more dynamism to the page.
+            .tooltip.five.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Lead capture field, with the option to select between 8 content journeys.
+            .tooltip.six.fadeIn(data-type='tooltip')
+              .tooltip__trigger(role='tooltip')
+                span.tooltip__trigger-text More
+              .tooltip__base
+                svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                  path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                .tooltip__content Most popular services filtered by interest.
+
+          figure.fadeIn
+            img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-home-2.png', alt='Sebrae Portal home')
+
+          figure
+            img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-home-3.png', alt='Sebrae Portal home')
+
+      section.mobile
+        figure.fadeIn
+          img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-mobile.png', alt='Sebrae Portal and E-commerce - mobile')
+          //- Tooltip
+          .tooltip.mobile.fadeIn(data-type='tooltip')
+            .tooltip__trigger(role='tooltip')
+              span.tooltip__trigger-text More
+            .tooltip__base
+              svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+              .tooltip__content Fully mobile friendly.
+
+      section.video.fadeIn
+        .flexy.pdBot-100
+          h4 Microinteractions
+          .description
+            p Showing attention to detail, we developed some feedback animations throughout the site, already in the first seconds the user will be impacted by a modern experience.
+          video(loop='', autoplay='', muted, alt='Sebrae Portal Microinteraction', title='Sebrae Portal Microinteraction')
+            source(type='video/webm', src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae_microinteraction.webm')
+            source(type='video/mp4', src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae_microinteraction.mp4')
+          script.
+            document.getElementById('vid').play();
+
+      section.half.bg-grey
+        .flexy.fadeIn 
+          h4 Content
+          p Some of the new content pages features
+          .col
+            .item.fadeIn 
+              h5 Results
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-results.jpg', alt='Sebrae Portal Results')
+                //- Tooltip
+                .tooltip.eight.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Search engine that not only looks for portal content such as Articles, Ebooks and Videos, but also the Store Courses and Posts from our digital community.
+            .item.fadeIn 
+              h5 Video Series
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-video-series.jpg', alt='Sebrae Portal Video Series')
+                //- Tooltip
+                .tooltip.nine.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Dedicated section for our webinars
+          .col
+            .item.fadeIn 
+              h5 404 page
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-404-page.jpg', alt='Sebrae Portal 404 Page')
+                //- Tooltip
+                .tooltip.ten.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Call to the 6 user journeys.
+            .item.fadeIn 
+              h5 Contact
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-contact.jpg', alt='Sebrae Portal Contact')
+                //- Tooltip
+                .tooltip.thirteen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Map with all points of service of the state\
+            .item.fadeIn 
+              h5 FAQ with Chatbot
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-chatbot.jpg', alt='Sebrae Portal Chatbot')
+
+      section.half
+        .flexy.fadeIn 
+          h4 E-commerce
+          p Some of the new store pages features
+          .col
+            .item.fadeIn 
+              h5 Store home
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-e-commerce.jpg', alt='Sebrae Portal Store home')
+                //- Tooltip
+                .tooltip.fourteen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Most popular list.
+                .tooltip.fifteen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content A bunch of new filters.
+            .item.fadeIn 
+              h5 Product
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-product.jpg', alt='Sebrae Portal Product Page')
+                //- Tooltip
+                .tooltip.sixteen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content More complete program content structure than previous model
+                .tooltip.seventeen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Complete rating display.
+          .col
+            .item.fadeIn 
+              h5 Calendar view
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-calendar-view.jpg', alt='Sebrae Portal Calendar view')
+                //- Tooltip
+                .tooltip.eighteen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Event calendar view.
+                      br
+                      | A big request.
+            .item.fadeIn 
+              h5 Checkout
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-checkout.jpg', alt='Sebrae Portal Checkout')
+                //- Tooltip
+                .tooltip.nineteen.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Purchase without the need to be logged in or have an account.
+
+      section.half.bg-gradGrey
+        .flexy.fadeIn 
+          h4 Account
+          p Some of the new account pages features
+          .col
+            .item.fadeIn 
+              h5 Account
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-account-page.jpg', alt='Sebrae Portal Account')
+                //- Tooltip
+                .tooltip.eleven.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content Recommended content and courses based on selected topics of interest
+          .col
+            .item.fadeIn 
+              h5 Connected tools
+              figure
+                img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-connected-tools.jpg', alt='Sebrae Portal Connected tools')
+                //- Tooltip
+                .tooltip.eleven.fadeIn(data-type='tooltip')
+                  .tooltip__trigger(role='tooltip')
+                    span.tooltip__trigger-text More
+                  .tooltip__base
+                    svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                      path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+                    .tooltip__content With a single account the user can login to several of our digital tools, so we created a dashboard where he can check which tools he has already connected and encourage him to use the others available.
+      
+      section.press
+        figure.fadeIn
+          img(src='assets/images/works/sebrae-portal/portal-ecommerce-sebrae-press-release.jpg', alt='Sebrae Press release')
+        .content
+          .description
+            .highlight
+              h6 Featured in more than 10 news portals.
+              
+      section.pdTop-30vh
+         .flexy
+          .description
+            p.highlight
+              img(src='assets/images/analytics.svg', alt='Analytics')
+              | Numbers coming soon
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='calculo-juridico-dashboard.html')
+              img(src='assets/images/works/calculo-juridico-dashboard/work-related.jpg', alt='Cálculo Jurídico SaaS Dashboard')
+              | Cálculo Jurídico - SaaS Dashboard
+            a.item(href='sebrae-design-sprint-prototype.html')
+              img(src='assets/images/works/sebrae-design-sprint/work-related.jpg', alt='Sebrae Design Sprint')
+              | Sebrae - Design sprint
+
+      include footer
+
+  include scripts-project
