@@ -228,3 +228,37 @@ new Nearby(bttnsix, {
         });
     }
 });
+
+/**************** Button seven ****************/
+const bttnseven = document.querySelector('.fxButton--border.seven');
+const bttnBorderseven = bttnseven.querySelector('.fxButton__border.seven');
+const borderIntervalseven = {from: 0.1, to: 1};
+
+const bttnGraphicseven = bttnseven.querySelector('.fxButton__graphic.seven');
+const bttnTextseven = bttnseven.querySelector('.fxButton__text.seven');
+const graphicIntervalseven = {from: 60, to: 0};
+const textIntervalseven = {from: 0, to: -20};
+
+new Nearby(bttnseven, {
+    onProgress: (distance) => {
+        const border = lineEq(borderIntervalseven.from, borderIntervalseven.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnBorderseven, 0.5, {
+            ease: 'Expo.easeOut',
+            opacity: `${Math.max(Math.min(border,borderIntervalseven.to),borderIntervalseven.from)}`
+        });
+
+        const tx = lineEq(graphicIntervalseven.from, graphicIntervalseven.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnGraphicseven, 0.5, {
+            ease: 'Expo.easeOut',
+            x: `${Math.min(tx,graphicInterval.from)}`
+        });
+
+        const txText = lineEq(textIntervalseven.from, textIntervalseven.to, distanceThreshold.max, distanceThreshold.min, distance);
+        const bw = lineEq(grayscaleInterval.from, grayscaleInterval.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnTextseven, 0.5, {
+            ease: 'Expo.easeOut',
+            x: `${Math.min(txText,graphicIntervalseven.to)}`,
+            filter: `grayscale(${Math.min(bw,grayscaleInterval.from)})`
+        });
+    }
+});

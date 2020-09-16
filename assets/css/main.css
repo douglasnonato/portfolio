@@ -500,6 +500,30 @@ section#projects .flexy{
   width: 60%;
 }
 
+.project.course{
+    border: 1px solid #4f49ff;
+    padding: 20px 20px 0;
+}
+
+@media screen and (max-width: 1091px){
+  .project.course{
+    padding-bottom: 20px;
+  }
+}
+
+.project.course:before{
+  content: 'course';
+  position: absolute;
+  background-color: #4f49ff;
+  left: -20px;
+  color: #fff;
+  padding: 10px;
+  font-weight: 700;
+  top: 40px;
+  border-radius: 2px;
+  z-index: 99;
+}
+
 /* Animated headline  */
 
 .cd-headline {
