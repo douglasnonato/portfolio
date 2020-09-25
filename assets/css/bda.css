@@ -123,3 +123,7 @@
   top: -420px;
   left: -100px;
 }
+
+.description .highlight{
+  width: unset;
+}
