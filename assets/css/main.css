@@ -402,8 +402,10 @@ li{
 
 #intro h3{
   color: #4f49ff;
-  font-size: 32px;
+  font-size: 20px;
   display: inline-block;
+  margin-top: 50px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 64em) {
