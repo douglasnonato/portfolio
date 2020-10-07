@@ -509,6 +509,7 @@ section#projects .flexy{
 .project.course{
     border: 1px solid #4f49ff;
     padding: 20px 20px 0;
+    position: relative;
 }
 
 @media screen and (max-width: 1091px){
