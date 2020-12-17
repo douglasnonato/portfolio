@@ -1,0 +1,334 @@
+@import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+@font-face {
+  font-family: 'Princess';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/PrincesSANDTHEFROG.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+img, video {
+    max-width: unset;
+}
+
+#out{
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Princess';
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+#back{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+ 	width: 100%;
+ 	height: 100%;
+ 	overflow: hidden;
+ }
+
+ #back img{
+	width: auto !important;
+    position: absolute;
+    height: 100%;
+    max-width: unset;
+ }
+
+h1{
+	font-size: 40px;
+}
+
+h2{
+	line-height: 26px;
+    font-size: 18px;
+}
+
+p{
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 19px;
+}
+
+.form-control {
+  -webkit-transition: none;
+  transition: none;
+  width: 32px;
+  height: 32px;
+  text-align: center
+}
+
+.form-control:focus {
+  color: #3F4254;
+  background-color: #ffffff;
+  border-color: #884377;
+  outline: 0;
+}
+
+.form-control.form-control-solid {
+  background-color: #F3F6F9;
+  border-color: #F3F6F9;
+  color: #3F4254;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+  background-color: #EBEDF3;
+  border-color: #EBEDF3;
+  color: #3F4254;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#form{
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100vw;
+    background-color: #000000b8;
+    /*max-width: 100vw;*/
+	padding: 70px;
+}
+
+@media (max-width: 600px){
+  #form{
+    padding: 20px;
+  }
+}
+
+.key{
+	flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+hr{
+	border: 1px dashed #b58d4a;
+	margin: 20px 0;
+}
+
+.m-2{
+	margin: 3px !important;
+}
+
+/*a{
+	background-color: #b68d49;
+    width: 260px;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+a:hover{
+
+}*/
+
+.form-control.form-control-solid {
+    background-color: #fff !important;
+}
+
+/*	MODAL */
+
+#modal .container video#myVideo {
+  mix-blend-mode: multiply;
+  top: calc(50% + 40px);
+  position: absolute;
+  left: 0;
+  width: 140vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  margin: auto;
+  z-index: -10;
+  /*left: -15vw;*/
+  max-width: 100vw;
+}
+
+#modal .container p{
+  font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+
+#modal .container a{
+  display: none;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#overlay{
+    background-color: #000;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: all 2s ease-in;
+}
+
+@media (max-width: 600px){
+  #overlay{
+    background-color: #000;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: all 2s ease-in;
+  }
+  #modal .container a{
+    display: block;
+  }
+  #modal .container img{
+    display: none;
+  }
+  #modal .container video {
+    display: none;
+  }
+}
+
+#container_inner {
+  opacity: 0;
+  -webkit-transition: all 2s .5s;
+  transition: all 2s .5s;
+  width: 80%;
+  margin: 0 auto;
+  z-index: -10;
+}
+
+#modal .container #wrap_inner {
+  position: absolute;
+  top: calc(45%);
+  text-align: center;
+  position: absolute;
+  left: -69px;
+  right: 0;
+  mix-blend-mode: screen;
+  margin: auto;
+  width: 350px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -10;
+}
+
+@media (max-width: 600px){
+  #modal .container #wrap_inner {
+    left: 0;
+    width: 380px;
+    top: calc(20%);
+  }
+}
+
+
+/*botão efeito*/
+
+.button-container-1 {
+  position: relative;
+  width: 270px;
+  height: 50px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 1px solid;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-1 a {
+  display: block;
+  width: 101%;
+  height: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #b68d49;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+  line-height: 47px;
+}
+.button-container-1 a:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.mas {
+  position: absolute !important;
+  color: #b68d49;
+  text-align: center;
+  width: 101%;
+  font-weight: 300;
+  position: absolute;
+  font-size: 16px;
+  margin-top: 12px;
+  overflow: hidden;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+a.link:hover{
+  text-decoration: underline;
+}
