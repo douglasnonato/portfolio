@@ -152,13 +152,24 @@ block content
       figure.dots.parallax(data-speed='4', data-parallax='')
         img(src='assets/images/dots.svg', alt="dots")
 
-    section.photo
-      figure.fadeIn
-        img(src='assets/images/douglas-nonato-summit.jpg', alt='Douglas Nonato Summit')
-      figure.fadeIn
-        img(src='assets/images/douglas-nonato-studio.jpg', alt='Douglas Nonato Studio')
-      figure.fadeIn
-        img(src='assets/images/douglas-nonato-summit-2.jpg', alt='Douglas Nonato Summit')
+    section#carousel
+      .owl-carousel.owl-theme
+        .item
+          h4
+            img(src='assets/images/social/douglas-nonato-summit.jpg', alt='Douglas Nonato Summit')
+        .item
+          h4
+            img(src='assets/images/social/douglas-nonato-studio.jpg', alt='Douglas Nonato Studio')
+        .item
+          h4
+            img(src='assets/images/social/douglas-nonato-summit-2.jpg', alt='Douglas Nonato Summit')
+        .item
+          h4
+            img(src='assets/images/social/douglas-nonato-studio-2.jpg', alt='Douglas Nonato Studio')
+        .item
+          h4
+            img(src='assets/images/social/douglas-nonato-sprint.jpg', alt='Douglas Nonato Sprint')
+
     include footer
 
   include scripts-index
