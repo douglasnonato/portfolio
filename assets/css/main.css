@@ -393,10 +393,7 @@ li{
 #intro h2{
   line-height: 32px;
   font-size: 17px;
-  font-weight: 600
-
-
-;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -409,10 +406,12 @@ li{
 }
 
 @media screen and (max-width: 64em) {
-
   #intro h2{
     line-height: 34px;
     font-size: 20px;
+  }
+  #intro h1 .hide{
+    display: none;
   }
 }
 
@@ -546,7 +545,7 @@ section#projects .flexy{
 .cd-words-wrapper b {
   display: inline-block;
   position: absolute;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   left: 0;
   top: 0;
   font-weight: 800;
@@ -752,6 +751,19 @@ section#projects .flexy{
   width: 300px;
   margin-top: 720px;
   right: 10vw;
+}
+
+section.photo{
+  padding: 0;
+}
+
+.photo figure{
+  width: 33.3%
+}
+
+.photo figure img{
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 68.1em) {
