@@ -294,7 +294,7 @@
 }
 
 @media screen and (max-width: 48em) {
-  .menu-overlay .call p{
+  .menu-overlay .call p, .menu-overlay ul.contents{
     display: none;
   }
 }

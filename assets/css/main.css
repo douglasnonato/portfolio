@@ -509,7 +509,7 @@ section#projects .flexy{
     border: 1px solid #4f49ff;
     padding: 20px;
     position: relative;
-    width: 42%
+    width: 42%;
 }
 
 .project.course figure, .project.podcast figure, .project.course .info, .project.podcast .info{
@@ -537,6 +537,13 @@ section#projects .flexy{
 .project.podcast:before{
   content: 'podcast';
 }
+
+@media screen and (max-width: 1091px) {
+  .project.course, .project.podcast{
+      width: 100%;
+  }
+}
+
 /* Animated headline  */
 
 .cd-headline {
