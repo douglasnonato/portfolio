@@ -207,7 +207,7 @@
 
 .menu-overlay ul.links{
   max-width: 430px;
-  margin: 40px auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -250,6 +250,40 @@
   height: calc(100% + 5px);
   width: calc(100% + 20px);
   left: -10px;
+}
+
+.menu-overlay ul.contents{
+  max-width: 430px;
+  margin: 40px auto 0;
+  display: block;
+}
+
+.menu-overlay ul.contents li{
+  margin: 0 0 20px;
+}
+
+.menu-overlay ul.contents li a{
+  color: #202025;
+  font-size: 28px;
+  border: 1px solid #d9d7e3;
+  padding: 20px;
+  border-radius: 4px;
+  display: block;
+  font-size: 20px;
+  width: max-content;
+  transition: .3s;
+}
+.menu-overlay ul.contents li a:hover{
+  background: #fff;
+}
+
+.menu-overlay ul.contents li a span{
+  background-color: #4f49ff;
+  color: #fff;
+  padding: 5px;
+  width: auto;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 64em) {

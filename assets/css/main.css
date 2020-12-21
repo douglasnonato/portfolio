@@ -505,19 +505,19 @@ section#projects .flexy{
   width: 60%;
 }
 
-.project.course{
+.project.course, .project.podcast{
     border: 1px solid #4f49ff;
-    padding: 20px 20px 0;
+    padding: 20px;
     position: relative;
+    width: 42%
 }
 
-@media screen and (max-width: 1091px){
-  .project.course{
-    padding-bottom: 20px;
-  }
+.project.course figure, .project.podcast figure, .project.course .info, .project.podcast .info{
+  width: 100%;
+  display: unset;
 }
 
-.project.course:before{
+.project.course:before, .project.podcast:before{
   content: 'course';
   position: absolute;
   background-color: #4f49ff;
@@ -530,6 +530,13 @@ section#projects .flexy{
   z-index: 99;
 }
 
+.project.course:before{
+  content: 'course';
+}
+
+.project.podcast:before{
+  content: 'podcast';
+}
 /* Animated headline  */
 
 .cd-headline {

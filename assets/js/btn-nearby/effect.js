@@ -262,3 +262,71 @@ new Nearby(bttnseven, {
         });
     }
 });
+
+/**************** Button eight ****************/
+const bttneight = document.querySelector('.fxButton--border.eight');
+const bttnBordereight = bttneight.querySelector('.fxButton__border.eight');
+const borderIntervaleight = {from: 0.1, to: 1};
+
+const bttnGraphiceight = bttneight.querySelector('.fxButton__graphic.eight');
+const bttnTexteight = bttneight.querySelector('.fxButton__text.eight');
+const graphicIntervaleight = {from: 60, to: 0};
+const textIntervaleight = {from: 0, to: -20};
+
+new Nearby(bttneight, {
+    onProgress: (distance) => {
+        const border = lineEq(borderIntervaleight.from, borderIntervaleight.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnBordereight, 0.5, {
+            ease: 'Expo.easeOut',
+            opacity: `${Math.max(Math.min(border,borderIntervaleight.to),borderIntervaleight.from)}`
+        });
+
+        const tx = lineEq(graphicIntervaleight.from, graphicIntervaleight.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnGraphiceight, 0.5, {
+            ease: 'Expo.easeOut',
+            x: `${Math.min(tx,graphicInterval.from)}`
+        });
+
+        const txText = lineEq(textIntervaleight.from, textIntervaleight.to, distanceThreshold.max, distanceThreshold.min, distance);
+        const bw = lineEq(grayscaleInterval.from, grayscaleInterval.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnTexteight, 0.5, {
+            ease: 'Expo.easeOut',
+            x: `${Math.min(txText,graphicIntervaleight.to)}`,
+            filter: `grayscale(${Math.min(bw,grayscaleInterval.from)})`
+        });
+    }
+});
+
+/**************** Button nine ****************/
+const bttnnine = document.querySelector('.fxButton--border.nine');
+const bttnBordernine = bttnnine.querySelector('.fxButton__border.nine');
+const borderIntervalnine = {from: 0.1, to: 1};
+
+const bttnGraphicnine = bttnnine.querySelector('.fxButton__graphic.nine');
+const bttnTextnine = bttnnine.querySelector('.fxButton__text.nine');
+const graphicIntervalnine = {from: 60, to: 0};
+const textIntervalnine = {from: 0, to: -20};
+
+new Nearby(bttnnine, {
+    onProgress: (distance) => {
+        const border = lineEq(borderIntervalnine.from, borderIntervalnine.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnBordernine, 0.5, {
+            ease: 'Expo.easeOut',
+            opacity: `${Math.max(Math.min(border,borderIntervalnine.to),borderIntervalnine.from)}`
+        });
+
+        const tx = lineEq(graphicIntervalnine.from, graphicIntervalnine.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnGraphicnine, 0.5, {
+            ease: 'Expo.easeOut',
+            x: `${Math.min(tx,graphicInterval.from)}`
+        });
+
+        const txText = lineEq(textIntervalnine.from, textIntervalnine.to, distanceThreshold.max, distanceThreshold.min, distance);
+        const bw = lineEq(grayscaleInterval.from, grayscaleInterval.to, distanceThreshold.max, distanceThreshold.min, distance);
+        TweenMax.to(bttnTextnine, 0.5, {
+            ease: 'Expo.easeOut',
+            x: `${Math.min(txText,graphicIntervalnine.to)}`,
+            filter: `grayscale(${Math.min(bw,grayscaleInterval.from)})`
+        });
+    }
+});
