@@ -382,12 +382,87 @@
 .description .highlight h6{
 	font-size: 30px;
     margin: 0;
-    line-height: 34px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
     text-align: center;
 }
 
+.description .highlight .col{
+	float: left;
+	width: 33%;
+	padding-top: 30px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 380px;
+}
+
 @media screen and (max-width: 48em) {
-	#sebrae .press figure{
+	.description .highlight .col{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.description .highlight .col.line{
+		border-top: 1px solid #fff;
+		padding-top: 30px; 
+		margin-top: 10px;
+	}
+	#sebrae_tb .press figure{
 		position: relative;
 	}
+}
+
+.description .highlight .label{
+	font-size: 20px;
+    line-height: 24px;
+    max-width: 215px;
+    margin: 10px auto;
+}
+
+.description .highlight .col.line .label{
+	font-size: 17px;
+}
+
+.description .highlight .right .label{
+    max-width: 260px;
+    line-height: 29px;
+}
+
+.description .highlight .col .data{
+	font-size: 70px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.description .highlight .col .note{
+	font-size: 12px;
+    line-height: 16px;
+    max-width: 215px;
+    margin: 0 auto;
+    opacity: .4;
+    font-weight: 400;
+}
+
+.description .highlight .col .coupon{
+	background-image: url(../images/coupon.svg);
+    background-repeat: no-repeat;
+    background-size: 160px;
+    background-position: center;
+    font-size: 110px;
+    font-weight: 800;
+    line-height: 70px;
+    padding: 20px 20px 20px 40px;
+    color: #4f49fe;
+}
+
+.description .highlight .col .news{
+	background-image: url(../images/news.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(50% - 15px);
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 120px;
+    padding: 30px 0 10px 20px;
 }
