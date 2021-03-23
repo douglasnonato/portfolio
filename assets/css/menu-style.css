@@ -188,11 +188,11 @@
 }
 
 .menu-overlay .call p{
-  line-height: 34px;
+  line-height: 30px;
   font-size: 18px;
   max-width: 430px;
   margin: 0 auto;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .menu-overlay .call p span{
@@ -272,6 +272,7 @@
   font-size: 20px;
   width: max-content;
   transition: .3s;
+  font-weight: 800;
 }
 .menu-overlay ul.contents li a:hover{
   background: #fff;
@@ -284,6 +285,7 @@
   width: auto;
   font-size: 20px;
   margin-right: 10px;
+  font-weight: 800;
 }
 
 @media screen and (max-width: 64em) {
@@ -400,6 +402,7 @@
   padding-left: 50px;
   width: 500px;
   position: relative;
+  font-weight: 900;
 }
 
 .menu-overlay ul li a strong small{

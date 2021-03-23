@@ -740,7 +740,7 @@ body,
 input,
 select,
 textarea {
-  font-family: "Montserrat", "Roboto", helvetica, arial, sans-serif;
+  font-family: 'Nunito Sans', "Roboto", helvetica, arial, sans-serif;
   font-size: 62.5%;
 }
 
