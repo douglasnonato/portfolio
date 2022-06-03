@@ -307,6 +307,10 @@ section.mobile{
   color: #202025;
 }
 
+.pdTop-30{
+  padding-top: 30px;
+}
+
 .pdTop-60{
   padding-top: 60px;
 }
@@ -317,6 +321,10 @@ section.mobile{
 
 .pdTop-15vh{
   padding-top: 15vh !important;
+}
+
+.pdTop-20vh{
+  padding-top: 20vh !important;
 }
 
 .pdTop-30vh{
@@ -332,6 +340,11 @@ section.mobile{
     padding-top: 15vh !important;
   }
 }
+
+.pdBot-50{
+  padding-bottom: 50px;
+}
+
 
 .pdBot-100{
   padding-bottom: 100px;
@@ -687,7 +700,7 @@ section#projects .flexy{
 }
 
 .testimonial{
-  padding-top: 800px;
+  padding-top: 1300px;
   height: 0;
 }
 
@@ -1062,6 +1075,11 @@ footer span i{
   position: absolute;
   max-width: 970px;
 }
+
+#single-project #header figure.viewMobile{
+  z-index: -1;
+}
+
 
 #single-project #header h1{
   margin: 150px 0 20px;

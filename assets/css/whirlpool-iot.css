@@ -1,0 +1,216 @@
+#whirlpool_iot .logo{
+	background-color: #EEB111;
+}
+
+#whirlpool_iot p.bigger{
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+
+#whirlpool_iot .flexy.smarthome, #whirlpool_iot .flexy.workflow {
+    width: 100vw;
+}
+
+@media screen and (min-width: 101em) {
+	#whirlpool_iot .scroll-to.down {
+		right: 990px;
+	}
+}
+
+@media screen and (min-width: 89em) and (max-width: 100em){
+	#whirlpool_iot .scroll-to.down {
+		right: 62%;
+	}	
+}
+
+@media screen and (min-width: 64em) and (max-width: 88em){
+		#whirlpool_iot .scroll-to.down {
+		right: 57%;
+	}
+}
+
+#whirlpool_iot #header {
+	background-color: #EEB111;
+	overflow: unset;
+}
+
+#whirlpool_iot #header .bg-text {
+	color: #f5f5f524;
+}
+
+@media screen and (max-width: 38.3em){
+	#single-project #header.web h1 {
+	    margin-top: 37vw;
+	    font-size: 11vw;
+	}
+}
+
+@media screen and (min-width: 64em){
+	#whirlpool_iot #header .bg-text{
+		left: calc(-1vw * 35);
+		font-size: 370px;
+	    line-height: 360px;
+	}
+}
+#whirlpool_iot #header h1{
+	width: 25vw;
+}
+
+#whirlpool_iot #header .block-right h2{
+	color: #201f25;
+}
+
+#whirlpool_iot #header .block-right{
+	width: 25vw;
+}
+
+#whirlpool_iot #header .block-right .block-revealer__content:before{
+	background-color: #fafafa;
+}
+
+@media screen and (min-width: 64em){
+	#whirlpool_iot #header .flexy, #whirlpool_iot .logo .flexy{
+		width: 80vw;
+	}
+	#whirlpool_iot #header figure {
+	    width: 60vw;
+	    bottom: 0;
+	    right: 0;
+	    top: -50px;
+	    margin: 0;
+	    overflow: hidden;
+	}
+	#whirlpool_iot #header figure img {
+	    width: 120%;
+	    margin-left: -60px;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 88em){
+	#whirlpool_iot #header figure {
+		width: 55vw;
+	}
+	#whirlpool_iot #header figure img {
+	    width: 180%;
+	}
+}
+
+#whirlpool_iot #header #rev-1 .block-revealer__element{
+	background-color: #fafafa !important;
+}
+
+#single-project .smarthome .row-figure{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#whirlpool_iot .smarthome .textBorder{
+  top: -350px;
+  left: -60px;
+}
+
+@media screen and (max-width: 64em) {
+	#whirlpool_iot #header {
+		padding-bottom: 150px;
+	}
+	#single-project .smarthome .flexBetween{
+		display: unset;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+#single-project .smarthome .flexBetween{
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 64em) {
+	#single-project .smarthome .flexBetween.matrix figure{
+		max-width: 220px !important;
+	}
+}
+
+#whirlpool_iot .intro .textBorder{
+	top: -350px;
+	left: -60px;
+}
+
+.leading{
+	margin-bottom: 25vh;
+}
+
+.leading h4{
+	margin-top: 100px;
+}
+
+.leading figure{
+	width: 22vw;
+	float: left;
+	max-width: 420px;
+}
+
+.leading .parallax{
+	margin-top: 30vw;
+	z-index: -1;
+}
+
+.leading figure.lg{
+	width: 50vw;
+	margin: 0 0 0 -30px !important;
+	z-index: -1;
+}
+
+.leading figure.lg figcaption{
+	margin-left: 30px !important;
+}
+
+@media screen and (min-width: 64em){
+	#single-project .leading figure img{
+		width: unset;
+	}
+}
+
+@media screen and (min-width: 64em) and (max-width: 102em) {
+	.leading .parallax{
+		margin-top: 40vw;
+	}
+}
+
+@media screen and (max-width: 90em) {
+	.leading .parallax{
+		margin-top: 600px;
+	}
+}
+
+.leading .row{
+	width: 50vw;
+}
+
+.leading .row figure:first-child{
+	margin-right: 10px !important;
+}
+
+@media screen and (max-width: 64em) {
+	#whirlpool_iot .intro .description{
+		display: unset;
+		margin: unset;
+	}
+	#single-project .smarthome .row-figure{
+		width:100%
+	}
+	#single-project .leading figure, #single-project .smarthome figure{
+		width: 100%;
+		margin: 0 auto !important;
+		float: unset;
+	}
+	.leading .row{
+		width: 100%;
+	}
+	.leading figure.lg figcaption{
+		margin-left: unset !important;
+	}
+}
+
+section.mobile{
+	padding-top: 0;
+}

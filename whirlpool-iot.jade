@@ -1,0 +1,173 @@
+include header
+
+extends ./header.jade
+
+block style
+  link(rel='stylesheet', type='text/css', href='assets/css/whirlpool-iot.css')
+
+block meta
+  title Douglas Nonato | Whirlpool Smart Home Appliances
+  meta(name='description', content="Internet of Things. Smart Home Solutions for the world's largest home appliance company.")
+  meta(name='keywords', content='Whirlpool, UX, IoT, Usability, Design, Smart, Global, Appliance, Connected')
+
+  //- Share image
+  meta(property='og:title', content='Douglas Nonato | Whirlpool Smart Home Aplliances')
+  meta(property='og:description', content="Internet of Things. Smart Home Solutions for the world's largest home appliance company.")
+  meta(property='og:url', content='https://www.douglasnonato.com/whirlpool-iot.html')
+  meta(property='og:site_name', content='Douglas Nonato')
+  meta(property='og:image', content='https://douglasnonato.com/assets/images/works/whirlpool-iot/og-image.jpg')
+  meta(property='og:type', content='website')
+
+block content
+  //- Main
+  main#whirlpool_iot
+    #top
+    include menu
+    #single-project
+      //- Content
+      section#header.web
+        .bg-text.fadeIn
+          | Whirl
+          br
+          | pool
+        figure.viewDesktop.fadeIn
+          img(src='assets/images/works/whirlpool-iot/whirlpool-IoT-app.jpg', alt='Whirlpool IoT App')
+        .flexy.flexy--column.delay-loading
+          h1#rev-1.content__title
+            | Whirlpool
+          figure.viewMobile.fadeIn
+            img(src='assets/images/works/whirlpool-iot/whirlpool-iot.png', alt='Whirlpool IoT App')
+          #rev-2.block-right
+            h2 Internet of Things. Smart Home Solutions for the world's largest home appliance company.
+
+      section#meta.fadeIn
+        .flexy
+          .col.date
+            small
+              | DATE —
+            br 
+            strong
+              | May_2022
+          .col.position
+            small
+              | ROLE —
+            br
+            strong
+              | UX Designer
+          .col.kind
+            small
+              | KIND —
+            br
+            strong
+              | App & IoT
+
+      section
+        .flexy.intro
+          h3#rev-3 Overview
+          .textBorder
+            svg
+              text(x='0' y='550') 01
+          .description#rev-4
+            .col-half
+              p For over 100 years Whirlpool Corporation has pursued improving life at home. The company is committed to being the best global kitchen and laundry company, and is consistently 
+                span recognized by FORTUNE as one of the World’s Most Admired Companies. 
+              p.pdBot-50 As a designer in one of the largest home appliance manufacturers in the world, our role is more than crafting the present, but literally seeking innovations to foster the future of the industry by meeting the evolving needs of consumers through the company's iconic brands 
+                span present all around the world.
+
+            .col-half
+              figure
+                img(src='assets/images/works/whirlpool-iot/whirlpool-brands.png', alt="Whirlpool Brands 2022")
+                figcaption
+                  | [Whirlpool Brands 2022]
+
+      section.description-section.pdTop-30vh
+        .flexy.smarthome
+          .col-half.center
+            h3#rev-5 Smart Home
+            .textBorder
+              svg
+                text(x='0' y='550') 02
+            .description#rev-6
+              p In an increasingly digital world, everyday products start to connect to our virtual ecosystems, making household tasks more efficient with the integration of the internet. But before reaching that level of maturity, 
+                span there is a long way to go among the decades-old habits of millions of consumers.
+              p In a global team with the most diverse Design disciplines, my role was to connect the experience found in new home appliances with our apps, in order to translate the standards already recognized by the user from the physical world to the expanded possibilities of the digital universe.
+          .row-figure  
+              figure
+                img(src='assets/images/works/whirlpool-iot/whirlpool-appliance-iot.png', alt="Home Appliance IoT")
+
+          .col-half.description.fadeIn.center
+            h4 CROSS-INTERFACE
+            p The IoT process involves collaborating with a very cross-functional stakeholders at global scale. One of the challenges I faced on this journey was having to dig into the physical product behavior specifications, understand with electrical engineers the technical limitations, learn about local safety regulations and also support new and old firmware versions from different appliance categories.
+            p Moreover, 
+              span to achieve maximum remote control capabilities
+              | &nbsp;you need to learn about user's digital ecosystem and try to 
+              span be on top of the emerging technologies waves.
+              | &nbsp;Solutions need to be created taking into account features and limitations offered by the device's operational systems and meeting requirements of third-party services, such as Apple, Alexa, Google, among others. In addition to designing brand-agnostic solutions to be suitable in Apps of different brands.
+            p With all these informations, at the end of the day I was able to impact 
+              span physical products interfaces, mobile and wearables apps.
+
+      section.description-section.pdTop-20vh
+        .flexy.leading
+          .col-half.description.fadeIn
+            p.bigger During this period I started to lead the UX roadmap of 
+              span 4 North American Apps,
+              | &nbsp;under the Whirlpool, Maytag, JennAir & KitchenAid brands, and  
+              span 3 from the European region
+              | &nbsp;under the Whirlpool, Hotpoint & Bauknechtauk brands.
+
+          .col-half
+            .parallax.viewDesktop(data-speed='2', data-parallax='')
+              figure.lg.fadeIn
+                img(src='assets/images/works/whirlpool-iot/whirlpool-app-regions.png', alt="Whirlpool App World Regions")
+            .viewMobile
+              figure.lg.fadeIn
+                img(src='assets/images/works/whirlpool-iot/whirlpool-app-regions.png', alt="Whirlpool App World Regions")
+
+      section.description-section
+        .flexy.smarthome
+          .col-half.center
+            h3#rev-7 Outcome
+            .textBorder
+              svg
+                text(x='0' y='550') 03
+            .description.fadeIn
+              p After all this immersion process to close the knowledge gaps, the user journey begins to be shaped at various stages of the design process with wireframes, flow diagrams, high fidelity prototypes and validated with online or in-person usability testing sessions. At the end, by using our design systems owned by the brand team, 
+                span my deliveries consisted on final screens to handoff.
+              p Another initiative 
+                span (which got me a bonus reward)
+                | &nbsp;was the creation of a DesignOps group to bring best practices to improve the workflow, especially in our Figma directories. Considering the huge catalog of products, physical and digital, under many different brands, the workspace was getting out of our control, and by creating a few small processes we started to offer a more efficient co-creation space.
+
+      section.mobile
+        figure.fadeIn
+          img(src='assets/images/works/whirlpool-iot/whirlpool-app-iot-mobile.png', alt='whirlpool App IoT Mobile')
+          //- Tooltip
+          .tooltip.mobile.fadeIn(data-type='tooltip')
+            .tooltip__trigger(role='tooltip')
+              span.tooltip__trigger-text More
+            .tooltip__base
+              svg.tooltip__shape(width='100%', height='100%', viewBox='0 0 400 300')
+                path(d='M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z')
+              .tooltip__content
+                | Some of the Apps
+                br
+                | I've been working on
+
+      section.description-section
+        .flexy.workflow
+          .col-half.description.fadeIn.center
+            p Due to high industry confidentiality and long release roadmaps, I will not go into details at this point, but rather give an overview of my contributions.
+
+      section
+        .flexy.flexy--row.projects--related.fadeIn
+          h4.content__title--center Other Projects
+          .projects
+            a.item(href='sebrae-portal-ecommerce.html')
+              img(src='assets/images/works/sebrae-portal/work-related.jpg', alt='Sebrae Portal and E-commmerce')
+              | Sebrae - Portal and E-commerce
+            a.item(href='calculo-juridico-dashboard.html')
+              img(src='assets/images/works/calculo-juridico-dashboard/work-related.jpg', alt='Cálculo Jurídico')
+              | Cálculo Jurídico - SaaS Dashboard
+
+      include footer
+
+  include scripts-project
