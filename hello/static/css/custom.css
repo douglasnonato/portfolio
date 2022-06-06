@@ -9,6 +9,12 @@ body, a, button{
   cursor: none !important;
 }
 
+p.small{
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+
 .cursor, .cursor-outer {
   mix-blend-mode: exclusion;
   width: 10px;
@@ -263,7 +269,7 @@ section.intro{
   text-align: center;
   line-height: 50px;
   font-weight: 600;
-  max-width: 650px;
+  max-width: 700px;
 }
 
 @media (max-width: 760px){
@@ -276,6 +282,16 @@ section.intro{
     font-weight: 500;
   }
 }
+
+.whirlpool .wrap{
+  margin-left: 0;
+}
+
+.bg-dark{
+  background-color: #202025;
+  color: #fff;
+}
+
 
 .sebrae .text-label{
   width: unset;
