@@ -7,7 +7,7 @@ $(document).ready(function () {
         autoplay: true,
         slideTransition: 'linear',
         autoplayTimeout: 0,
-        autoplaySpeed: 20000,
+        autoplaySpeed: 10000,
         autoplayHoverPause: false
 
     });
