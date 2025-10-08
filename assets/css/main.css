@@ -366,8 +366,7 @@ li{
 /* Index */
 
 #intro{
-  margin-bottom: 100px;
-  height: 100vh;
+  height: 80vh;
   /*background-color: #ccc;*/
   display: flex;
   align-items: center;

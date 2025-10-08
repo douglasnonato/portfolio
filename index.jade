@@ -4,26 +4,30 @@ extends ./header.jade
 block content
   main
     #top
-    include menu-index
+    //- include menu-index
     //- Content
     section#intro.delay-loading
       .content
-        header
-        h1#rev-heading-1.content__title.cd-headline.letters.type
-          span Hello,&nbsp;
-          br.desktop
-          span my name is&nbsp;
-          span.highlight Douglas Nonato
-          br
-          span.hide 👨‍💻&nbsp;
-          span.cd-words-wrapper.waiting
-            b.is-visible I'm a Designer with...
-            b 14+ years of experience
-            b Ecomm, App, and IoT expertise
-            b and a rapid prototype instructor
+        div
+          //- figure
+          //-       img.content__image(src='assets/images/douglas_nonato.jpg', alt='Douglas Nonato')
+          h1#rev-heading-1.content__title.cd-headline.letters.type
+            span Hello,&nbsp;
+            br.desktop
+            span my name is&nbsp;
+            span.highlight Douglas Nonato
+            br
+            span.hide 👨‍💻&nbsp;
+            span.cd-words-wrapper.waiting
+              b.is-visible I'm a Designer with...
+              b 15+ years of experience
+              b Ecomm, App, and IoT expertise
             
         h2#rev-heading-2
-          | Inspired by the Digital World, since 2008 I have been helping companies to build winning solutions and stand out from the competition. With a solid skills set that goes from visual, motion design, usability and prototyping to frontend development, I'm able of being a great player in the most diverse scenarios and teams. From a strategic perspective, over the past couple of years, I have mastered my leadership skills by ensuring agile deliveries and incorporating Design Thinking techniques to meet organizational requirements.
+          | Inspired by the Digital World, I have spent over 15 years helping large organizations create cohesive, human-centered digital experiences without losing efficiency, consistency, or strategic alignment. As a design leader, I translate these complex challenges into scalable solutions that drive both business impact and customer value.
+          br
+          br
+          | By leading design teams, I have a proven record of delivering results across eCommerce, IoT, B2B platforms, and global design systems by fostering deep collaboration between UX, product, and architecture and embedding design thinking into the organization's core.
         
         h3#rev-heading-3
           span Currently Design Manager at
@@ -32,7 +36,7 @@ block content
 
     section#projects
       .flexy
-        .project.fadeIn
+        .project
           a.link(href='whirlpool-iot.html')
             figure
               img.content__image(src='assets/images/works/whirlpool-iot/whirlpool-app-iot.jpg', alt='Whirlpool IoT App')
@@ -150,19 +154,19 @@ block content
         //-         .fxButton__border.eight
         //-           | Check-out this project
 
-    section.testimonial.fadeIn
-      .content.fadeIn.parallax(data-speed='2', data-parallax='')
-        p "Douglas is a person you can rely on inside and outside the company. He is interested, original, talented, and a strategic visionary that combines design, user experience, and business value creation skills. During the time we worked together, I witnessed his evolution from a designer to an experienced product owner, focused on solving customer problems. His abilities cover the whole process of prototyping and product development."
-        .name
-          span Jorge Buczek —&nbsp;
-          strong Director of Valoo
-      .content.fadeIn.parallax(data-speed='6', data-parallax='')
-        p "Douglas is a very experienced product designer with a wide variety of skills. As a software developer I have recommended him to a few clients that were amazed with the results of his work. He is a good listener and works in a very practical way to find a good solution for each requirement. On the technical side, he is up to date with the latest tools of the trade, like Sketch and Figma."
-        .name
-          span Giovanni Bonetti —&nbsp;
-          strong CTO of Cálculo Jurídico
-      figure.dots.parallax(data-speed='4', data-parallax='')
-        img(src='assets/images/dots.svg', alt="dots")
+    //- section.testimonial.fadeIn
+    //-   .content.fadeIn.parallax(data-speed='2', data-parallax='')
+    //-     p "Douglas is a person you can rely on inside and outside the company. He is interested, original, talented, and a strategic visionary that combines design, user experience, and business value creation skills. During the time we worked together, I witnessed his evolution from a designer to an experienced product owner, focused on solving customer problems. His abilities cover the whole process of prototyping and product development."
+    //-     .name
+    //-       span Jorge Buczek —&nbsp;
+    //-       strong Director of Valoo
+    //-   .content.fadeIn.parallax(data-speed='6', data-parallax='')
+    //-     p "Douglas is a very experienced product designer with a wide variety of skills. As a software developer I have recommended him to a few clients that were amazed with the results of his work. He is a good listener and works in a very practical way to find a good solution for each requirement. On the technical side, he is up to date with the latest tools of the trade, like Sketch and Figma."
+    //-     .name
+    //-       span Giovanni Bonetti —&nbsp;
+    //-       strong CTO of Cálculo Jurídico
+    //-   figure.dots.parallax(data-speed='4', data-parallax='')
+    //-     img(src='assets/images/dots.svg', alt="dots")
 
     section#carousel
       .owl-carousel.owl-theme
