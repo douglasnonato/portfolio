@@ -91,9 +91,12 @@
       flex-direction: column;
       width: 100%;                  /* impede que o hero encolha se o pai for flex/grid */
       max-width: none;
+      min-height: 100vh;            /* fallback */
+      min-height: 100dvh;           /* hero ocupa pelo menos a altura da tela */
       margin: 0;
       padding: 0;
       background: var(--bg);
+      --frame-ratio: var(--video-ratio); /* desktop: frame segue a proporção real do vídeo */
     }
 
     .hero__media {
@@ -106,12 +109,10 @@
       width: 100vw;
       max-width: none;
       margin-left: calc(50% - 50vw);
-      --frame-ratio: var(--video-ratio); /* desktop: frame segue a proporção real do vídeo */
       aspect-ratio: var(--frame-ratio); /* reserva o espaço (evita "pulo" de layout) */
-      /* O conteúdo cobre só ~25% da altura do vídeo. Altura do vídeo = 100vw / proporção,
-         então a sobreposição é 25% disso. Se o texto crescer (mobile), o vídeo é empurrado
-         para baixo naturalmente. */
-      margin-top: calc(var(--video-overlap) * -100vw / var(--frame-ratio));
+      /* margin-top:auto absorve o espaço livre e cola o vídeo no FIM da tela quando ela é alta.
+         Se o conteúdo for maior que a tela, não sobra espaço e o vídeo é empurrado para baixo. */
+      margin-top: auto;
       background: var(--bg);        /* fallback enquanto o vídeo carrega */
       overflow: hidden;
     }
@@ -139,6 +140,9 @@
 
     /* ---------- Conteúdo ---------- */
     .hero__content {
+      /* O vídeo sobe ~25% da própria altura por baixo do conteúdo (altura do vídeo = 100vw / proporção).
+         Em telas altas, o espaço livre reduz essa sobreposição e o vídeo fica colado no fim da tela. */
+      margin-bottom: calc(var(--video-overlap) * -100vw / var(--frame-ratio));
       --content-pt: clamp(40px, 4.8vw, 76px);
       --title-fs: clamp(30px, 2vw + 20px, 50px);
       --title-lh: 1.2;
@@ -249,7 +253,7 @@
 
     /* Mobile: frame do vídeo em 3:4 (retrato), com o vídeo centralizado e cortado nas laterais */
     @media (max-width: 767px) {
-      .hero__media { --frame-ratio: 0.75; }          /* 3 / 4 */
+      .hero { --frame-ratio: 0.75; }                  /* 3 / 4 */
       .hero__video { object-position: center center; }
     }
 
@@ -358,8 +362,9 @@
 
       // Ajusta o container à proporção real do vídeo: largura total, sem cortes (e recalcula a sobreposição).
       video.addEventListener("loadedmetadata", () => {
-        if (video.videoWidth && video.videoHeight && video.parentElement) {
-          video.parentElement.style.setProperty("--video-ratio", (video.videoWidth / video.videoHeight).toFixed(4));
+        const hero = video.closest(".hero");
+        if (video.videoWidth && video.videoHeight && hero) {
+          hero.style.setProperty("--video-ratio", (video.videoWidth / video.videoHeight).toFixed(4));
         }
       }, { once: true });
 
