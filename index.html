@@ -251,8 +251,9 @@
       .links { gap: 28px; }
     }
 
-    /* Mobile: frame do vídeo em 3:4 (retrato), com o vídeo centralizado e cortado nas laterais */
-    @media (max-width: 767px) {
+    /* Mobile / retrato: frame do vídeo em 3:4, com o vídeo centralizado e cortado nas laterais.
+       Vale para telas de até 768px de largura OU qualquer tela em que a altura é maior que a largura. */
+    @media (max-width: 768px), (orientation: portrait) {
       .hero { --frame-ratio: 0.75; }                  /* 3 / 4 */
       .hero__video { object-position: center center; }
     }
